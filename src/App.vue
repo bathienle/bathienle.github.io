@@ -1,14 +1,16 @@
 <template>
   <navbar />
   <router-view />
+  <footing />
 </template>
 
 <script>
+import Footing from "@/components/Footing.vue";
 import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "App",
-  components: { Navbar },
+  components: { Footing, Navbar },
 };
 </script>
 
