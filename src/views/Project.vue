@@ -1,24 +1,15 @@
 <template>
   <div class="project">
-    <h1>Project</h1>
+    <h1 class="title">Project</h1>
 
-    <div align="center">
-      <table>
-        <tr>
-          <td>Repository name</td>
-          <td>Description</td>
-          <td>Fork</td>
-          <td>Stars</td>
-          <td>Watch</td>
-        </tr>
-        <tr v-for="repo in repos" v-bind:key="repo.id">
-          <td>{{ repo.name }}</td>
-          <td>{{ repo.description }}</td>
-          <td>{{ repo.forks_count }}</td>
-          <td>{{ repo.stargazers_count }}</td>
-          <td>{{ repo.watchers_count }}</td>
-        </tr>
-      </table>
+    <div v-for="repo in repos" v-bind:key="repo.id">
+      <card
+        :name="repo.name"
+        :description="repo.description"
+        :forks="repo.forks_count"
+        :stars="repo.stargazers_count"
+        :watchers="repo.watchers_count"
+      />
     </div>
   </div>
 </template>
@@ -26,7 +17,10 @@
 <script>
 import axios from "axios";
 
+import Card from "@/components/Card.vue";
+
 export default {
+  components: { Card },
   data() {
     return { repos: undefined };
   },
