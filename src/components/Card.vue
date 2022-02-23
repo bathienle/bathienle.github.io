@@ -1,10 +1,12 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <p class="card-header-title is-centered">{{ name }}</p>
-      <p>Watchers: {{ watchers }}</p>
-      <p>Forks: {{ forks }}</p>
-      <p>Stars: {{ stars }}</p>
+      <p class="card-header-title">
+        <a :href="url">{{ name }}</a>
+      </p>
+      <p class="card-content">
+        Watchers: {{ watchers }} Forks: {{ forks }} Stars: {{ stars }}
+      </p>
     </div>
 
     <div class="card-content">
@@ -19,9 +21,17 @@ export default {
   props: {
     name: String,
     description: String,
+    url: String,
     forks: Number,
     stars: Number,
     watchers: Number,
   },
 };
 </script>
+
+<style scoped>
+.card {
+  border-radius: 1rem;
+  height: 160px;
+}
+</style>

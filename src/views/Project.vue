@@ -1,15 +1,18 @@
 <template>
   <div class="project">
-    <h1 class="title">Project</h1>
+    <h1 class="title">Projects</h1>
 
-    <div v-for="repo in repos" v-bind:key="repo.id">
-      <card
-        :name="repo.name"
-        :description="repo.description"
-        :forks="repo.forks_count"
-        :stars="repo.stargazers_count"
-        :watchers="repo.watchers_count"
-      />
+    <div class="columns is-multiline is-centered">
+      <div class="column is-half" v-for="repo in repos" v-bind:key="repo.id">
+        <card
+          :name="repo.name"
+          :description="repo.description"
+          :url="repo.html_url"
+          :forks="repo.forks_count"
+          :stars="repo.stargazers_count"
+          :watchers="repo.watchers_count"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -35,3 +38,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.columns {
+  margin: auto;
+  width: 75%;
+}
+</style>
