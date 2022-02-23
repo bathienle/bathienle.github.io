@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
-import Contact from '../views/Contact.vue'
-import Home from '../views/Home.vue'
-import Project from '../views/Project.vue'
+import Contact from '@/views/Contact.vue';
+import Home from '@/views/Home.vue';
+import Project from '@/views/Project.vue';
 
 const routes = [
   {
@@ -20,11 +20,11 @@ const routes = [
     name: 'Contact',
     component: Contact
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;
