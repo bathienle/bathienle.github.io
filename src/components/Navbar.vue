@@ -25,13 +25,13 @@
         <div class="field is-grouped">
           <p class="control">
             <a class="bd-tw-button button" href="https://github.com/bathienle">
-              <span class="icon"><i class="fa-brands fa-github"></i></span>
+              <span class="icon"><font-awesome-icon :icon="['fab', 'github']" /></span>
               <span>GitHub</span>
             </a>
           </p>
           <p class="control">
             <a class="bd-tw-button button" href="https://be.linkedin.com/in/bathien-le">
-              <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="icon"><font-awesome-icon :icon="['fab', 'linkedin']" /></span>
               <span>LinkedIn</span>
             </a>
           </p>
