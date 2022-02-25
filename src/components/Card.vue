@@ -5,7 +5,9 @@
         <a :href="url">{{ name }}</a>
       </p>
       <p class="card-content">
-        Watchers: {{ watchers }} Forks: {{ forks }} Stars: {{ stars }}
+        <font-awesome-icon :icon="['fas', 'eye']" /> {{ watchers }}
+        <font-awesome-icon :icon="['fas', 'code-fork']" /> {{ forks }}
+        <font-awesome-icon :icon="['fas', 'star']" /> {{ stars }}
       </p>
     </div>
 
