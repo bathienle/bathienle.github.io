@@ -1,7 +1,9 @@
 <template>
   <div class="has-background-black"><navbar /></div>
-  <router-view />
-  <footing />
+  <div class="container">
+    <router-view />
+    <footing />
+  </div>
 </template>
 
 <script>

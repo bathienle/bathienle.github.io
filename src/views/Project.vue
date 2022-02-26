@@ -32,16 +32,8 @@ export default {
       .get("https://api.github.com/users/bathienle/repos")
       .then((response) => {
         this.repos = response.data;
-        console.log(response.data);
       })
       .catch((error) => console.log(error));
   },
 };
 </script>
-
-<style scoped>
-.columns {
-  margin: auto;
-  width: 75%;
-}
-</style>
