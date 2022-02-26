@@ -1,9 +1,9 @@
 <template>
   <div class="project">
-    <h1 class="title">Projects</h1>
+    <h1 class="title mt-4">Projects</h1>
 
     <div class="columns is-multiline is-centered">
-      <div class="column is-half" v-for="repo in repos" v-bind:key="repo.id">
+      <div class="column is-half" v-for="repo in repos" :key="repo.id">
         <card
           :name="repo.name"
           :description="repo.description"
@@ -23,6 +23,7 @@ import axios from "axios";
 import Card from "@/components/Card.vue";
 
 export default {
+  name: "Project",
   components: { Card },
   data() {
     return { repos: undefined };
