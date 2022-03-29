@@ -1,4 +1,11 @@
 /* You have to override the values first and then import bulma */
-$navbar-item-hover-background-color: hsl(209, 100%, 26%);
+$color1: hsl(209, 100%, 26%);
+$color2: hsl(248, 100%, 14%);
+
+$navbar-item-hover-background-color: $color1;
+$navbar-dropdown-background-color: $color1;
+$navbar-dropdown-item-hover-background-color: $color2;
+$navbar-dropdown-item-hover-color: white;
+$navbar-item-hover-color: white;
 
 @import "~bulma";
