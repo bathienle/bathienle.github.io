@@ -15,9 +15,9 @@
 
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item"><router-link :to="{ name: 'Home' }">Home</router-link></a>
-          <a class="navbar-item"><router-link :to="{ name: 'Project' }">Project</router-link></a>
-          <a class="navbar-item"><router-link :to="{ name: 'Contact' }">Contact</router-link></a>
+          <router-link class="navbar-item" :to="{ name: 'Home' }">Home</router-link>
+          <router-link class="navbar-item" :to="{ name: 'Project' }">Project</router-link>
+          <router-link class="navbar-item" :to="{ name: 'Contact' }">Contact</router-link>
         </div>
       </div>
 
