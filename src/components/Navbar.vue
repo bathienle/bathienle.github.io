@@ -18,6 +18,7 @@
           <router-link class="navbar-item" :to="{ name: 'Home' }">Home</router-link>
           <router-link class="navbar-item" :to="{ name: 'Project' }">Project</router-link>
           <router-link class="navbar-item" :to="{ name: 'Contact' }">Contact</router-link>
+          <router-link class="navbar-item" :to="{ name: 'About' }">About</router-link>
         </div>
       </div>
 
