@@ -5,6 +5,8 @@
         Hi <font-awesome-icon :icon="['fas', 'hand-peace']" />, I'm Ba Thien
       </h1>
 
+      <hr />
+
       <p class="is-size-5 m-3">
         I am a research software engineer at the
         <a href="https://www.montefiore.uliege.be/">Montefiore Institute</a>
@@ -12,7 +14,7 @@
         working at the
         <a href="https://uliege.cytomine.org/">Cytomine ULiège Research & Development</a>.
       </p>
-
+      
       <p class="m-3">
         <img
           src="https://uliege.cytomine.org/images/logo_hu81929b023bf79bdfa325dae3c994e64a_23106_0x70_resize_mitchellnetravali_2.png"
@@ -22,6 +24,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Home"
+};
+</script>
 
 <style scoped>
 .home {

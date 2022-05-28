@@ -15,10 +15,21 @@
 
       <div class="navbar-menu">
         <div class="navbar-start">
-          <router-link class="navbar-item" :to="{ name: 'Home' }">Home</router-link>
-          <router-link class="navbar-item" :to="{ name: 'Project' }">Project</router-link>
-          <router-link class="navbar-item" :to="{ name: 'Contact' }">Contact</router-link>
-          <router-link class="navbar-item" :to="{ name: 'About' }">About</router-link>
+          <router-link class="navbar-item" :to="{ name: 'Home' }">
+            Home <img class="m-1" src="@/assets/icons/home.png" />
+          </router-link>
+          <router-link class="navbar-item" :to="{ name: 'About' }">
+            About <img class="m-1" src="@/assets/icons/about.png" />
+          </router-link>
+          <router-link class="navbar-item" :to="{ name: 'Experience' }">
+            Experience <img class="m-1" src="@/assets/icons/experience.png" />
+          </router-link>
+          <router-link class="navbar-item" :to="{ name: 'Skill' }">
+            Skill <img class="m-1" src="@/assets/icons/skill.png" />
+          </router-link>
+          <router-link class="navbar-item" :to="{ name: 'Project' }">
+            Project <img class="m-1" src="@/assets/icons/project.png" />
+          </router-link>
         </div>
       </div>
 
