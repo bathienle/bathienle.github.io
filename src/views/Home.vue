@@ -14,7 +14,7 @@
         working at the
         <a href="https://uliege.cytomine.org/">Cytomine ULiège Research & Development</a>.
       </p>
-      
+
       <p class="m-3">
         <img
           src="https://uliege.cytomine.org/images/logo_hu81929b023bf79bdfa325dae3c994e64a_23106_0x70_resize_mitchellnetravali_2.png"
