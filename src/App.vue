@@ -1,7 +1,7 @@
 <template>
   <div class="has-background-black"><navbar /></div>
   <div class="container">
-    <home />
+    <home :user="user" />
     <about />
     <experience />
     <skill />
@@ -50,7 +50,8 @@ export default {
     fillUserInfo(userInfo) {
       let metadata = userInfo.metadata;
       this.user = {
-        name: metadata.name,
+        first_name: metadata.first_name,
+        last_name: metadata.last_name,
         job_title: metadata.job_title,
         office: metadata.office,
         work_address: metadata.work_address,

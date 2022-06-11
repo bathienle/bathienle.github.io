@@ -2,13 +2,13 @@
   <div class="home">
     <div class="vertical-center">
       <h1 class="title is-size-2 mt-4">
-        Hi <font-awesome-icon :icon="['fas', 'hand-peace']" />, I'm Ba Thien
+        Hi <font-awesome-icon :icon="['fas', 'hand-peace']" />, I'm {{ user.first_name }}
       </h1>
 
       <hr />
 
       <p class="is-size-5 m-3">
-        I am a research software engineer at the
+        I am a {{ user.job_title }} at the
         <a href="https://www.montefiore.uliege.be/">Montefiore Institute</a>
         (<a href="https://www.uliege.be/">University of Liège</a>), <br />
         working at the
@@ -27,7 +27,10 @@
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
+  props: {
+    user: Object,
+  },
 };
 </script>
 
