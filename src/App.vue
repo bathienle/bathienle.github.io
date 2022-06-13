@@ -2,7 +2,7 @@
   <div class="has-background-black"><navbar /></div>
   <div class="container">
     <home :user="user" />
-    <about />
+    <about :user="user" />
     <experience />
     <skill />
     <project />
@@ -52,7 +52,9 @@ export default {
       this.user = {
         first_name: metadata.first_name,
         last_name: metadata.last_name,
+        description: metadata.description,
         job_title: metadata.job_title,
+        email: metadata.email,
         office: metadata.office,
         work_address: metadata.work_address,
         github: metadata.github,
