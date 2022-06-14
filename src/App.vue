@@ -39,10 +39,11 @@ export default {
     projects: {},
   }),
   methods: {
+    fetchProfilePicture() {
+      return bucket.getMedia({ props: "imgix_url,original_name" });
+    },
     fetchData() {
-      return new Promise((resolve) => {
-        resolve(bucket.getObjects({ props: "title,type,content,metadata" }));
-      });
+      return new Promise((resolve) => resolve(bucket.getObjects({ props: "type,metadata" })));
     },
     getData(type, objects) {
       return objects.filter((item) => item.type === type);
@@ -63,9 +64,7 @@ export default {
     },
     fillExperiences(experiences) {
       this.experiences = {
-        education: experiences.filter(
-          (item) => item.metadata.type === "education"
-        ),
+        education: experiences.filter((item) => item.metadata.type === "education"),
         work: experiences.filter((item) => item.metadata.type === "work"),
       };
     },
@@ -75,6 +74,11 @@ export default {
       let objects = values.objects;
       this.fillUserInfo(this.getData("user", objects).pop());
       this.fillExperiences(this.getData("experiences", objects));
+    });
+
+    this.fetchProfilePicture().then((images) => {
+      let picture = images.media.filter((item) => item.original_name.includes("profile")).pop();
+      this.user["profile_picture"] = picture.imgix_url;
     });
   },
 };

@@ -7,7 +7,7 @@
         <table>
           <tbody>
             <tr>
-              <td><img src="@/assets/profile.jpg" alt="Profile picture" /></td>
+              <td><img :src="user.profile_picture" alt="Profile picture" /></td>
             </tr>
             <tr>
               <td>
@@ -32,7 +32,7 @@
         </table>
       </div>
 
-      <div class="column column is-4">
+      <div class="column is-4">
         <p>{{ user.description }}</p>
       </div>
     </div>
