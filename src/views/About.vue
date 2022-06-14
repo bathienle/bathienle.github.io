@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <h1 class="title mt-4">ABOUT ME</h1>
+    <h1 class="title pt-4 is-uppercase">About me</h1>
 
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-4 is-offset-2">
         <table>
           <tbody>
@@ -22,6 +22,7 @@
             <tr>
               <td>
                 <info-card
+                  class="mt-4"
                   :email="user.email"
                   :work_address="user.work_address"
                   :office="user.office"
@@ -32,8 +33,8 @@
         </table>
       </div>
 
-      <div class="column is-4">
-        <p>{{ user.description }}</p>
+      <div class="column is-5">
+        <p class="is-size-4">{{ user.description }}</p>
       </div>
     </div>
   </div>
@@ -59,5 +60,9 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+p {
+  white-space: pre-line;
 }
 </style>
