@@ -1,9 +1,9 @@
 <template>
   <div class="has-background-black"><navbar /></div>
   <div class="container">
-    <home :user="user" />
-    <about :user="user" />
-    <experience />
+    <home class="m-4" :user="user" />
+    <about class="p-4" :user="user" />
+    <experience :experiences="experiences" />
     <skill />
     <project />
     <footing />
@@ -43,7 +43,7 @@ export default {
       return bucket.getMedia({ props: "imgix_url,original_name" });
     },
     fetchData() {
-      return new Promise((resolve) => resolve(bucket.getObjects({ props: "type,metadata" })));
+      return new Promise((resolve) => resolve(bucket.getObjects({ props: "title,content,type,metadata" })));
     },
     getData(type, objects) {
       return objects.filter((item) => item.type === type);
