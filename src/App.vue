@@ -4,7 +4,7 @@
     <home class="m-4" :user="user" />
     <about class="p-4" :user="user" />
     <experience :experiences="experiences" />
-    <skill />
+    <skill class="p-4" :skills="skills" />
     <project />
     <footing />
   </div>
@@ -74,6 +74,7 @@ export default {
       let objects = values.objects;
       this.fillUserInfo(this.getData("user", objects).pop());
       this.fillExperiences(this.getData("experiences", objects));
+      this.skills = this.getData("skills", objects);
     });
 
     this.fetchProfilePicture().then((images) => {
