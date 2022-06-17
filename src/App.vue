@@ -1,11 +1,11 @@
 <template>
   <div class="has-background-black"><navbar /></div>
   <div class="container">
-    <home class="m-4" :user="user" />
+    <home :user="user" />
     <about class="p-4" :user="user" />
     <experience :experiences="experiences" />
     <skill class="p-4" :skills="skills" />
-    <project />
+    <project class="p-4" :projects="projects" />
     <footing />
   </div>
 </template>
@@ -75,6 +75,7 @@ export default {
       this.fillUserInfo(this.getData("user", objects).pop());
       this.fillExperiences(this.getData("experiences", objects));
       this.skills = this.getData("skills", objects);
+      this.projects = this.getData("projects", objects);
     });
 
     this.fetchProfilePicture().then((images) => {
