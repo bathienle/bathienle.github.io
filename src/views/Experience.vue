@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div id="experience">
     <h1 class="title is-uppercase">Experience</h1>
     <h2 class="subtitle is-uppercase">Academic and Professional</h2>
 

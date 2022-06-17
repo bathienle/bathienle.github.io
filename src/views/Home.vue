@@ -36,7 +36,7 @@ export default {
 
 .vertical-center {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
 }
 
