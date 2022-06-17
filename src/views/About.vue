@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about">
     <h1 class="title pt-4 is-uppercase">About me</h1>
 
     <div class="columns is-vcentered">

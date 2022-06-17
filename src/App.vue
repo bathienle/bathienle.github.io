@@ -1,6 +1,8 @@
 <template>
-  <div class="has-background-black"><navbar /></div>
-  <Home :user="user" />
+  <div>
+    <Navbar :user="user" />
+    <Home :user="user" />
+  </div>
   <div class="container">
     <about class="p-4" :user="user" />
     <experience :experiences="experiences" />
@@ -60,6 +62,7 @@ export default {
         work_address: metadata.work_address,
         github: metadata.github,
         linkedin: metadata.linkedin,
+        website_url: metadata.personal_website
       };
     },
     fillExperiences(experiences) {
