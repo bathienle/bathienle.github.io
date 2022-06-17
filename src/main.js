@@ -1,5 +1,5 @@
-import { createApp } from 'vue';
-import App from './App.vue';
+import { createApp } from "vue";
+import App from "./App.vue";
 
 /* Font Awesome Icon */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -10,9 +10,9 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 library.add(fas);
 
-require('@/assets/styles/main.scss');
+require("@/assets/styles/main.scss");
 
 const app = createApp(App);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
-app.mount('#app');
+app.mount("#app");
