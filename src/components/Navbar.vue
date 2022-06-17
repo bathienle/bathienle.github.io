@@ -14,41 +14,22 @@
       </div>
 
       <div class="navbar-menu">
-        <div class="navbar-start">
-          <router-link class="navbar-item" :to="{ name: 'Home' }">
-            Home <img class="m-1" src="@/assets/icons/home.png" />
-          </router-link>
-          <router-link class="navbar-item" :to="{ name: 'About' }">
-            About <img class="m-1" src="@/assets/icons/about.png" />
-          </router-link>
-          <router-link class="navbar-item" :to="{ name: 'Experience' }">
-            Experience <img class="m-1" src="@/assets/icons/experience.png" />
-          </router-link>
-          <router-link class="navbar-item" :to="{ name: 'Skill' }">
-            Skill <img class="m-1" src="@/assets/icons/skill.png" />
-          </router-link>
-          <router-link class="navbar-item" :to="{ name: 'Project' }">
-            Project <img class="m-1" src="@/assets/icons/project.png" />
-          </router-link>
-        </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="bd-tw-button button" href="https://github.com/bathienle">
-                <span class="icon"><font-awesome-icon :icon="['fab', 'github']" /></span>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="bd-tw-button button" href="https://be.linkedin.com/in/bathien-le">
-                <span class="icon"><font-awesome-icon :icon="['fab', 'linkedin']" /></span>
-                <span>LinkedIn</span>
-              </a>
-            </p>
-          </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="#home">
+            <font-awesome-icon class="p-1" :icon="['fas', 'house']" size="2x" /> Home
+          </a>
+          <a class="navbar-item" href="#about">
+            <font-awesome-icon class="p-1" :icon="['fas', 'address-card']" size="2x" /> About
+          </a>
+          <a class="navbar-item" href="#experience">
+            <font-awesome-icon class="p-1" :icon="['fas', 'briefcase']" size="2x" /> Experience
+          </a>
+          <a class="navbar-item" href="#skill">
+            <font-awesome-icon class="p-1" :icon="['fas', 'screwdriver-wrench']" size="2x" /> Skill
+          </a>
+          <a class="navbar-item" href="#project">
+            <font-awesome-icon class="p-1" :icon="['fas', 'code']" size="2x" /> Project
+          </a>
         </div>
       </div>
     </nav>
