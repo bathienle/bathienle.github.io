@@ -1,18 +1,18 @@
 <template>
   <div class="has-background-black"><navbar /></div>
+  <Home :user="user" />
   <div class="container">
-    <home :user="user" />
     <about class="p-4" :user="user" />
     <experience :experiences="experiences" />
     <skill class="p-4" :skills="skills" />
     <project class="p-4" :projects="projects" />
-    <footing />
+    <Footer :user="user" />
   </div>
 </template>
 
 <script>
 import Home from "@/views/Home.vue";
-import Footing from "@/components/Footing.vue";
+import Footer from "@/components/Footer.vue";
 import Navbar from "@/components/Navbar.vue";
 import About from "@/views/About.vue";
 import Experience from "@/views/Experience.vue";
@@ -30,7 +30,7 @@ export default {
     Experience,
     Skill,
     Project,
-    Footing,
+    Footer,
   },
   data: () => ({
     user: {},
