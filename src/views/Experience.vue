@@ -29,39 +29,14 @@
       </ul>
     </div>
 
-    <div class="timeline is-centered" v-show="activeTab == 'education'">
+    <div class="timeline is-centered">
       <header class="timeline-header">
         <span class="tag is-medium is-primary">Today</span>
       </header>
 
       <div
         class="timeline-item is-primary"
-        v-for="item in this.experiences.education"
-        :key="item.title"
-      >
-        <div class="timeline-marker is-primary"></div>
-        <div class="timeline-content">
-          <p class="heading is-size-5">
-            {{ formatDate(item.metadata.start_date) }} -
-            {{ formatDate(item.metadata.end_date) }}
-          </p>
-          <experience-card :experience="item" />
-        </div>
-      </div>
-
-      <header class="timeline-header">
-        <span class="tag is-medium is-primary">Start</span>
-      </header>
-    </div>
-
-    <div class="timeline is-centered" v-show="activeTab == 'work'">
-      <header class="timeline-header">
-        <span class="tag is-medium is-primary">Today</span>
-      </header>
-
-      <div
-        class="timeline-item is-primary"
-        v-for="item in this.experiences.work"
+        v-for="item in getContent()"
         :key="item.title"
       >
         <div class="timeline-marker is-primary"></div>
@@ -100,6 +75,11 @@ export default {
       const options = { year: "numeric", month: "long" };
       let date = new Date(rawDate).toLocaleDateString("en-BE", options);
       return date == "Invalid Date" ? "Present" : date;
+    },
+    getContent() {
+      return this.activeTab === "work"
+        ? this.experiences.work
+        : this.experiences.education;
     },
   },
 };
