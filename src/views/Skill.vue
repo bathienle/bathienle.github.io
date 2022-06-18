@@ -39,5 +39,11 @@ export default {
   data: () => ({
     activeTab: undefined,
   }),
+  watch: {
+    skills(skills) {
+      if (!skills) return;
+      this.activeTab = skills[0].title;
+    },
+  },
 };
 </script>
