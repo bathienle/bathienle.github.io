@@ -11,7 +11,14 @@
         <tbody>
           <tr v-for="(value, key) in this.skill.metadata" :key="key">
             <th class="is-capitalized">{{ key }}</th>
-            <td class="is-capitalized">{{ value }}</td>
+            <td>
+              <span v-for="item in rankToStar(value)" :key="item">
+                <font-awesome-icon class="mr-1" :icon="['fas', 'star']" />
+              </span>
+              <span v-for="item in 5 - rankToStar(value)" :key="item">
+                <font-awesome-icon class="mr-1" :icon="['far', 'star']" />
+              </span>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -24,6 +31,19 @@ export default {
   name: "SkillCard",
   props: {
     skill: Object,
+  },
+  methods: {
+    rankToStar(rank) {
+      const ranking = {
+        bronze: 1,
+        silver: 2,
+        gold: 3,
+        platinum: 4,
+        diamond: 5,
+      };
+
+      return ranking[rank];
+    },
   },
 };
 </script>
