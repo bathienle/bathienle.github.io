@@ -45,7 +45,7 @@
             {{ formatDate(item.metadata.start_date) }} -
             {{ formatDate(item.metadata.end_date) }}
           </p>
-          <experience-card :experience="item" />
+          <ExperienceCard :experience="item" />
         </div>
       </div>
 

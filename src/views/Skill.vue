@@ -20,7 +20,7 @@
       :key="item.title"
       v-show="activeTab == item.title"
     >
-      <skill-card :skill="item" />
+      <SkillCard :skill="item" />
     </div>
   </div>
 </template>

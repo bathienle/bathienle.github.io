@@ -21,7 +21,7 @@
             </tr>
             <tr>
               <td>
-                <info-card
+                <InfoCard
                   class="mt-4"
                   :email="user.email"
                   :work_address="user.work_address"

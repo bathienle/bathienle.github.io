@@ -4,10 +4,10 @@
     <Home :user="user" />
   </div>
   <div class="container">
-    <about class="p-4" :user="user" />
-    <experience :experiences="experiences" />
-    <skill class="p-4" :skills="skills" />
-    <project class="p-4" :projects="projects" />
+    <About class="p-4" :user="user" />
+    <Experience :experiences="experiences" />
+    <Skill class="p-4" :skills="skills" />
+    <Project class="p-4" :projects="projects" />
     <Footer :user="user" />
   </div>
 </template>

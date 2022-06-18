@@ -8,7 +8,7 @@
         v-for="project in projects"
         :key="project.title"
       >
-        <project-card :project="project" />
+        <ProjectCard :project="project" />
       </div>
     </div>
   </div>
