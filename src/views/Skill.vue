@@ -1,6 +1,6 @@
 <template>
   <div id="skill">
-    <h1 class="title is-uppercase">Skill</h1>
+    <h1 class="title is-uppercase">Skills</h1>
 
     <div class="tabs is-centered is-boxed">
       <ul>

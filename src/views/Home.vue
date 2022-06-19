@@ -7,9 +7,9 @@
 
       <hr />
 
-      <h1 class="subtitle is-uppercase is-size-4 has-text-weight-bold mt-4">
+      <h2 class="subtitle is-uppercase is-size-4 has-text-weight-bold p-4">
         {{ user.job_title }}
-      </h1>
+      </h2>
     </div>
   </div>
 </template>
@@ -36,11 +36,11 @@ export default {
 
 .vertical-center {
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 100%;
 }
 
-h1 {
+h1, h2 {
   color: white;
 }
 

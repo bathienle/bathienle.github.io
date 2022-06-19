@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <h1 class="title pt-4 is-uppercase">About me</h1>
+    <h1 class="title is-uppercase">About me</h1>
 
     <div class="columns is-vcentered">
       <div class="column is-4 is-offset-2">

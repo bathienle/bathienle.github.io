@@ -2,12 +2,10 @@
   <div>
     <Navbar :user="user" />
     <Home :user="user" />
-  </div>
-  <div class="container">
-    <About class="p-4" :user="user" />
-    <Experience :experiences="experiences" />
-    <Skill class="p-4" :skills="skills" />
-    <Project class="p-4" :projects="projects" />
+    <About class="container p-4" :user="user" />
+    <Experience class="container p-4" :experiences="experiences" />
+    <Skill class="container p-4" :skills="skills" />
+    <Project class="container p-4" :projects="projects" />
     <Footer :user="user" />
   </div>
 </template>
@@ -95,5 +93,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+div h1 {
+  padding-top: 50px;
 }
 </style>
