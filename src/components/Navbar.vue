@@ -1,53 +1,52 @@
 <template>
-  <div class="container">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bathienle.github.io/">
-          <p class="is-size-4 has-text-weight-semibold">Ba Thien Le</p>
-        </a>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" :href="user.website_url">
+        <p class="is-size-4 has-text-weight-semibold">
+          {{ user.first_name }} {{ user.last_name }}
+        </p>
+      </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <router-link class="navbar-item" :to="{ name: 'Home' }">Home</router-link>
-          <router-link class="navbar-item" :to="{ name: 'Project' }">Project</router-link>
-          <router-link class="navbar-item" :to="{ name: 'Contact' }">Contact</router-link>
-          <router-link class="navbar-item" :to="{ name: 'About' }">About</router-link>
-        </div>
-      </div>
-
+    <div class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="bd-tw-button button" href="https://github.com/bathienle">
-                <span class="icon"><font-awesome-icon :icon="['fab', 'github']" /></span>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="bd-tw-button button" href="https://be.linkedin.com/in/bathien-le">
-                <span class="icon"><font-awesome-icon :icon="['fab', 'linkedin']" /></span>
-                <span>LinkedIn</span>
-              </a>
-            </p>
-          </div>
-        </div>
+        <a class="navbar-item" href="#home">
+          <font-awesome-icon class="p-1" :icon="['fas', 'house']" size="2x" />
+          Home
+        </a>
+        <a class="navbar-item" href="#about">
+          <font-awesome-icon class="p-1" :icon="['fas', 'address-card']" size="2x" />
+          About
+        </a>
+        <a class="navbar-item" href="#experience">
+          <font-awesome-icon class="p-1" :icon="['fas', 'briefcase']" size="2x" />
+          Experience
+        </a>
+        <a class="navbar-item" href="#skill">
+          <font-awesome-icon class="p-1" :icon="['fas', 'screwdriver-wrench']" size="2x" />
+          Skill
+        </a>
+        <a class="navbar-item" href="#project">
+          <font-awesome-icon class="p-1" :icon="['fas', 'code']" size="2x" />
+          Project
+        </a>
       </div>
-    </nav>
-  </div>
-
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "Navbar",
+  props: {
+    user: Object,
+  },
 };
 </script>
 
@@ -56,8 +55,17 @@ export default {
   background-color: hsl(0, 0%, 4%);
 }
 
-.navbar-brand a, .navbar-menu a {
+.navbar-brand a,
+.navbar-menu a {
   color: white;
+}
+
+.navbar-brand {
+  margin-left: 250px;
+}
+
+.navbar-end {
+  margin-right: 250px;
 }
 
 .button:hover {

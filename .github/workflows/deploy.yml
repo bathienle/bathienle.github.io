@@ -25,10 +25,13 @@ jobs:
       run: |
         npm ci
         npm run build
+      env:
+        VUE_APP_COSMICJS_SLUG: ${{ secrets.VUE_APP_COSMICJS_SLUG }}
+        VUE_APP_COSMICJS_TOKEN: ${{ secrets.VUE_APP_COSMICJS_TOKEN }}
+        VUE_APP_GITHUB_TOKEN: ${{ secrets.VUE_APP_GITHUB_TOKEN }}
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         branch: website
         folder: dist
-      
