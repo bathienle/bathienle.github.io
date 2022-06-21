@@ -39,9 +39,6 @@ export default {
     projects: {},
   }),
   methods: {
-    fetchProfilePicture() {
-      return bucket.getMedia({ props: "imgix_url,original_name" });
-    },
     fetchData() {
       return new Promise((resolve) => resolve(bucket.getObjects({ props: "title,content,type,metadata" })));
     },
@@ -77,11 +74,6 @@ export default {
       this.fillExperiences(this.getData("experiences", objects));
       this.skills = this.getData("skills", objects);
       this.projects = this.getData("projects", objects);
-    });
-
-    this.fetchProfilePicture().then((images) => {
-      let picture = images.media.filter((item) => item.original_name.includes("profile")).pop();
-      this.user["profile_picture"] = picture.imgix_url;
     });
   },
 };

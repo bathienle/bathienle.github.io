@@ -7,7 +7,7 @@
         <table>
           <tbody>
             <tr>
-              <td><img :src="user.profile_picture" alt="Profile picture" /></td>
+              <td><img src="@/assets/images/profile.jpg" alt="Profile picture" /></td>
             </tr>
             <tr>
               <td>
