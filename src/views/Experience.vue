@@ -36,7 +36,7 @@
 
       <div
         class="timeline-item is-primary"
-        v-for="item in getContent()"
+        v-for="item in this.experiences[this.activeTab]"
         :key="item.title"
       >
         <div class="timeline-marker is-primary"></div>
@@ -75,11 +75,6 @@ export default {
       const options = { year: "numeric", month: "long" };
       let date = new Date(rawDate).toLocaleDateString("en-BE", options);
       return date == "Invalid Date" ? "Present" : date;
-    },
-    getContent() {
-      return this.activeTab === "work"
-        ? this.experiences.work
-        : this.experiences.education;
     },
   },
 };
