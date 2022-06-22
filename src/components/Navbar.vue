@@ -7,7 +7,12 @@
         </p>
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <a
+        class="navbar-burger"
+        v-on:click="toggleBurger()"
+        aria-label="menu"
+        aria-expanded="false"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -47,11 +52,21 @@ export default {
   props: {
     user: Object,
   },
+  methods: {
+    toggleBurger() {
+      const burgerIcon = document.querySelector(".navbar-burger");
+      const navbarItem = document.querySelector(".navbar-menu");
+
+      burgerIcon.classList.toggle("is-active");
+      navbarItem.classList.toggle("is-active");
+    },
+  },
 };
 </script>
 
 <style scoped>
-.navbar {
+.navbar,
+.navbar-menu {
   background-color: hsl(0, 0%, 4%);
 }
 
