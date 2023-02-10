@@ -1,0 +1,19 @@
+---
+changelog:
+  categories:
+    - title: ✅ Added
+      labels:
+        - docs
+        - feature
+    - title: 🔁 Changed
+      labels:
+        - dependencies
+        - enhancement
+        - refactor
+        - style
+    - title: 🔧 Fixed
+      labels:
+        - bug
+    - title: 🗑️ Removed
+      labels:
+        - removed
