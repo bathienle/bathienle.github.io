@@ -17,7 +17,7 @@
     "bulma-timeline": "^3.0.5",
     "core-js": "^3.6.5",
     "cosmicjs": "^4.1.7",
-    "octokit": "^1.8.0",
+    "octokit": "^3.1.2",
     "sass": "^1.49.8",
     "sass-loader": "^10.2.0",
     "vue": "^3.0.0"
