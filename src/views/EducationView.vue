@@ -1,0 +1,41 @@
+<template>
+  <h1 class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
+
+  <EducationItem v-for="education in educations" :key="education.degree">
+    <template #icon>
+      <AcademicCapIcon class="size-8 text-blue-500" />
+    </template>
+    <template #heading>{{ education.degree }}</template>
+
+    <p class="flex text-gray-500 p-1.5">
+      <span class="pr-2">
+        <CalendarDaysIcon class="size-6 text-blue-500" />
+      </span>
+      {{ education.startDate }} - {{ education.endDate }}
+    </p>
+
+    <p class="flex text-gray-700 p-1.5">
+      <span class="pr-2">
+        <MapPinIcon class="size-6 text-blue-500" />
+      </span>
+      {{ education.institution }}
+    </p>
+
+    <p class="text-gray-600 p-1.5">
+      {{ education.description }}
+    </p>
+  </EducationItem>
+</template>
+
+<script setup lang="ts">
+import { computed, inject, ref } from 'vue';
+import { AcademicCapIcon, CalendarDaysIcon, MapPinIcon } from '@heroicons/vue/24/solid'
+
+import type { Ref } from 'vue';
+import type { Content } from '@/types/content';
+
+import EducationItem from '@/components/EducationItem.vue';
+
+const content = inject<Ref<Content | null>>('content', ref(null));
+const educations = computed(() => content?.value?.educations);
+</script>

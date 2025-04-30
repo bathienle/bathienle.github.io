@@ -3,6 +3,7 @@
 
   <main>
     <TheWelcome />
+    <EducationView />
   </main>
 </template>
 
@@ -13,6 +14,7 @@ import type { Content } from '@/types/content';
 
 import AppNavbar from './components/AppNavbar.vue';
 import TheWelcome from './components/TheWelcome.vue';
+import EducationView from './views/EducationView.vue';
 
 const content = ref<Content | null>(null);
 provide('content', content);
