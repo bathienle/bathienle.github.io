@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
+  <h1 id="education" class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
 
   <EducationItem v-for="education in educations" :key="education.degree">
     <template #icon>
@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { computed, inject, ref } from 'vue';
-import { AcademicCapIcon, CalendarDaysIcon, MapPinIcon } from '@heroicons/vue/24/solid'
+import { AcademicCapIcon, CalendarDaysIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content';
