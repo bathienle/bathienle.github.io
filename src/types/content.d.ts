@@ -22,8 +22,18 @@ export interface Education {
   description: string;
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  startDate: string;
+  endDate: string;
+  technologies: string[];
+  link: string;
+}
+
 export interface Content {
   profile: Profile;
   experiences: Experience[];
   educations: Education[];
+  projects: Project[];
 }
