@@ -8,9 +8,9 @@
       <nav class="flex">
         <a href="#home" class="p-2 hover:bg-green-700 rounded-full">Home</a>
         <a href="#about" class="p-2 hover:bg-green-700 rounded-full">About</a>
+        <a href="#experience" class="p-2 hover:bg-green-700 rounded-full">Experience</a>
         <a href="#education" class="p-2 hover:bg-green-700 rounded-full">Education</a>
-        <a href="#experiences" class="p-2 hover:bg-green-700 rounded-full">Experiences</a>
-        <a href="#projects" class="p-2 hover:bg-green-700 rounded-full">Projects</a>
+        <a href="#project" class="p-2 hover:bg-green-700 rounded-full">Projects</a>
       </nav>
     </div>
   </header>
