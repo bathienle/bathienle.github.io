@@ -3,6 +3,30 @@
     "firstName": "Ba Thien",
     "lastName": "Le"
   },
+  "experiences": [
+    {
+      "title": "Software Engineer",
+      "company": "University of Liège",
+      "location": "Liège, Belgium",
+      "startDate": "September 2021",
+      "endDate": "Present",
+      "description": "Working on various aspects in the field of software development for the Cytomine software. Cytomine is a web platform for collaborative analysis of very large bio-medical images and semi-automatic processing of large image collections using machine learning algorithms.",
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "technologies": [
+        "Docker",
+        "Python",
+        "Java",
+        "FastAPI",
+        "Spring Boot",
+        "Vue"
+      ]
+    }
+  ],
   "educations": [
     {
       "degree": "M.Sc. in Computer Science",

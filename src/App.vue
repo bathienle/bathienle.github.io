@@ -2,7 +2,7 @@
   <AppNavbar />
 
   <main>
-    <TheWelcome />
+    <ExperienceView />
     <EducationView />
   </main>
 </template>
@@ -13,8 +13,8 @@ import { onMounted, provide, ref } from 'vue';
 import type { Content } from '@/types/content';
 
 import AppNavbar from './components/AppNavbar.vue';
-import TheWelcome from './components/TheWelcome.vue';
 import EducationView from './views/EducationView.vue';
+import ExperienceView from './views/ExperienceView.vue';
 
 const content = ref<Content | null>(null);
 provide('content', content);

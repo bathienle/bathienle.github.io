@@ -3,6 +3,17 @@ export interface Profile {
   lastName: string;
 }
 
+export interface Experience {
+  title: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  achievements: string[];
+  technologies: string[];
+}
+
 export interface Education {
   degree: string;
   institution: string;
@@ -13,5 +24,6 @@ export interface Education {
 
 export interface Content {
   profile: Profile;
+  experiences: Experience[];
   educations: Education[];
 }
