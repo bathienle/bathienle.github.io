@@ -1,30 +1,32 @@
 <template>
-  <h1 id="education" class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
+  <section id="education" class="scroll-mt-20">
+    <h1 class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
 
-  <EducationItem v-for="education in educations" :key="education.degree">
-    <template #icon>
-      <AcademicCapIcon class="size-8 text-blue-500" />
-    </template>
-    <template #heading>{{ education.degree }}</template>
+    <EducationItem v-for="education in educations" :key="education.degree">
+      <template #icon>
+        <AcademicCapIcon class="size-8 text-blue-500" />
+      </template>
+      <template #heading>{{ education.degree }}</template>
 
-    <p class="flex text-gray-500 p-1.5">
-      <span class="pr-2">
-        <CalendarDaysIcon class="size-6 text-blue-500" />
-      </span>
-      {{ education.startDate }} - {{ education.endDate }}
-    </p>
+      <p class="flex text-gray-500 p-1.5">
+        <span class="pr-2">
+          <CalendarDaysIcon class="size-6 text-blue-500" />
+        </span>
+        {{ education.startDate }} - {{ education.endDate }}
+      </p>
 
-    <p class="flex text-gray-700 p-1.5">
-      <span class="pr-2">
-        <MapPinIcon class="size-6 text-blue-500" />
-      </span>
-      {{ education.institution }}
-    </p>
+      <p class="flex text-gray-700 p-1.5">
+        <span class="pr-2">
+          <MapPinIcon class="size-6 text-blue-500" />
+        </span>
+        {{ education.institution }}
+      </p>
 
-    <p class="text-gray-600 p-1.5">
-      {{ education.description }}
-    </p>
-  </EducationItem>
+      <p class="text-gray-600 p-1.5">
+        {{ education.description }}
+      </p>
+    </EducationItem>
+  </section>
 </template>
 
 <script setup lang="ts">
