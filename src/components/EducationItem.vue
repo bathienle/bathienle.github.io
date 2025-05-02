@@ -20,6 +20,7 @@
 }
 
 .details {
+  padding-left: 50px;
   flex: 1;
   margin-left: 1rem;
 }
@@ -49,20 +50,20 @@ h3 {
 
   i {
     top: calc(50% - 25px);
-    left: -26px;
     position: absolute;
     border: 1px solid var(--color-border);
     background: var(--color-background);
     border-radius: 8px;
     width: 50px;
     height: 50px;
+    left: calc(5%);
   }
 
   .item:before {
     content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
-    left: 0;
+    left: calc(5% + 25px);
     bottom: calc(50% + 25px);
     height: calc(50% - 25px);
   }
@@ -71,7 +72,7 @@ h3 {
     content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
-    left: 0;
+    left: calc(5% + 25px);
     top: calc(50% + 25px);
     height: calc(50% - 25px);
   }
