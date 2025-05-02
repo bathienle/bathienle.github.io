@@ -20,6 +20,7 @@
 }
 
 .details {
+  margin-top: 0.5rem;
   padding-left: 50px;
   flex: 1;
   margin-left: 1rem;
@@ -49,7 +50,6 @@ h3 {
   }
 
   i {
-    top: calc(50% - 25px);
     left: calc(5%);
     position: absolute;
     border: 1px solid var(--color-border);
