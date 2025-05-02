@@ -1,7 +1,8 @@
 <template>
   <AppNavbar />
 
-  <main>
+  <main class="p-8 md:p-8">
+    <AboutView />
     <ExperienceView />
     <EducationView />
     <ProjectView />
@@ -14,6 +15,7 @@ import { onMounted, provide, ref } from 'vue';
 import type { Content } from '@/types/content';
 
 import AppNavbar from '@/components/AppNavbar.vue';
+import AboutView from '@/views/AboutView.vue';
 import EducationView from '@/views/EducationView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ProjectView from '@/views/ProjectView.vue';
