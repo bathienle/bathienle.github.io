@@ -3,6 +3,11 @@ export interface Profile {
   lastName: string;
 }
 
+export interface About {
+  description: string;
+  interests: string[];
+}
+
 export interface Experience {
   title: string;
   company: string;
@@ -33,6 +38,7 @@ export interface Project {
 
 export interface Content {
   profile: Profile;
+  about: About;
   experiences: Experience[];
   educations: Education[];
   projects: Project[];

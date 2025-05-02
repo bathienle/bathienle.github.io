@@ -3,6 +3,15 @@
     "firstName": "Ba Thien",
     "lastName": "Le"
   },
+  "about": {
+    "description": "Aspiring software engineer with a strong passion for software development, deep learning, and MLOps. Eager to leverage expertise in software development to build scalable, data-driven solutions. Committed to driving innovation by integrating cutting-edge AI techniques with robust engineering practices, ensuring seamless deployment and operational efficiency of machine learning models.",
+    "interests": [
+      "Software Development",
+      "Machine Learning",
+      "Web Development",
+      "Open Source"
+    ]
+  },
   "experiences": [
     {
       "title": "Software Engineer",
