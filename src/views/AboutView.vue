@@ -3,7 +3,7 @@
 
   <h1 class="text-3xl text-gray-300 font-bold p-1.5">About</h1>
 
-  <p v-if="about">
+  <p v-if="about" class="p-1.5">
     {{ about.description }}
   </p>
 </template>
