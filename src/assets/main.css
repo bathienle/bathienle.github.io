@@ -4,3 +4,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+#main {
+  max-width: 60rem;
+  margin: auto;
+}

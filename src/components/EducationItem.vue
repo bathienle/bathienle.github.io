@@ -20,6 +20,8 @@
 }
 
 .details {
+  margin-top: 0.5rem;
+  padding-left: 50px;
   flex: 1;
   margin-left: 1rem;
 }
@@ -48,8 +50,7 @@ h3 {
   }
 
   i {
-    top: calc(50% - 25px);
-    left: -26px;
+    left: calc(5%);
     position: absolute;
     border: 1px solid var(--color-border);
     background: var(--color-background);
@@ -62,17 +63,17 @@ h3 {
     content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
-    left: 0;
+    left: calc(5% + 25px);
     bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
+    height: calc(80% - 25px);
   }
 
   .item:after {
     content: ' ';
     border-left: 1px solid var(--color-border);
     position: absolute;
-    left: 0;
-    top: calc(50% + 25px);
+    left: calc(5% + 25px);
+    top: calc(20% + 25px);
     height: calc(50% - 25px);
   }
 
