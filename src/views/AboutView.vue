@@ -1,5 +1,7 @@
 <template>
-  <h1 id="about" class="text-3xl text-gray-300 font-bold p-1.5">About</h1>
+  <div id="about" class="relative -top-20" />
+
+  <h1 class="text-3xl text-gray-300 font-bold p-1.5">About</h1>
 
   <p v-if="about">
     {{ about.description }}
