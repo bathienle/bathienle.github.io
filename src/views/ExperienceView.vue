@@ -19,6 +19,13 @@
         <span class="pr-2">
           <MapPinIcon class="size-6 text-blue-500" />
         </span>
+        {{ experience.location }}
+      </p>
+
+      <p class="flex text-gray-700 p-1.5">
+        <span class="pr-2">
+          <BuildingLibraryIcon class="size-6 text-blue-500" />
+        </span>
         {{ experience.company }}
       </p>
 
@@ -41,7 +48,7 @@
 
 <script setup lang="ts">
 import { computed, inject, ref } from 'vue';
-import { CalendarDaysIcon, CodeBracketIcon, MapPinIcon } from '@heroicons/vue/24/solid';
+import { BuildingLibraryIcon, CalendarDaysIcon, CodeBracketIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content';
