@@ -1,6 +1,7 @@
 export interface Profile {
   firstName: string;
   lastName: string;
+  website: string;
 }
 
 export interface About {

@@ -1,7 +1,8 @@
 {
   "profile": {
     "firstName": "Ba Thien",
-    "lastName": "Le"
+    "lastName": "Le",
+    "website": "https://bathienle.github.io"
   },
   "about": {
     "description": "Aspiring software engineer with a strong passion for software development, deep learning, and MLOps. Eager to leverage expertise in software development to build scalable, data-driven solutions. Committed to driving innovation by integrating cutting-edge AI techniques with robust engineering practices, ensuring seamless deployment and operational efficiency of machine learning models.",
