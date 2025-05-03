@@ -30,9 +30,10 @@ export interface Education {
 export interface Project {
   title: string;
   description: string;
+  image: string;
   startDate: string;
   endDate: string;
-  technologies: string[];
+  tags: string[];
   link: string;
 }
 
