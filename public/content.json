@@ -56,10 +56,12 @@
     {
       "title": "bathienle.github.io",
       "description": "Personal website to showcase my projects and skills.",
+      "image": "/images/portfolio.svg",
       "startDate": "May 2025",
       "endDate": "Present",
-      "technologies": [
+      "tags": [
         "Tailwind CSS 4",
+        "Vite",
         "Vue 3"
       ],
       "link": "https://github.com/bathienle/bathienle.github.io"
