@@ -22,7 +22,7 @@ describe('ProjectCard.vue', () => {
       global: {
         stubs: {
           FontAwesomeIcon: true,
-          ItemBox: true,
+          TagItem: true,
         }
       }
     });
@@ -42,7 +42,7 @@ describe('ProjectCard.vue', () => {
   });
 
   it('should render correct number of tags', () => {
-    const itemBoxes = wrapper.findAllComponents({ name: 'ItemBox' });
-    expect(itemBoxes.length).toBe(mockProject.tags.length);
+    const tags = wrapper.findAllComponents({ name: 'TagItem' });
+    expect(tags.length).toBe(mockProject.tags.length);
   });
 });

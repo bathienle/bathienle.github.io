@@ -40,7 +40,7 @@
       </ul>
 
       <div class="flex flex-wrap gap-2 p-1.5">
-        <ItemBox v-for="item in experience.technologies" :key="item" :text="item" />
+        <TagItem v-for="item in experience.technologies" :key="item" :text="item" />
       </div>
     </ExperienceItem>
   </section>
@@ -54,7 +54,7 @@ import type { Ref } from 'vue';
 import type { Content } from '@/types/content';
 
 import ExperienceItem from '@/components/ExperienceItem.vue';
-import ItemBox from '@/components/ItemBox.vue';
+import TagItem from '@/components/TagItem.vue';
 
 const content = inject<Ref<Content | null>>('content', ref(null));
 const experiences = computed(() => content?.value?.experiences);

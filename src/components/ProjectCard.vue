@@ -23,14 +23,14 @@
       <p class="text-gray-200 text-sm text-justify">{{ project.description }}</p>
 
       <div class="flex flex-wrap gap-2 pt-2">
-        <ItemBox v-for="tag in project.tags" :key="tag" :text="tag" />
+        <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ItemBox from '@/components/ItemBox.vue';
+import TagItem from '@/components/TagItem.vue';
 
 defineProps({
   project: { type: Object, required: true },

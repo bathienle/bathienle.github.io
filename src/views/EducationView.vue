@@ -32,6 +32,10 @@
       <p class="text-gray-600 p-1.5">
         {{ education.description }}
       </p>
+
+      <div class="flex flex-wrap gap-2 p-1.5">
+        <TagItem v-for="item in education.tags" :key="item" :text="item" />
+      </div>
     </EducationItem>
   </section>
 </template>
@@ -44,6 +48,7 @@ import type { Ref } from 'vue';
 import type { Content } from '@/types/content';
 
 import EducationItem from '@/components/EducationItem.vue';
+import TagItem from '@/components/TagItem.vue';
 
 const content = inject<Ref<Content | null>>('content', ref(null));
 const educations = computed(() => content?.value?.educations);
