@@ -1,18 +1,8 @@
 # bathienle.github.io
 
-This template should help get you started developing with Vue 3 in Vite.
+[bathienle.github.io](https://bathienle.github.io/) is my portfolio website, showcasing my work, skills, and experience as a Software Developer.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+This portfolio is a continuously evolving side project where I try to explore and integrate the latest trends in web development.
 
 ## Project Setup
 
@@ -38,8 +28,6 @@ npm run build
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Licence
 
-```sh
-npm run lint
-```
+Apache-2.0
