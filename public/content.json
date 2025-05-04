@@ -44,7 +44,13 @@
       "location": "Liège, Belgium",
       "startDate": "September 2019",
       "endDate": "June 2021",
-      "description": ""
+      "description": "Focus in intelligent systems and machine learning.",
+      "tags": [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Bioinformatics"
+      ]
     },
     {
       "degree": "B.Sc. in Computer Science",
@@ -52,7 +58,14 @@
       "location": "Liège, Belgium",
       "startDate": "September 2016",
       "endDate": "September 2019",
-      "description": ""
+      "description": "",
+      "tags": [
+        "Probability and Statistics",
+        "Algorithms and Data Structures",
+        "Database Systems",
+        "Object-Oriented Programming",
+        "Parallel Programming"
+      ]
     }
   ],
   "projects": [
