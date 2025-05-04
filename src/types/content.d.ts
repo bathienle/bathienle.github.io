@@ -17,7 +17,7 @@ export interface Experience {
   endDate: string;
   description: string;
   achievements: string[];
-  technologies: string[];
+  tags: string[];
 }
 
 export interface Education {
