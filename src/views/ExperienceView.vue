@@ -29,18 +29,18 @@
         {{ experience.company }}
       </p>
 
-      <p class="text-gray-600 p-1.5">
+      <p class="text-justify text-gray-600 p-1.5">
         {{ experience.description }}
       </p>
 
-      <ul class="list-disc text-gray-600 pl-5 p-1.5">
+      <ul class="list-disc text-gray-600 pl-7.5 p-1.5">
         <li v-for="(item, index) in experience.achievements" :key="index">
           {{ item }}
         </li>
       </ul>
 
       <div class="flex flex-wrap gap-2 p-1.5">
-        <TagItem v-for="item in experience.technologies" :key="item" :text="item" />
+        <TagItem v-for="item in experience.tags" :key="item" :text="item" />
       </div>
     </ExperienceItem>
   </section>

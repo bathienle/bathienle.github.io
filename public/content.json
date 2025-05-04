@@ -22,12 +22,10 @@
       "endDate": "Present",
       "description": "Working on various aspects in the field of software development for the Cytomine software. Cytomine is a web platform for collaborative analysis of very large bio-medical images and semi-automatic processing of large image collections using machine learning algorithms.",
       "achievements": [
-        "Achievement 1",
-        "Achievement 2",
-        "Achievement 3",
-        "Achievement 4"
+        "Develop a Content-Based Image Retrieval service using FastAPI, enabling efficient searching for similar annotations and whole-slide image patches.",
+        "Develop a Spring Boot service to execute containerised algorithms within the Cytomine software, leveraging external clusters, e.g., MicroK8s, for the executions."
       ],
-      "technologies": [
+      "tags": [
         "Docker",
         "Python",
         "Java",
@@ -44,7 +42,7 @@
       "location": "Liège, Belgium",
       "startDate": "September 2019",
       "endDate": "June 2021",
-      "description": "Focus in intelligent systems and machine learning.",
+      "description": "Focus in intelligent systems.",
       "tags": [
         "Machine Learning",
         "Deep Learning",
