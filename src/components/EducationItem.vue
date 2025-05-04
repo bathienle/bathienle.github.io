@@ -58,31 +58,5 @@ h3 {
     width: 50px;
     height: 50px;
   }
-
-  .item:before {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: calc(5% + 25px);
-    bottom: calc(50% + 25px);
-    height: calc(80% - 25px);
-  }
-
-  .item:after {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: calc(5% + 25px);
-    top: calc(20% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:first-of-type:before {
-    display: none;
-  }
-
-  .item:last-of-type:after {
-    display: none;
-  }
 }
 </style>
