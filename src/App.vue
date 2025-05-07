@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import { onMounted, provide, ref } from 'vue';
 
-import type { Content } from '@/types/content';
+import type { Content } from '@/types/content.d.ts';
 
 import AppNavbar from '@/components/AppNavbar.vue';
 import AboutView from '@/views/AboutView.vue';
@@ -20,7 +20,7 @@ import EducationView from '@/views/EducationView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ProjectView from '@/views/ProjectView.vue';
 
-const content = ref<Content | null>(null);
+const content = ref<Content>();
 provide('content', content);
 
 onMounted(async () => {
