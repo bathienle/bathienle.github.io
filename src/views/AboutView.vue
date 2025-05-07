@@ -9,11 +9,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, inject, ref } from 'vue';
+import { computed, inject } from 'vue';
 
 import type { Ref } from 'vue';
-import type { Content } from '@/types/content';
+import type { Content } from '@/types/content.d.ts';
 
-const content = inject<Ref<Content | null>>('content', ref(null));
+const content = inject<Ref<Content>>('content');
 const about = computed(() => content?.value?.about);
 </script>

@@ -47,15 +47,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed, inject, ref } from 'vue';
+import { computed, inject } from 'vue';
 import { BuildingLibraryIcon, CalendarDaysIcon, CodeBracketIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
-import type { Content } from '@/types/content';
+import type { Content } from '@/types/content.d.ts';
 
 import ExperienceItem from '@/components/ExperienceItem.vue';
 import TagItem from '@/components/TagItem.vue';
 
-const content = inject<Ref<Content | null>>('content', ref(null));
+const content = inject<Ref<Content>>('content');
 const experiences = computed(() => content?.value?.experiences);
 </script>
