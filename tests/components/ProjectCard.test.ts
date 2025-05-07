@@ -1,7 +1,7 @@
 import { shallowMount, VueWrapper } from '@vue/test-utils';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
-import type { Project } from '@/types/Project';
+import type { Project } from '@/types/content.d.ts';
 import ProjectCard from '@/components/ProjectCard.vue';
 
 describe('ProjectCard.vue', () => {
@@ -14,7 +14,7 @@ describe('ProjectCard.vue', () => {
     description: 'This is a test project.',
     tags: ['Vue', 'TypeScript']
   };
-  let wrapper: VueWrapper<ProjectCard>;
+  let wrapper: VueWrapper<InstanceType<typeof ProjectCard>>;
 
   beforeEach(() => {
     wrapper = shallowMount(ProjectCard, {
