@@ -5,11 +5,10 @@ on:
     branches:
       - main
     paths:
-      - "src/**"
-      - "tests/**"
-      - "public/**"
-      - "package.json"
-      - "package-lock.json"
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
 
 permissions:
   contents: read
