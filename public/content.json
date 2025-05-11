@@ -13,6 +13,50 @@
       "Open Source"
     ]
   },
+  "stacks": [
+    {
+      "key": "python",
+      "name": "Python",
+      "url": "https://www.python.org/",
+      "category": "Language"
+    },
+    {
+      "key": "java",
+      "name": "Java",
+      "url": "https://www.java.com/",
+      "category": "Language"
+    },
+    {
+      "key": "js",
+      "name": "JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "category": "Language"
+    },
+    {
+      "key": "docker",
+      "name": "Docker",
+      "url": "https://www.docker.com/",
+      "category": "Containerisation"
+    },
+    {
+      "key": "git",
+      "name": "Git",
+      "url": "https://git-scm.com/",
+      "category": "Version Control System"
+    },
+    {
+      "key": "vue",
+      "name": "Vue.js",
+      "url": "https://vuejs.org/",
+      "category": "Framework"
+    },
+    {
+      "key": "springboot",
+      "name": "Spring Boot",
+      "url": "https://spring.io/projects/spring-boot",
+      "category": "Framework"
+    }
+  ],
   "experiences": [
     {
       "title": "Software Engineer",

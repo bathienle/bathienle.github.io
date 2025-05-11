@@ -9,6 +9,13 @@ export interface About {
   interests: string[];
 }
 
+export interface Tech {
+  key: string;
+  name: string;
+  url: string;
+  category;
+}
+
 export interface Experience {
   title: string;
   company: string;
@@ -43,6 +50,7 @@ export interface Project {
 export interface Content {
   profile: Profile;
   about: About;
+  stacks: Tech[];
   experiences: Experience[];
   educations: Education[];
   projects: Project[];
