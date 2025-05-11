@@ -2,6 +2,10 @@
   <section id="experience" class="scroll-mt-20">
     <h1 class="text-3xl text-gray-300 font-bold p-1.5">Experience</h1>
 
+    <div class="py-4">
+      <hr class="w-full border-t-2 border-white mt-2">
+    </div>
+
     <ExperienceItem v-for="experience in experiences" :key="experience.company">
       <template #icon>
         <CodeBracketIcon class="size-6 text-blue-500" />

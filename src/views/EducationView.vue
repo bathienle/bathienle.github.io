@@ -2,6 +2,10 @@
   <section id="education" class="scroll-mt-20">
     <h1 class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
 
+    <div class="py-4">
+      <hr class="w-full border-t-2 border-white mt-2">
+    </div>
+
     <EducationItem v-for="education in educations" :key="education.degree">
       <template #icon>
         <AcademicCapIcon class="size-8 text-blue-500" />

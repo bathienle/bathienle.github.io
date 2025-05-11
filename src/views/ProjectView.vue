@@ -1,8 +1,12 @@
 <template>
   <section id="project" class="scroll-mt-20">
-    <h1 class="text-3xl text-gray-300 font-bold p-1.5 pb-4">Projects</h1>
+    <h1 class="text-3xl text-gray-300 font-bold p-1.5">Projects</h1>
 
-    <div class="flex flex-wrap gap-4 ">
+    <div class="py-4">
+      <hr class="w-full border-t-2 border-white pb-2 mt-2">
+    </div>
+
+    <div class="flex flex-wrap gap-4">
       <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
     </div>
   </section>
