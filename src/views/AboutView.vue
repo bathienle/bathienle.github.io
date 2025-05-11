@@ -2,6 +2,10 @@
   <section id="about" class="scroll-mt-20">
     <h1 class="text-3xl text-gray-300 font-bold p-1.5">About</h1>
 
+    <div class="py-4">
+      <hr class="w-full border-t-2 border-white mt-2">
+    </div>
+
     <p v-if="about" class="text-justify p-1.5">
       {{ about.description }}
     </p>
