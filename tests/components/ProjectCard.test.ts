@@ -12,7 +12,7 @@ describe('ProjectCard.vue', () => {
     startDate: 'Jan 2021',
     endDate: 'Dec 2021',
     description: 'This is a test project.',
-    tags: ['Vue', 'TypeScript']
+    tags: ['Vue', 'TypeScript'],
   };
   let wrapper: VueWrapper<InstanceType<typeof ProjectCard>>;
 
@@ -23,8 +23,8 @@ describe('ProjectCard.vue', () => {
         stubs: {
           FontAwesomeIcon: true,
           TagItem: true,
-        }
-      }
+        },
+      },
     });
   });
 

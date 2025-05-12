@@ -7,7 +7,7 @@ describe('TagItem.vue', () => {
   it('renders the text correctly', () => {
     const wrapper = shallowMount(TagItem, {
       props: { text: 'Hello World' },
-    })
+    });
 
     expect(wrapper.text()).toContain('Hello World');
   });
