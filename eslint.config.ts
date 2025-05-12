@@ -1,28 +1,35 @@
-import { globalIgnores } from 'eslint/config'
-import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
-import pluginVue from 'eslint-plugin-vue'
-import pluginVitest from '@vitest/eslint-plugin'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
+import pluginVue from 'eslint-plugin-vue';
+import pluginVitest from '@vitest/eslint-plugin';
+import globals from 'globals';
 
-// To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
-// import { configureVueProject } from '@vue/eslint-config-typescript'
-// configureVueProject({ scriptLangs: ['ts', 'tsx'] })
-// More info at https://github.com/vuejs/eslint-config-typescript/#advanced-setup
-
-export default defineConfigWithVueTs(
-  {
-    name: 'app/files-to-lint',
-    files: ['**/*.{ts,mts,tsx,vue}'],
+export default defineConfigWithVueTs({
+  ignores: ['coverage', 'dist', 'node_modules'],
+  files: ['**/*.{ts,vue}'],
+  languageOptions: {
+    globals: globals.browser,
   },
-
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
-
-  pluginVue.configs['flat/essential'],
-  vueTsConfigs.recommended,
-  
-  {
-    ...pluginVitest.configs.recommended,
-    files: ['src/**/__tests__/*'],
+  rules: {
+    'array-bracket-spacing': ['error', 'never'],
+    'brace-style': ['error', '1tbs'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'consistent-return': 'error',
+    'curly': ['error', 'all'],
+    'eqeqeq': ['error', 'always'],
+    'indent': ['error', 2],
+    'keyword-spacing': ['error', { 'before': true, 'after': true }],
+    'no-redeclare': 'error',
+    'no-undef': 'error',
+    'no-unused-vars': ['warn'],
+    'no-var': 'error',
+    'object-curly-spacing': ['error', 'always'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    'vue/html-indent': ['error', 2],
   },
-  skipFormatting,
-)
+  extends: [
+    pluginVitest.configs.recommended,
+    pluginVue.configs['flat/essential'],
+    vueTsConfigs.recommended,
+  ],
+});

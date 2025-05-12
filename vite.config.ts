@@ -1,17 +1,16 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
+import vue from '@vitejs/plugin-vue';
+import vueDevTools from 'vite-plugin-vue-devtools';
 
-// https://vite.dev/config/
 export default defineConfig({
   server: {
     watch: {
       usePolling: true,
     },
-    host: "0.0.0.0",
+    host: '0.0.0.0',
     port: 5173,
   },
   plugins: [
@@ -21,7 +20,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-})
+});
