@@ -1,7 +1,13 @@
+export interface Social {
+  key: string,
+  url: string,
+}
+
 export interface Profile {
   firstName: string;
   lastName: string;
   website: string;
+  socials: Social[];
 }
 
 export interface About {
