@@ -4,9 +4,9 @@
 
     <div class="flex justify-center p-4 gap-2">
       <a v-for="social in socials" :key="social.key" :href="social.url" rel="noopener" target="_blank">
-        <div class="p-2 border border-gray-300 rounded-lg shadow-md">
+        <div class="flex border border-gray-300 rounded-lg shadow-md w-16 h-16 items-center justify-center">
           <div class="text-4xl text-gray-500 hover:text-blue-500 transition-colors duration-200">
-            <i :class="`fab fa-${social.key}`" />
+            <i :class="`fab fa-${social.key} `" />
           </div>
         </div>
       </a>
