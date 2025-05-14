@@ -7,6 +7,8 @@
     <EducationView />
     <ProjectView />
   </main>
+
+  <AppFooter />
 </template>
 
 <script setup lang="ts">
@@ -14,6 +16,7 @@ import { onMounted, provide, ref } from 'vue';
 
 import type { Content } from '@/types/content.d.ts';
 
+import AppFooter from './components/AppFooter.vue';
 import AppNavbar from '@/components/AppNavbar.vue';
 import AboutView from '@/views/AboutView.vue';
 import EducationView from '@/views/EducationView.vue';
