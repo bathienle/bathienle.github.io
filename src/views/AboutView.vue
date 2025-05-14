@@ -10,7 +10,7 @@
       {{ about.description }}
     </p>
 
-    <h2 class="text-2xl text-gray-500 text-center font-bold p-1.5">Skills</h2>
+    <h2 class="text-2xl text-gray-500 text-center font-bold p-1.5">Stack</h2>
     <div class="flex flex-wrap justify-center gap-4">
       <TechIcon v-for="tech in stacks" :key="tech.key" :tech="tech" />
     </div>

@@ -25,6 +25,24 @@
   },
   "stacks": [
     {
+      "key": "bash",
+      "name": "bash",
+      "url": "https://www.gnu.org/software/bash/",
+      "category": "Language"
+    },
+    {
+      "key": "c",
+      "name": "C",
+      "url": "https://en.wikipedia.org/wiki/C_(programming_language)",
+      "category": "Language"
+    },
+    {
+      "key": "cplusplus",
+      "name": "C++",
+      "url": "https://en.wikipedia.org/wiki/C%2B%2B",
+      "category": "Language"
+    },
+    {
       "key": "python",
       "name": "Python",
       "url": "https://www.python.org/",
@@ -55,15 +73,39 @@
       "category": "Version Control System"
     },
     {
+      "key": "npm",
+      "name": "npm",
+      "url": "https://www.npmjs.com/",
+      "category": "Package Manager"
+    },
+    {
+      "key": "poetry",
+      "name": "Poetry",
+      "url": "https://python-poetry.org/",
+      "category": "Package Manager"
+    },
+    {
+      "key": "pytorch",
+      "name": "PyTorch",
+      "url": "https://pytorch.org/",
+      "category": "Machine Learning"
+    },
+    {
+      "key": "fastapi",
+      "name": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/",
+      "category": "Framework"
+    },
+    {
       "key": "vue",
       "name": "Vue.js",
       "url": "https://vuejs.org/",
       "category": "Framework"
     },
     {
-      "key": "springboot",
-      "name": "Spring Boot",
-      "url": "https://spring.io/projects/spring-boot",
+      "key": "spring",
+      "name": "Spring",
+      "url": "https://spring.io/projects/spring-framework",
       "category": "Framework"
     },
     {
@@ -71,6 +113,48 @@
       "name": "PostgreSQL",
       "url": "https://www.postgresql.org/",
       "category": "Database"
+    },
+    {
+      "key": "vitejs",
+      "name": "Vite",
+      "url": "https://vitejs.dev/",
+      "category": "Build Tool"
+    },
+    {
+      "key": "vscode",
+      "name": "Visual Studio Code",
+      "url": "https://code.visualstudio.com/",
+      "category": "IDE"
+    },
+    {
+      "key": "intellij",
+      "name": "IntelliJ IDEA",
+      "url": "https://www.jetbrains.com/idea/",
+      "category": "IDE"
+    },
+    {
+      "key": "webstorm",
+      "name": "WebStorm",
+      "url": "https://www.jetbrains.com/webstorm/",
+      "category": "IDE"
+    },
+    {
+      "key": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "category": "Productivity"
+    },
+    {
+      "key": "github",
+      "name": "GitHub",
+      "url": "https://github.com/",
+      "category": "Source Code Management"
+    },
+    {
+      "key": "gitlab",
+      "name": "GitLab",
+      "url": "https://about.gitlab.com/",
+      "category": "Source Code Management"
     }
   ],
   "experiences": [
