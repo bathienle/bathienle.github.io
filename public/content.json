@@ -8,7 +8,7 @@
         "key": "github",
         "url": "https://github.com/bathienle"
       },
-        {
+      {
         "key": "linkedin",
         "url": "https://www.linkedin.com/in/bathien-le/"
       }
@@ -65,6 +65,12 @@
       "name": "Spring Boot",
       "url": "https://spring.io/projects/spring-boot",
       "category": "Framework"
+    },
+    {
+      "key": "postgresql",
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/",
+      "category": "Database"
     }
   ],
   "experiences": [
