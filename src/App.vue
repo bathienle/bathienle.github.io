@@ -7,7 +7,8 @@
     <EducationView />
     <ProjectView />
   </main>
-    <AppFooter />
+
+  <AppFooter />
 </template>
 
 <script setup lang="ts">

@@ -24,7 +24,7 @@ describe('AppFooter.vue', () => {
       stacks: [],
       experiences: [],
       educations: [],
-      projects: []
+      projects: [],
     });
 
     const wrapper = shallowMount(AppFooter, {
