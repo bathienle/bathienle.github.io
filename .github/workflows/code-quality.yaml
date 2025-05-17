@@ -32,3 +32,21 @@ jobs:
 
       - name: Check lint
         run: npm run lint
+
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up the repository
+        uses: actions/checkout@v4
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Check type
+        run: npm run type-check
