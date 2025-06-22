@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center p-0.5 bg-gray-700 rounded-lg border border-gray-300">
+  <div class="flex items-center justify-center p-1 bg-gray-600 rounded-lg">
     <span class="text-sm text-gray-300">{{ text }}</span>
   </div>
 </template>
