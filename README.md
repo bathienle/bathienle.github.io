@@ -40,5 +40,5 @@ npm run test:unit
 [Apache-2.0][license-url]
 
 [license-badge]: https://img.shields.io/github/license/bathienle/bathienle.github.io
-[license-url]: https://github.com/bathienle/bathienle.github.io/blob/main/README.md
+[license-url]: https://github.com/bathienle/bathienle.github.io/blob/main/LICENSE
 [github-deployment]: https://img.shields.io/github/deployments/bathienle/bathienle.github.io/github-pages
