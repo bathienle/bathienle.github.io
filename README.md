@@ -3,7 +3,7 @@
 <div align="center">
 
 [![GitHub License][license-badge]][license-url]
-![GitHub deployments][github-deployment]
+[![GitHub Action][github-badge]][github-action-url]
 
 </div>
 
@@ -41,4 +41,5 @@ npm run test:unit
 
 [license-badge]: https://img.shields.io/github/license/bathienle/bathienle.github.io
 [license-url]: https://github.com/bathienle/bathienle.github.io/blob/main/LICENSE
-[github-deployment]: https://img.shields.io/github/deployments/bathienle/bathienle.github.io/github-pages
+[github-action-url]: https://github.com/bathienle/bathienle.github.io/actions
+[github-badge]: https://img.shields.io/github/deployments/bathienle/bathienle.github.io/github-pages
