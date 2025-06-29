@@ -5,14 +5,14 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
-      - 'tests/**'
+      - 'src/**/*.{ts,vue}'
+      - 'tests/**/*.ts'
   pull_request:
     branches:
       - main
     paths:
-      - 'src/**'
-      - 'tests/**'
+      - 'src/**/*.{ts,vue}'
+      - 'tests/**/*.ts'
 
 jobs:
   lint:
