@@ -1,6 +1,17 @@
 {
   "name": "bathienle.github.io",
+  "description": "This is my portfolio website, showcasing my work, skills, and experience as a Software Developer.",
   "version": "2025.1.0",
+  "homepage": "https://bathienle.github.io/",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Le Ba Thien",
+    "url": "https://github.com/bathienle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bathienle/bathienle.github.io.git"
+  },
   "private": true,
   "type": "module",
   "scripts": {
