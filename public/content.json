@@ -61,6 +61,18 @@
       "category": "Language"
     },
     {
+      "key": "html",
+      "name": "HTML",
+      "url": "https://developer.mozilla.org/fr/docs/Web/HTML",
+      "category": "Language"
+    },
+    {
+      "key": "css",
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/fr/docs/Web/CSS",
+      "category": "Language"
+    },
+    {
       "key": "docker",
       "name": "Docker",
       "url": "https://www.docker.com/",
