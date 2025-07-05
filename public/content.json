@@ -81,6 +81,11 @@
           "key": "vue",
           "name": "Vue.js",
           "url": "https://vuejs.org/"
+        },
+        {
+          "key": "tailwindcss",
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/"
         }
       ]
     },
