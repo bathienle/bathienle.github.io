@@ -19,7 +19,11 @@ export interface Tech {
   key: string;
   name: string;
   url: string;
-  category;
+}
+
+export interface TechGroup {
+  title: string;
+  items: Tech[];
 }
 
 export interface Experience {
@@ -56,7 +60,7 @@ export interface Project {
 export interface Content {
   profile: Profile;
   about: About;
-  stacks: Tech[];
+  stacks: TechGroup[];
   experiences: Experience[];
   educations: Education[];
   projects: Project[];

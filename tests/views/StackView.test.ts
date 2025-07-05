@@ -6,9 +6,14 @@ import StackView from '@/views/StackView.vue';
 
 describe('StackView.vue', () => {
   const mockedStacks = [
-    { key: 'vue', name: 'Vue' },
-    { key: 'ts', name: 'TypeScript' },
-    { key: 'tailwind', name: 'TailwindCSS' },
+    {
+      title: 'Frontend',
+      items: [
+        { key: 'vue', name: 'Vue' },
+        { key: 'ts', name: 'TypeScript' },
+        { key: 'tailwind', name: 'TailwindCSS' },
+      ],
+    },
   ];
 
   it('should render all provided tech stack icons', () => {
@@ -25,7 +30,7 @@ describe('StackView.vue', () => {
     });
 
     expect(wrapper.text()).toContain('Stack');
-    expect(wrapper.findAll('tech-icon-stub').length).toBe(mockedStacks.length);
+    expect(wrapper.findAll('tech-icon-stub').length).toBe(mockedStacks[0].items.length);
   });
 
   it('should not render any icons if stacks is undefined', () => {
