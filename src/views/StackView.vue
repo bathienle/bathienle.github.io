@@ -6,8 +6,13 @@
       <hr class="w-full border-t-2 border-white mt-2">
     </div>
 
-    <div class="flex flex-wrap justify-center gap-4">
-      <TechIcon v-for="tech in stacks" :key="tech.key" :tech="tech" />
+    <div class="grid md:grid-cols-2 gap-6">
+      <div v-for="(stack, index) in stacks" :key="index">
+        <h3 class="mb-2 text-lg font-semibold text-center">{{ stack.title }}</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <TechIcon v-for="tech in stack.items" :key="tech.key" :tech="tech" />
+        </div>
+      </div>
     </div>
   </section>
 </template>
