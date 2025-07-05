@@ -28,11 +28,6 @@
       "title": "Programming Languages",
       "items": [
         {
-          "key": "bash",
-          "name": "Bash",
-          "url": "https://www.gnu.org/software/bash/"
-        },
-        {
           "key": "c",
           "name": "C",
           "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
@@ -115,7 +110,7 @@
       ]
     },
     {
-      "title": "Tools",
+      "title": "DevOps & Tools",
       "items": [
         {
           "key": "docker",
@@ -126,41 +121,6 @@
           "key": "git",
           "name": "Git",
           "url": "https://git-scm.com/"
-        },
-        {
-          "key": "npm",
-          "name": "npm",
-          "url": "https://www.npmjs.com/"
-        },
-        {
-          "key": "poetry",
-          "name": "Poetry",
-          "url": "https://python-poetry.org/"
-        },
-        {
-          "key": "vitejs",
-          "name": "Vite",
-          "url": "https://vitejs.dev/"
-        },
-        {
-          "key": "vscode",
-          "name": "Visual Studio Code",
-          "url": "https://code.visualstudio.com/"
-        },
-        {
-          "key": "intellij",
-          "name": "IntelliJ IDEA",
-          "url": "https://www.jetbrains.com/idea/"
-        },
-        {
-          "key": "webstorm",
-          "name": "WebStorm",
-          "url": "https://www.jetbrains.com/webstorm/"
-        },
-        {
-          "key": "notion",
-          "name": "Notion",
-          "url": "https://www.notion.so/"
         },
         {
           "key": "github",

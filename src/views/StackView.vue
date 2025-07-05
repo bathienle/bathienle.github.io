@@ -7,8 +7,12 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
-      <div v-for="(stack, index) in stacks" :key="index">
-        <h3 class="mb-2 text-lg font-semibold text-center">{{ stack.title }}</h3>
+      <div 
+        v-for="(stack, index) in stacks"
+        :key="index"
+        class="bg-gray-800 rounded-xl shadow-md p-4 border border-gray-700"
+      >
+        <h3 class="text-center text-xl text-gray-100 font-semibold pb-4">{{ stack.title }}</h3>
         <div class="flex flex-wrap justify-center gap-4">
           <TechIcon v-for="tech in stack.items" :key="tech.key" :tech="tech" />
         </div>

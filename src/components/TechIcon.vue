@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm shadow-lg">
+  <div class="max-w-sm shadow-lg bg-gray-600 p-2 rounded-xl">
     <div class="h-12 w-full">
       <a :href="tech.url" target="_blank" rel="noopener" class="relative group">
         <img class="object-contain w-full h-full" :alt="tech.name" :src="getImageSrc()" />
