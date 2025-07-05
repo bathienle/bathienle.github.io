@@ -1,6 +1,6 @@
 <template>
   <section id="stack" class="scroll-mt-20">
-    <h1 class="text-3xl text-gray-300 font-bold p-1.5">Stack</h1>
+    <h1 class="text-3xl text-gray-300 font-bold p-1.5">My Tech Stack</h1>
 
     <div class="py-4">
       <hr class="w-full border-t-2 border-white mt-2">
