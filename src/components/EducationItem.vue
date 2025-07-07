@@ -1,16 +1,62 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <component :is="icon" class="size-8 text-blue-500" />
     </i>
+
     <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+      <h3>{{ education.degree }}</h3>
+
+      <p class="flex text-gray-500 p-1.5">
+        <span class="pr-2">
+          <CalendarDaysIcon class="size-6 text-blue-500" />
+        </span>
+        {{ education.startDate }} - {{ education.endDate }}
+      </p>
+
+      <p class="flex text-gray-700 p-1.5">
+        <span class="pr-2">
+          <MapPinIcon class="size-6 text-blue-500" />
+        </span>
+        {{ education.location }}
+      </p>
+
+      <p class="flex text-gray-700 p-1.5">
+        <span class="pr-2">
+          <BuildingLibraryIcon class="size-6 text-blue-500" />
+        </span>
+        {{ education.institution }}
+      </p>
+
+      <p class="text-gray-600 p-1.5">
+        {{ education.description }}
+      </p>
+
+      <div class="flex flex-wrap gap-2 p-1.5">
+        <TagItem v-for="item in education.tags" :key="item" :text="item" />
+      </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { CalendarDaysIcon, BuildingLibraryIcon, MapPinIcon } from '@heroicons/vue/24/solid';
+
+import TagItem from '@/components/TagItem.vue';
+
+defineProps<{
+  icon: any,
+  education: {
+    degree: string,
+    startDate: string,
+    endDate: string,
+    location: string,
+    institution: string,
+    description: string,
+    tags: string[]
+  }
+}>();
+</script>
 
 <style scoped>
 .item {
