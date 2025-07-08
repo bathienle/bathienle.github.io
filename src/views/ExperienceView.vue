@@ -11,13 +11,12 @@
         <CodeBracketIcon class="size-6 text-blue-500" />
       </template>
       <template #heading>{{ experience.title }}</template>
-
-      <p class="flex text-gray-500 p-1.5">
-        <span class="pr-2">
-          <CalendarDaysIcon class="size-6 text-blue-500" />
-        </span>
+      <template #date>
         {{ experience.startDate }} - {{ experience.endDate }}
-      </p>
+      </template>
+      <template #date-icon>
+        <CalendarDaysIcon class="size-6 text-blue-500" />
+      </template>
 
       <p class="flex text-gray-700 p-1.5">
         <span class="pr-2">
