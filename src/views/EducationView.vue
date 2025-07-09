@@ -6,23 +6,26 @@
       <hr class="w-full border-t-2 border-white mt-2">
     </div>
 
-    <EducationItem
+    <ExperienceItem
       v-for="education in educations"
       :key="education.degree"
+      :item="education"
       :icon="AcademicCapIcon"
-      :education="education"
+      :locationIcon="MapPinIcon"
+      :institutionIcon="BuildingLibraryIcon"
+      :dateIcon="CalendarDaysIcon"
     />
   </section>
 </template>
 
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import { AcademicCapIcon } from '@heroicons/vue/24/solid';
+import { AcademicCapIcon, BuildingLibraryIcon, CalendarDaysIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content.d.ts';
 
-import EducationItem from '@/components/EducationItem.vue';
+import ExperienceItem from '@/components/ExperienceItem.vue';
 
 const content = inject<Ref<Content>>('content');
 const educations = computed(() => content?.value?.educations);

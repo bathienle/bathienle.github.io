@@ -1,23 +1,17 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <component :is="icon" class="size-8 text-blue-500" />
     </i>
     <div class="details w-full">
       <div class="flex items-center justify-between cursor-pointer select-none" @click="toggle">
         <div>
-          <h3>
-            <slot name="heading"></slot>
-          </h3>
-          <!-- Always show date below the job title -->
+          <h3>{{ item.title }}</h3>
           <span class="flex text-gray-500 p-1.5">
             <span class="pr-2">
-              <slot name="date-icon">
-                <!-- fallback icon if not provided -->
-                <svg class="size-6 text-blue-500" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
-              </slot>
+              <component :is="dateIcon" class="size-6 text-blue-500" />
             </span>
-            <slot name="date"></slot>
+            {{ item.startDate }} - {{ item.endDate }}
           </span>
         </div>
         <button
@@ -35,7 +29,29 @@
       </div>
       <transition name="fade">
         <div v-show="!collapsed">
-          <slot></slot>
+          <p v-if="item.location" class="flex text-gray-700 p-1.5">
+            <span class="pr-2">
+              <component :is="locationIcon" class="size-6 text-blue-500" />
+            </span>
+            {{ item.location }}
+          </p>
+          <p v-if="item.institution || item.company" class="flex text-gray-700 p-1.5">
+            <span class="pr-2">
+              <component :is="institutionIcon" class="size-6 text-blue-500" />
+            </span>
+            {{ item.institution || item.company }}
+          </p>
+          <p v-if="item.description" class="text-gray-600 p-1.5">
+            {{ item.description }}
+          </p>
+          <ul v-if="item.achievements && item.achievements.length" class="list-disc text-gray-600 pl-7.5 p-1.5">
+            <li v-for="(ach, index) in item.achievements" :key="index">
+              {{ ach }}
+            </li>
+          </ul>
+          <div v-if="item.tags && item.tags.length" class="flex flex-wrap gap-2 p-1.5">
+            <TagItem v-for="tag in item.tags" :key="tag" :text="tag" />
+          </div>
         </div>
       </transition>
     </div>
@@ -43,7 +59,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, type Component } from 'vue';
+import TagItem from '@/components/TagItem.vue';
+
+defineProps<{
+  item: Record<string, any>,
+  icon: Component,
+  locationIcon?: Component,
+  institutionIcon?: Component,
+  dateIcon?: Component
+}>();
 
 const collapsed = ref(true);
 
