@@ -63,7 +63,7 @@ import { ref, type Component } from 'vue';
 import TagItem from '@/components/TagItem.vue';
 
 defineProps<{
-  item: Record<string, any>,
+  item: Record<string, Component>,
   icon: Component,
   locationIcon?: Component,
   institutionIcon?: Component,
