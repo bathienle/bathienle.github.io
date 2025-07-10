@@ -44,6 +44,7 @@ export interface Education {
   location: string;
   startDate: string;
   endDate: string;
+  icon: string;
   description: string;
   tags: string[];
 }

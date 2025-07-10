@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <i>
-      <component :is="icon" class="size-8 text-blue-500" />
+      <img :src="education.icon" :alt="education.institution" />
     </i>
 
     <div class="details w-full">
@@ -109,6 +109,13 @@ i {
   color: var(--color-text);
 }
 
+i img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -136,10 +143,17 @@ h3 {
     left: calc(5%);
     position: absolute;
     border: 1px solid var(--color-border);
-    background: var(--color-background);
+    background: #3c8082;
     border-radius: 8px;
     width: 50px;
     height: 50px;
+  }
+
+  i img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
 }
 </style>
