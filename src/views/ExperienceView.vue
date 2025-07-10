@@ -48,7 +48,7 @@
 
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import { BuildingLibraryIcon, CalendarDaysIcon, CodeBracketIcon, MapPinIcon } from '@heroicons/vue/24/solid';
+import { BuildingLibraryIcon, CalendarDaysIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content.d.ts';
