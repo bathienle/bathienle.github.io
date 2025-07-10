@@ -6,10 +6,7 @@
       <hr class="w-full border-t-2 border-white mt-2">
     </div>
 
-    <ExperienceItem v-for="experience in experiences" :key="experience.company">
-      <template #icon>
-        <CodeBracketIcon class="size-6 text-blue-500" />
-      </template>
+    <ExperienceItem v-for="experience in experiences" :key="experience.company" :experience="experience">
       <template #heading>{{ experience.title }}</template>
       <template #date>
         {{ experience.startDate }} - {{ experience.endDate }}
