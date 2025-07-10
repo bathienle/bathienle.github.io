@@ -60,22 +60,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, type Component } from 'vue';
+import { ref } from 'vue';
 import { CalendarDaysIcon, BuildingLibraryIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import TagItem from '@/components/TagItem.vue';
+import type { Education } from '@/types/content.d.ts';
 
 defineProps<{
-  icon: Component,
-  education: {
-    degree: string,
-    startDate: string,
-    endDate: string,
-    location: string,
-    institution: string,
-    description: string,
-    tags: string[]
-  }
+  education: Education,
 }>();
 
 const collapsed = ref(true);
