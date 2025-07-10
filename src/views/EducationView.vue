@@ -9,7 +9,6 @@
     <EducationItem
       v-for="education in educations"
       :key="education.degree"
-      :icon="AcademicCapIcon"
       :education="education"
     />
   </section>
@@ -17,7 +16,6 @@
 
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import { AcademicCapIcon } from '@heroicons/vue/24/solid';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content.d.ts';

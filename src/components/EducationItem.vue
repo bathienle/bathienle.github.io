@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <i>
-      <component :is="icon" class="size-8 text-blue-500" />
+      <img :src="education.icon" :alt="education.institution" />
     </i>
 
     <div class="details w-full">
@@ -60,22 +60,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, type Component } from 'vue';
+import { ref } from 'vue';
 import { CalendarDaysIcon, BuildingLibraryIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import TagItem from '@/components/TagItem.vue';
+import type { Education } from '@/types/content.d.ts';
 
 defineProps<{
-  icon: Component,
-  education: {
-    degree: string,
-    startDate: string,
-    endDate: string,
-    location: string,
-    institution: string,
-    description: string,
-    tags: string[]
-  }
+  education: Education,
 }>();
 
 const collapsed = ref(true);
@@ -109,6 +101,13 @@ i {
   color: var(--color-text);
 }
 
+i img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -136,10 +135,17 @@ h3 {
     left: calc(5%);
     position: absolute;
     border: 1px solid var(--color-border);
-    background: var(--color-background);
+    background: #3c8082;
     border-radius: 8px;
     width: 50px;
     height: 50px;
+  }
+
+  i img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
 }
 </style>
