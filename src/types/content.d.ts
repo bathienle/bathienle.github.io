@@ -32,6 +32,7 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string;
+  icon: string;
   description: string;
   achievements: string[];
   tags: string[];

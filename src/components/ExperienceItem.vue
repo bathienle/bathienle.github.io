@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <img :src="experience.icon" :alt="experience.company" />
     </i>
     <div class="details w-full">
       <div class="flex items-center justify-between cursor-pointer select-none" @click="toggle">
@@ -44,6 +44,12 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+import type { Experience } from '@/types/content.d.ts';
+
+defineProps<{
+  experience: Experience,
+}>();
 
 const collapsed = ref(true);
 
@@ -102,7 +108,7 @@ h3 {
     left: calc(5%);
     position: absolute;
     border: 1px solid var(--color-border);
-    background: var(--color-background);
+    background: #3c8082;
     border-radius: 8px;
     width: 50px;
     height: 50px;
