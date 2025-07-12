@@ -101,6 +101,11 @@
           "key": "fastapi",
           "name": "FastAPI",
           "url": "https://fastapi.tiangolo.com/"
+        },
+        {
+          "key": "django",
+          "name": "Django",
+          "url": "https://www.djangoproject.com/"
         }
       ]
     },
