@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="relative pt-2 pb-4 pl-20">
     <div
       class="flex items-center justify-center w-8 h-8
             lg:absolute lg:left-[5%] lg:w-[50px] lg:h-[50px]
@@ -8,7 +8,7 @@
       <img :src="experience.icon" :alt="experience.company" />
     </div>
 
-    <div class="details w-full">
+    <div class="w-full flex-1 mt-2 ml-4 pl-15">
       <div class="flex items-center justify-between cursor-pointer select-none" @click="toggle">
         <div>
           <h3 class="text-xl mb-1 text-[color:var(--color-heading)]">
@@ -87,35 +87,3 @@ function toggle() {
   collapsed.value = !collapsed.value;
 }
 </script>
-
-<style scoped>
-.item {
-  margin-top: 2rem;
-  display: flex;
-  position: relative;
-}
-
-.details {
-  margin-top: 0.5rem;
-  padding-left: 50px;
-  flex: 1;
-  margin-left: 1rem;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-@media (min-width: 1024px) {
-  .item {
-    margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-  }
-}
-</style>
