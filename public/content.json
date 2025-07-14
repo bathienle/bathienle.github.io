@@ -103,16 +103,6 @@
           "url": "https://fastapi.tiangolo.com/"
         },
         {
-          "key": "django",
-          "name": "Django",
-          "url": "https://www.djangoproject.com/"
-        }
-      ]
-    },
-    {
-      "title": "Databases",
-      "items": [
-        {
           "key": "postgresql",
           "name": "PostgreSQL",
           "url": "https://www.postgresql.org/"
@@ -141,6 +131,26 @@
           "key": "gitlab",
           "name": "GitLab",
           "url": "https://about.gitlab.com/"
+        }
+      ]
+    },
+    {
+      "title": "Currently Learning",
+      "items": [
+        {
+          "key": "kubernetes",
+          "name": "Kubernetes",
+          "url": "https://kubernetes.io/"
+        },
+        {
+          "key": "django",
+          "name": "Django",
+          "url": "https://www.djangoproject.com/"
+        },
+        {
+          "key": "typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/"
         }
       ]
     }
