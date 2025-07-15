@@ -12,9 +12,11 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  tech: { type: Object, required: true },
-});
+import type { Tech } from '@/types/content.d.ts';
+
+const props = defineProps<{
+  tech: Tech,
+}>();
 
 function getImageSrc() {
   return `/images/tech-stack-icons/${props.tech.key}.svg`;

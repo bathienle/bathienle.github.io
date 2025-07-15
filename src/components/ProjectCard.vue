@@ -30,9 +30,11 @@
 </template>
 
 <script setup lang="ts">
+import type { Project } from '@/types/content.d.ts';
+
 import TagItem from '@/components/TagItem.vue';
 
-defineProps({
-  project: { type: Object, required: true },
-});
+defineProps<{
+  project: Project,
+}>();
 </script>
