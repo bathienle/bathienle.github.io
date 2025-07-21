@@ -6,7 +6,7 @@
       <a v-for="social in socials" :key="social.key" :href="social.url" rel="noopener" target="_blank">
         <div class="flex border border-gray-300 rounded-lg shadow-md w-16 h-16 items-center justify-center">
           <div class="text-4xl text-gray-500 hover:text-blue-500 transition-colors duration-200">
-            <i :class="`fab fa-${social.key} `" />
+            <Icon :icon="`fa:${social.key}`" />
           </div>
         </div>
       </a>
@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue';
 import { computed, inject } from 'vue';
 
 import type { Ref } from 'vue';
