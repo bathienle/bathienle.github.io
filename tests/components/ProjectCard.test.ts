@@ -21,7 +21,6 @@ describe('ProjectCard.vue', () => {
       props: { project: mockProject },
       global: {
         stubs: {
-          FontAwesomeIcon: true,
           TagItem: true,
         },
       },
