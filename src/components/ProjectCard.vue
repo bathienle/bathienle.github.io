@@ -10,14 +10,20 @@
           {{ project.title }}
         </span>
         <span>
-          <a :href="project.link" target="_blank" rel="noopener">
-            <i class="fab fa-github fa-lg text-gray-500 hover:text-blue-500 transition-colors duration-200" />
+          <a
+            class="text-gray-500 hover:text-blue-500 transition-colors duration-200"
+            :href="project.link"
+            target="_blank"
+            rel="noopener"
+          >
+            <Icon icon="fa:github" width="32" height="32" />
           </a>
         </span>
       </h3>
 
-      <h4 class="pb-4">
-        <i class="fa-solid fa-calendar-days" /> {{ project.startDate }} - {{ project.endDate }}
+      <h4 class="flex items-center pb-4 gap-2">
+        <Icon icon="twemoji:calendar" width="24" height="24" />
+        {{ project.startDate }} - {{ project.endDate }}
       </h4>
 
       <p class="text-gray-200 text-sm text-justify">{{ project.description }}</p>
@@ -30,6 +36,8 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue';
+
 import type { Project } from '@/types/content.d.ts';
 
 import TagItem from '@/components/TagItem.vue';

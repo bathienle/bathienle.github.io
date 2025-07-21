@@ -26,7 +26,7 @@
               target="_blank"
               class="hover:text-blue-500 transition-colors duration-200"
             >
-              <i :class="`fab fa-${social.key} text-lg`" />
+              <Icon class="text-2xl" :icon="`fa:${social.key}`" />
             </a>
           </div>
         </div>
@@ -36,6 +36,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue';
 import { computed, inject } from 'vue';
 
 import type { Ref } from 'vue';

@@ -10,7 +10,7 @@
           <h3>{{ education.degree }}</h3>
           <span class="flex text-gray-500 p-1.5">
             <span class="pr-2">
-              <CalendarDaysIcon class="size-6 text-blue-500" />
+              <Icon icon="twemoji:calendar" width="24" height="24" />
             </span>
             {{ education.startDate }} - {{ education.endDate }}
           </span>
@@ -33,15 +33,15 @@
       <transition name="fade">
         <div v-show="!collapsed">
           <p class="flex text-gray-700 p-1.5">
-            <span class="pr-2">
-              <MapPinIcon class="size-6 text-blue-500" />
+            <span class="pr-2 text-blue-500">
+              <Icon icon="ep:map-location" width="24" height="24" />
             </span>
             {{ education.location }}
           </p>
 
           <p class="flex text-gray-700 p-1.5">
-            <span class="pr-2">
-              <BuildingLibraryIcon class="size-6 text-blue-500" />
+            <span class="pr-2 text-blue-500">
+              <Icon icon="fa:institution" width="24" height="24" />
             </span>
             {{ education.institution }}
           </p>
@@ -60,8 +60,8 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue';
 import { ref } from 'vue';
-import { CalendarDaysIcon, BuildingLibraryIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
 import TagItem from '@/components/TagItem.vue';
 import type { Education } from '@/types/content.d.ts';
