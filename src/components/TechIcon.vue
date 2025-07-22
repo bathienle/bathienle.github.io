@@ -18,7 +18,5 @@ const props = defineProps<{
   tech: Tech,
 }>();
 
-function getImageSrc() {
-  return `/images/tech-stack-icons/${props.tech.key}.svg`;
-}
+const getImageSrc = () => `/images/tech-stack-icons/${props.tech.key}.svg`;
 </script>
