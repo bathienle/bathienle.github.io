@@ -72,9 +72,9 @@ defineProps<{
 
 const collapsed = ref(true);
 
-function toggle() {
+const toggle = () => {
   collapsed.value = !collapsed.value;
-}
+};
 </script>
 
 <style scoped>
