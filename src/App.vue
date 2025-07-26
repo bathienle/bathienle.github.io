@@ -1,7 +1,7 @@
 <template>
   <AppNavbar />
 
-  <main id="main" class="p-8 md:p-8">
+  <main>
     <AboutView />
     <StackView />
     <ExperienceView />
