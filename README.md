@@ -2,8 +2,9 @@
 
 <div align="center">
 
+[![GitHub Action Publish][github-publish-badge]][github-publish-url]
+[![GitHub Action Test][github-test-badge]][github-test-url]
 [![GitHub License][license-badge]][license-url]
-[![GitHub Action][github-badge]][github-action-url]
 
 </div>
 
@@ -41,5 +42,7 @@ npm run test:unit
 
 [license-badge]: https://img.shields.io/github/license/bathienle/bathienle.github.io
 [license-url]: https://github.com/bathienle/bathienle.github.io/blob/main/LICENSE
-[github-action-url]: https://github.com/bathienle/bathienle.github.io/actions
-[github-badge]: https://img.shields.io/github/deployments/bathienle/bathienle.github.io/github-pages
+[github-publish-badge]: https://github.com/bathienle/bathienle.github.io/workflows/Publish/badge.svg
+[github-publish-url]: https://github.com/bathienle/bathienle.github.io/actions/workflows/publish.yaml
+[github-test-badge]: https://github.com/bathienle/bathienle.github.io/workflows/Test/badge.svg
+[github-test-url]: https://github.com/bathienle/bathienle.github.io/actions/workflows/test.yaml
