@@ -25,7 +25,7 @@
 import { computed, inject } from 'vue';
 
 import type { Ref } from 'vue';
-import type { Content } from '@/types/content.d.ts';
+import type { Content } from '@/types/content.ts';
 
 import TechIcon from '@/components/TechIcon.vue';
 

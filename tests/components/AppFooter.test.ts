@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils';
 import { describe, expect, it } from 'vitest';
 import { ref } from 'vue';
 
-import type { Content } from '@/types/content.d.ts';
+import type { Content } from '@/types/content.ts';
 import AppFooter from '@/components/AppFooter.vue';
 
 describe('AppFooter.vue', () => {

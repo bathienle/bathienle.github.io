@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
 
-import type { Project } from '@/types/content.d.ts';
+import type { Project } from '@/types/content.ts';
 
 import TagItem from '@/components/TagItem.vue';
 
