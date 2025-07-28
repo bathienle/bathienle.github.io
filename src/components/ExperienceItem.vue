@@ -73,7 +73,7 @@
 import { Icon } from '@iconify/vue';
 import { ref } from 'vue';
 
-import type { Experience } from '@/types/content.d.ts';
+import type { Experience } from '@/types/content.ts';
 
 import TagItem from '@/components/TagItem.vue';
 

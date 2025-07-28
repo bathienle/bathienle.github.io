@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Tech } from '@/types/content.d.ts';
+import type { Tech } from '@/types/content.ts';
 
 const props = defineProps<{
   tech: Tech,

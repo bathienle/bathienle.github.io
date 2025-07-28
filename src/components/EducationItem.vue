@@ -64,7 +64,7 @@ import { Icon } from '@iconify/vue';
 import { ref } from 'vue';
 
 import TagItem from '@/components/TagItem.vue';
-import type { Education } from '@/types/content.d.ts';
+import type { Education } from '@/types/content.ts';
 
 defineProps<{
   education: Education,

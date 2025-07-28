@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { onMounted, provide, ref } from 'vue';
 
-import type { Content } from '@/types/content.d.ts';
+import type { Content } from '@/types/content.ts';
 
 import AppFooter from '@/components/AppFooter.vue';
 import AppNavbar from '@/components/AppNavbar.vue';

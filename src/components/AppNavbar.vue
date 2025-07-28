@@ -40,7 +40,7 @@ import { Icon } from '@iconify/vue';
 import { computed, inject } from 'vue';
 
 import type { Ref } from 'vue';
-import type { Content } from '@/types/content.d.ts';
+import type { Content } from '@/types/content.ts';
 
 const content = inject<Ref<Content>>('content');
 const profile = computed(() => content?.value?.profile);
