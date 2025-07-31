@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg bg-black">
-    <div class="h-48 w-full overflow-hidden">
+  <div class="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg bg-gray-700">
+    <div class="h-48 w-full overflow-hidden bg-black">
       <img class="object-contain w-full h-full" :src="project.image" :alt="project.title" />
     </div>
 
