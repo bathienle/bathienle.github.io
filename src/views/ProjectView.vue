@@ -6,7 +6,7 @@
       <hr class="w-full border-t-2 border-white pb-2 mt-2">
     </div>
 
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap justify-center gap-4">
       <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
     </div>
   </section>
