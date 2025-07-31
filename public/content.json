@@ -220,7 +220,7 @@
     {
       "title": "bathienle.github.io",
       "description": "Personal website to showcase my projects and skills.",
-      "image": "/images/portfolio.svg",
+      "image": "/images/projects/portfolio.svg",
       "startDate": "May 2025",
       "endDate": "Present",
       "tags": [
@@ -229,6 +229,22 @@
         "Vue 3"
       ],
       "link": "https://github.com/bathienle/bathienle.github.io"
+    },
+    {
+      "title": "LocalShelf",
+      "description": "Side project to learn API, Nuxt, and Tesseract.js.",
+      "image": "/images/projects/LocalShelf.png",
+      "startDate": "25 July 2025",
+      "endDate": "31 July 2025",
+      "tags": [
+        "Nuxt 4",
+        "Spoonacular API",
+        "Tailwind CSS 4",
+        "Tesseract.js",
+        "Vite",
+        "Vue 3"
+      ],
+      "link": "https://github.com/bathienle/local-shelf"
     }
   ]
 }
