@@ -5,16 +5,20 @@ on:
     branches:
       - main
     paths:
-      - 'src/**/*.ts'
-      - 'src/**/*.vue'
-      - 'tests/**/*.ts'
+      - "src/**/*.ts"
+      - "src/**/*.vue"
+      - "tests/**/*.ts"
   pull_request:
     branches:
       - main
     paths:
-      - 'src/**/*.ts'
-      - 'src/**/*.vue'
-      - 'tests/**/*.ts'
+      - "src/**/*.ts"
+      - "src/**/*.vue"
+      - "tests/**/*.ts"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   lint:
