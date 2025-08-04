@@ -7,7 +7,10 @@ export default defineConfigWithVueTs({
   ignores: ['coverage', 'dist', 'node_modules'],
   files: ['**/*.{ts,vue}'],
   languageOptions: {
-    globals: globals.browser,
+    globals: {
+      ...globals.browser,
+      ...globals.node,
+    },
   },
   rules: {
     'array-bracket-spacing': ['error', 'never'],
