@@ -21,6 +21,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test:unit": "vitest --run",
+    "test:e2e": "playwright test",
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@iconify/vue": "^5.0.0",
+    "@playwright/test": "^1.54.2",
     "@tailwindcss/vite": "^4.1.7",
     "@tsconfig/node22": "^22.0.1",
     "@types/jsdom": "^21.1.7",
