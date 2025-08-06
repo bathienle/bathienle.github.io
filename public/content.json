@@ -46,6 +46,11 @@
           "key": "js",
           "name": "JavaScript",
           "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "key": "typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/"
         }
       ]
     },
@@ -136,16 +141,6 @@
           "key": "kubernetes",
           "name": "Kubernetes",
           "url": "https://kubernetes.io/"
-        },
-        {
-          "key": "django",
-          "name": "Django",
-          "url": "https://www.djangoproject.com/"
-        },
-        {
-          "key": "typescript",
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
         },
         {
           "key": "nuxt",
