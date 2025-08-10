@@ -8,7 +8,6 @@ const mockContent = ref({
   profile: {
     firstName: 'John',
     lastName: 'Doe',
-    website: 'https://example.com',
   },
 });
 
@@ -23,9 +22,9 @@ describe('AppNavbar.vue', () => {
     });
 
     expect(wrapper.text()).toContain('John');
-    expect(wrapper.text()).toContain('Doe');
+    expect(wrapper.text()).toContain('Doe'.toUpperCase());
 
-    const link = wrapper.find('a[href="https://example.com"]');
+    const link = wrapper.find('a[href="/"]');
     expect(link.exists()).toBe(true);
   });
 
