@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 max-w-4xl mx-auto place-items-center items-start">
       <div class="m-2 text-center md:text-left">
         <h2 class="text-2xl text-gray-300 font-bold py-1.5">
-          Ba Thien Le
+          {{ fullName }}
         </h2>
 
         <p class="text-gray-400 text-balance leading-relaxed">Crafted with precision and a touch of mischievous code.</p>
