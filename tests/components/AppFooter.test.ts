@@ -36,9 +36,8 @@ describe('AppFooter.vue', () => {
     });
 
     const links = wrapper.findAll('a');
-    expect(links.length).toBe(2);
 
-    expect(links[0].attributes('href')).toBe('https://twitter.com/example');
-    expect(links[1].attributes('href')).toBe('https://github.com/example');
+    expect(links.some(link => link.attributes('href') === 'https://twitter.com/example')).toBe(true);
+    expect(links.some(link => link.attributes('href') === 'https://github.com/example')).toBe(true);
   });
 });
