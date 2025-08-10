@@ -1,11 +1,11 @@
 <template>
   <header class="sticky top-0 z-50 bg-gray-900 text-white shadow-md">
-    <div class="grid grid-cols-1 md:grid-cols-3 items-center h-16 px-4 max-w-7xl mx-auto place-items-center text-gray-300">
-      <a class="text-2xl font-bold hover:text-gray-400 transition-colors duration-200" href="/" rel="noopener">
+    <div class="grid grid-cols-2 md:grid-cols-3 items-center h-16 px-4 max-w-7xl mx-auto place-items-center text-gray-300">
+      <a class="justify-self-start md:justify-self-center text-2xl font-bold hover:text-gray-400 transition-colors duration-200" href="/" rel="noopener">
         {{ fullName }}
       </a>
 
-      <nav>
+      <nav class="hidden md:block">
         <ul class="flex flex-row items-center md:items-start">
           <li v-for="link in links" :key="link.href">
             <a :href="link.href" class="px-3 py-2 rounded-md hover:bg-blue-500 duration-200">{{ link.label }}</a>
@@ -13,7 +13,7 @@
         </ul>
       </nav>
 
-      <div class="flex items-center justify-end gap-2">
+      <div class="hidden md:flex items-center justify-end gap-2">
         <a
           v-for="social in socials"
           :key="social.key"
@@ -25,7 +25,38 @@
           <Icon class="text-2xl" :icon="`fa:${social.key}`" />
         </a>
       </div>
+
+      <button class="md:hidden justify-self-end text-2xl hover:text-gray-200" @click="toggleMenu">
+        <Icon :icon="isOpen ? 'fa:times' : 'fa:bars'" />
+      </button>
     </div>
+
+    <nav v-if="isOpen" class="md:hidden bg-gray-800 text-gray-300 shadow-lg">
+      <ul class="flex flex-col divide-y divide-gray-700">
+        <li v-for="link in links" :key="link.href">
+          <a
+            :href="link.href"
+            class="block px-3 py-2 hover:bg-blue-500 duration-200"
+            @click="closeMenu"
+          >
+            {{ link.label }}
+          </a>
+        </li>
+      </ul>
+
+      <div class="flex justify-center gap-4 py-3 border-t border-gray-700">
+        <a
+          v-for="social in socials"
+          :key="social.key"
+          :href="social.url"
+          rel="noopener"
+          target="_blank"
+          class="text-3xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+        >
+          <Icon class="text-2xl" :icon="`fa:${social.key}`" />
+        </a>
+      </div>
+    </nav>
   </header>
 </template>
 
