@@ -18,8 +18,8 @@ describe('EducationView.vue', () => {
         institution: 'Tech Institute',
         year: '2022-2024',
         description: 'Specialization in Data Science',
-      }
-    ]
+      },
+    ],
   };
 
   const wrapper = shallowMount(EducationView, {

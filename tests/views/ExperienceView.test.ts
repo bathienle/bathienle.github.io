@@ -16,8 +16,8 @@ describe('ExperienceView.vue', () => {
         title: 'Intern',
         company: 'Company B',
         year: '2018-2022',
-      }
-    ]
+      },
+    ],
   };
 
   const wrapper = shallowMount(ExperienceView, {
