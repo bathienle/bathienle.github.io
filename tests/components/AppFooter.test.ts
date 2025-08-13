@@ -9,7 +9,7 @@ const mockContent = ref<Content>({
   profile: {
     firstName: 'John',
     lastName: 'Doe',
-    website: 'https://example.com',
+    tagline: 'Welcome to my website!',
     socials: [
       { key: 'twitter', url: 'https://twitter.com/example' },
       { key: 'github', url: 'https://github.com/example' },
