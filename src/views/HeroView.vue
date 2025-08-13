@@ -14,7 +14,7 @@
 
         <a
           href="#project"
-          class="inline-block bg-purple-900 hover:text-gray-400 text-white px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
+          class="inline-block bg-purple-900 hover:text-gray-400 px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
         >
           See My Work
         </a>
