@@ -19,7 +19,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest  --coverage",
+    "test": "vitest --coverage",
     "test:unit": "vitest run --coverage",
     "type-check": "vue-tsc --build"
   },
