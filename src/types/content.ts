@@ -6,7 +6,7 @@ export interface Social {
 export interface Profile {
   firstName: string;
   lastName: string;
-  website: string;
+  tagline: string;
   socials: Social[];
 }
 
