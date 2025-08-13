@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 bg-gray-900 text-white shadow-md">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
     <div class="grid grid-cols-2 md:grid-cols-3 items-center h-16 px-4 max-w-7xl mx-auto place-items-center text-gray-300">
       <a class="justify-self-start md:justify-self-center text-2xl font-bold hover:text-gray-400 transition-colors duration-200" href="/" rel="noopener">
         {{ fullName }}
