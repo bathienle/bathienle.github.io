@@ -1,15 +1,18 @@
 <template>
-  <AppNavbar />
+  <div class="bg-gray-900">
+    <AppNavbar />
 
-  <main>
-    <AboutView />
-    <StackView />
-    <ExperienceView />
-    <EducationView />
-    <ProjectView />
-  </main>
+    <HeroView />
+    <main>
+      <AboutView />
+      <StackView />
+      <ExperienceView />
+      <EducationView />
+      <ProjectView />
+    </main>
 
-  <AppFooter />
+    <AppFooter />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -22,6 +25,7 @@ import AppNavbar from '@/components/AppNavbar.vue';
 import AboutView from '@/views/AboutView.vue';
 import EducationView from '@/views/EducationView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
+import HeroView from '@/views/HeroView.vue';
 import ProjectView from '@/views/ProjectView.vue';
 import StackView from '@/views/StackView.vue';
 

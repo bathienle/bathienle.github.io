@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="scroll-mt-20">
+  <section id="about" class="scroll-mt-20 pt-20">
     <h1 class="text-3xl text-gray-300 font-bold p-1.5">About Me</h1>
 
     <div class="py-4">
