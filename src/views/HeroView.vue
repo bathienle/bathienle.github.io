@@ -9,7 +9,7 @@
             {{ fullName }}
           </h1>
           <p class="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Software engineering, AI, and modern web development, built with accuracy and attention to detail.
+            {{ profile?.tagline }}
           </p>
         </div>
 
