@@ -8,7 +8,7 @@
       <nav class="hidden md:block">
         <ul class="flex flex-row items-center md:items-start">
           <li v-for="link in links" :key="link.href">
-            <a :href="link.href" class="px-3 py-2 rounded-md hover:bg-blue-500 duration-200">{{ link.label }}</a>
+            <a :href="link.href" class="px-3 py-2 rounded-md hover:bg-purple-500 duration-200">{{ link.label }}</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
         <li v-for="link in links" :key="link.href">
           <a
             :href="link.href"
-            class="block px-3 py-2 hover:bg-blue-500 duration-200"
+            class="block px-3 py-2 hover:bg-purple-500 duration-200"
             @click="closeMenu"
           >
             {{ link.label }}

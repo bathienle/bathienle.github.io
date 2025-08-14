@@ -10,9 +10,9 @@
       <div 
         v-for="(stack, index) in stacks"
         :key="index"
-        class="bg-gray-800 rounded-xl shadow-md p-4 border border-gray-700"
+        class="bg-gray-700 rounded-xl shadow-md p-4 border border-purple-300"
       >
-        <h3 class="text-center text-xl text-gray-100 font-semibold pb-4">{{ stack.title }}</h3>
+        <h3 class="text-center text-xl font-semibold pb-4">{{ stack.title }}</h3>
         <div class="flex flex-wrap justify-center gap-4">
           <TechIcon v-for="tech in stack.items" :key="tech.key" :tech="tech" />
         </div>

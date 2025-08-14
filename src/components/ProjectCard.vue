@@ -6,12 +6,12 @@
 
     <div class="bg-gray-700 p-4">
       <h3 class="flex text-2xl font-bold text-gray-500 mb-2 justify-between items-center">
-        <span class="text-gray-500 hover:text-blue-500 transition-colors duration-200">
+        <span class="text-gray-500 hover:text-purple-500 transition-colors duration-200">
           {{ project.title }}
         </span>
         <span>
           <a
-            class="text-gray-500 hover:text-blue-500 transition-colors duration-200"
+            class="text-gray-500 hover:text-purple-500 transition-colors duration-200"
             :href="project.link"
             target="_blank"
             rel="noopener"

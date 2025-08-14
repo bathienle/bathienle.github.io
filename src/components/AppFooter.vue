@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-2 bg-gradient-to-b from-gray-900 to-gray-800">
+  <footer class="py-2 bg-gradient-to-b from-gray-800 to-gray-700">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 max-w-4xl mx-auto place-items-center items-start">
       <div class="m-2 text-center md:text-left">
         <h2 class="text-2xl text-gray-300 font-bold py-1.5">
