@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+  <div class="min-h-screen bg-gradient-to-b from-gray-700 to-gray-800 text-white">
     <div class="w-full h-screen flex items-center justify-center relative overflow-hidden pt-20">
 
       <div class="relative z-10 text-center max-w-4xl px-6">
         <div class="mb-8">
-          <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-purple-500 bg-clip-text text-transparent">
             {{ fullName }}
           </h1>
           <p class="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -14,7 +14,7 @@
 
         <a
           href="#project"
-          class="inline-block bg-purple-900 hover:text-gray-400 px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
+          class="inline-block bg-blue-500 hover:text-gray-100 px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
         >
           See My Work
         </a>

@@ -1,21 +1,15 @@
 :root {
   --black: #181818;
-  --gray-900: #111827;
+  --gray-100: #F3F4F6;
+  --gray-800: #1F2937;
   --white: #ffffff;
 
-  --divider-strong: rgba(84, 84, 84, 0.65);
-  --divider-subtle: rgba(84, 84, 84, 0.48);
-
   --text-primary: var(--white);
-  --text-secondary: rgba(235, 235, 235, 0.64);
+  --text-secondary: var(--gray-100);
 }
 
 :root {
-  --color-background: var(--gray-900);
-
-  --color-border: var(--divider-subtle);
-  --color-border-hover: var(--divider-strong);
-
+  --color-background: var(--gray-800);
   --color-heading: var(--text-primary);
   --color-text: var(--text-secondary);
 }
