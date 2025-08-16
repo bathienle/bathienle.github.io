@@ -65,16 +65,16 @@ describe('AppNavbar.vue', () => {
 
     const iconStub = toggleButton.find('anonymous-stub');
     expect(iconStub.exists()).toBe(true);
-    expect(iconStub.attributes('icon')).toBe('fa:bars');
+    expect(iconStub.attributes('icon')).toBe('mdi:menu');
 
     await toggleButton.trigger('click');
 
     const iconStubAfterClick = toggleButton.find('anonymous-stub');
-    expect(iconStubAfterClick.attributes('icon')).toBe('fa:times');
+    expect(iconStubAfterClick.attributes('icon')).toBe('mdi:times');
 
     await toggleButton.trigger('click');
 
     const iconStubAfterSecondClick = toggleButton.find('anonymous-stub');
-    expect(iconStubAfterSecondClick.attributes('icon')).toBe('fa:bars');
+    expect(iconStubAfterSecondClick.attributes('icon')).toBe('mdi:menu');
   });
 });

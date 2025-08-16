@@ -20,14 +20,14 @@
           :href="social.url"
           rel="noopener"
           target="_blank"
-          class="text-3xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
         >
-          <Icon class="text-2xl" :icon="`fa:${social.key}`" />
+          <Icon :icon="`mdi:${social.key}`" />
         </a>
       </div>
 
-      <button class="md:hidden justify-self-end text-2xl hover:text-gray-200" @click="toggleMenu">
-        <Icon :icon="isOpen ? 'fa:times' : 'fa:bars'" />
+      <button class="md:hidden justify-self-end text-4xl hover:text-gray-200" @click="toggleMenu">
+        <Icon :icon="isOpen ? 'mdi:times' : 'mdi:menu'" />
       </button>
     </div>
 
@@ -51,9 +51,9 @@
           :href="social.url"
           rel="noopener"
           target="_blank"
-          class="text-3xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
         >
-          <Icon class="text-2xl" :icon="`fa:${social.key}`" />
+          <Icon :icon="`mdi:${social.key}`" />
         </a>
       </div>
     </nav>
