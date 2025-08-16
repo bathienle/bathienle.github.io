@@ -11,13 +11,13 @@
         <ul class="flex my-4 gap-5 justify-center md:justify-start">
           <li v-for="social in profile?.socials" :key="social.key">
             <a
-              class="inline-flex items-center justify-center text-3xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+              class="inline-flex items-center justify-center text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
               :aria-label="`Visit ${social.key} profile`"
               :href="social.url"
               rel="noopener"
               target="_blank"
             >
-              <Icon :icon="`fa:${social.key}`"/>
+              <Icon :icon="`mdi:${social.key}`"/>
             </a>
           </li>
         </ul>

@@ -41,7 +41,7 @@ describe('HeroView.vue', () => {
   });
 
   it('should scroll down when clicking on arrow down icon', async () => {
-    const scrollBySpy = vi.spyOn(window, 'scrollBy');
+    const scrollBySpy = vi.spyOn(window, 'scrollBy').mockImplementation(() => {});
 
     const button = wrapper.find('.animate-bounce');
     await button.trigger('click');
