@@ -18,7 +18,7 @@ export interface About {
 export interface Tech {
   key: string;
   name: string;
-  url: string;
+  url?: string;
 }
 
 export interface TechGroup {
@@ -35,7 +35,7 @@ export interface Experience {
   icon: string;
   description: string;
   achievements: string[];
-  tags: string[];
+  stack: Tech[];
 }
 
 export interface Education {
