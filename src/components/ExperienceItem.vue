@@ -36,14 +36,14 @@
       </div>
       <transition name="fade">
         <div v-show="!collapsed">
-          <p class="flex text-gray-700 p-1.5">
+          <p class="flex text-gray-500 p-1.5">
             <span class="pr-2 text-3xl">
               <Icon icon="mdi:location" />
             </span>
             {{ experience.location }}
           </p>
 
-          <p class="flex text-gray-700 p-1.5">
+          <p class="flex text-gray-500 p-1.5">
             <span class="pr-2 text-3xl">
               <Icon icon="mdi-office-building"/>
             </span>
