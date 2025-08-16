@@ -215,7 +215,6 @@
       "startDate": "September 2019",
       "endDate": "June 2021",
       "icon": "/images/educations/uliege.svg",
-      "description": "Focus in intelligent systems.",
       "tags": [
         "Machine Learning",
         "Deep Learning",
@@ -230,10 +229,9 @@
       "startDate": "September 2016",
       "endDate": "September 2019",
       "icon": "/images/educations/uliege.svg",
-      "description": "",
       "tags": [
-        "Probability and Statistics",
-        "Algorithms and Data Structures",
+        "Probability & Statistics",
+        "Algorithms & Data Structures",
         "Database Systems",
         "Object-Oriented Programming",
         "Parallel Programming"

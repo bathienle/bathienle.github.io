@@ -1,16 +1,16 @@
 <template>
-  <section id="education" class="scroll-mt-20">
+  <section id="education" class="scroll-mt-20 pt-10">
     <h1 class="text-3xl text-gray-300 font-bold p-1.5">Education</h1>
 
     <div class="py-4">
       <hr class="w-full border-t-2 border-white mt-2">
     </div>
 
-    <EducationItem
-      v-for="education in educations"
-      :key="education.degree"
-      :education="education"
-    />
+    <div v-for="(education, index) in educations" :key="education.degree" class="m-2">
+      <EducationItem :education="education" />
+      <hr v-if="index < educations.length - 1" class="border-t border-gray-600 my-4" />
+    </div>
+
   </section>
 </template>
 
@@ -23,5 +23,5 @@ import type { Content } from '@/types/content.ts';
 import EducationItem from '@/components/EducationItem.vue';
 
 const content = inject<Ref<Content>>('content');
-const educations = computed(() => content?.value?.educations);
+const educations = computed(() => content?.value?.educations ?? []);
 </script>
