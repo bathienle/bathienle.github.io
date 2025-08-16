@@ -60,8 +60,8 @@
             </li>
           </ul>
 
-          <div class="flex flex-wrap gap-2 p-1.5">
-            <TagItem v-for="item in experience.tags" :key="item" :text="item" />
+          <div class="flex flex-wrap gap-4 pt-4">
+            <TechIcon v-for="tech in experience.stack" :key="tech.key" :tech="tech" />
           </div>
         </div>
       </transition>
@@ -75,7 +75,7 @@ import { ref } from 'vue';
 
 import type { Experience } from '@/types/content.ts';
 
-import TagItem from '@/components/TagItem.vue';
+import TechIcon from '@/components/TechIcon.vue';
 
 defineProps<{
   experience: Experience,

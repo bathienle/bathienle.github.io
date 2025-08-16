@@ -163,13 +163,47 @@
         "Develop a Content-Based Image Retrieval service using FastAPI, enabling efficient searching for similar annotations and whole-slide image patches.",
         "Develop a Spring Boot service to execute containerised algorithms within the Cytomine software, leveraging external clusters, e.g., MicroK8s, for the executions."
       ],
-      "tags": [
-        "Docker",
-        "Python",
-        "Java",
-        "FastAPI",
-        "Spring Boot",
-        "Vue 2"
+      "stack": [
+        {
+          "key": "github",
+          "name": "GitHub"
+        },
+        {
+          "key": "docker",
+          "name": "Docker"
+        },
+        {
+          "key": "python",
+          "name": "Python"
+        },
+        {
+          "key": "java",
+          "name": "Java"
+        },
+        {
+          "key": "js",
+          "name": "JavaScript"
+        },
+        {
+          "key": "typescript",
+          "name": "TypeScript"
+        },
+        {
+          "key": "vue",
+          "name": "Vue.js"
+        },
+        {
+          "key": "spring",
+          "name": "Spring"
+        },
+        {
+          "key": "fastapi",
+          "name": "FastAPI"
+        },
+        {
+          "key": "pytorch",
+          "name": "PyTorch"
+        }
       ]
     }
   ],
