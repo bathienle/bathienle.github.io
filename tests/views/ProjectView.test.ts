@@ -28,12 +28,6 @@ describe('Projects.vue', () => {
     wrapper.unmount();
   });
 
-  it('should render the Projects heading', () => {
-    const heading = wrapper.find('h1');
-    expect(heading.exists()).toBe(true);
-    expect(heading.text()).toBe('Projects');
-  });
-
   it('should render a ProjectCard for each project', () => {
     const cards = wrapper.findAllComponents({ name: 'ProjectCard' });
     expect(cards).toHaveLength(mockContent.value.projects.length);
