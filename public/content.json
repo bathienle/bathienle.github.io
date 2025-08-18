@@ -25,46 +25,6 @@
   },
   "stacks": [
     {
-      "title": "Programming Languages",
-      "items": [
-        {
-          "key": "cplusplus",
-          "name": "C++",
-          "url": "https://en.wikipedia.org/wiki/C%2B%2B"
-        },
-        {
-          "key": "python",
-          "name": "Python",
-          "url": "https://www.python.org/"
-        },
-        {
-          "key": "java",
-          "name": "Java",
-          "url": "https://www.java.com/"
-        },
-        {
-          "key": "js",
-          "name": "JavaScript",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
-        {
-          "key": "typescript",
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
-        }
-      ]
-    },
-    {
-      "title": "Artificial Intelligence",
-      "items": [
-        {
-          "key": "pytorch",
-          "name": "PyTorch",
-          "url": "https://pytorch.org/"
-        }
-      ]
-    },
-    {
       "title": "Frontend Development",
       "items": [
         {
@@ -78,6 +38,16 @@
           "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
         },
         {
+          "key": "js",
+          "name": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "key": "typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
           "key": "vue",
           "name": "Vue.js",
           "url": "https://vuejs.org/"
@@ -86,6 +56,11 @@
           "key": "tailwindcss",
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/"
+        },
+        {
+          "key": "nuxt",
+          "name": "Nuxt",
+          "url": "https://nuxt.com/"
         }
       ]
     },
@@ -93,9 +68,19 @@
       "title": "Backend Development",
       "items": [
         {
+          "key": "java",
+          "name": "Java",
+          "url": "https://www.java.com/"
+        },
+        {
           "key": "spring",
           "name": "Spring",
           "url": "https://spring.io/projects/spring-framework"
+        },
+        {
+          "key": "python",
+          "name": "Python",
+          "url": "https://www.python.org/"
         },
         {
           "key": "fastapi",
@@ -106,6 +91,21 @@
           "key": "postgresql",
           "name": "PostgreSQL",
           "url": "https://www.postgresql.org/"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence",
+      "items": [
+        {
+          "key": "python",
+          "name": "Python",
+          "url": "https://www.python.org/"
+        },
+        {
+          "key": "pytorch",
+          "name": "PyTorch",
+          "url": "https://pytorch.org/"
         }
       ]
     },
@@ -131,21 +131,6 @@
           "key": "gitlab",
           "name": "GitLab",
           "url": "https://about.gitlab.com/"
-        }
-      ]
-    },
-    {
-      "title": "Currently Learning",
-      "items": [
-        {
-          "key": "kubernetes",
-          "name": "Kubernetes",
-          "url": "https://kubernetes.io/"
-        },
-        {
-          "key": "nuxt",
-          "name": "Nuxt",
-          "url": "https://nuxt.com/"
         }
       ]
     }

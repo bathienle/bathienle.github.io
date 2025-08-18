@@ -13,7 +13,7 @@
         class="bg-gray-700 rounded-xl shadow-md p-4 border border-purple-300"
       >
         <h3 class="text-center text-xl font-semibold pb-4">{{ stack.title }}</h3>
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-wrap justify-center gap-4 mx-15">
           <TechIcon v-for="tech in stack.items" :key="tech.key" :tech="tech" />
         </div>
       </div>
