@@ -1,9 +1,9 @@
 <template>
-  <section id="about" class="scroll-mt-20 pt-20">
-    <h1 class="text-3xl text-gray-300 font-bold p-1.5">About Me</h1>
+  <section id="about" class="scroll-mt-10">
+    <h2 class="text-center  text-3xl text-gray-300 font-bold p-1.5">About Me</h2>
 
     <div class="py-4">
-      <hr class="w-full border-t-2 border-white mt-2">
+      <hr class="w-full border-t-2 border-white my-2">
     </div>
 
     <p v-if="about" class="text-justify p-1.5">
