@@ -1,27 +1,27 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-700 to-gray-800 text-white">
+  <div class="min-h-screen bg-gradient-to-b from-gray-700 to-dominant">
     <div class="w-full h-screen flex items-center justify-center relative overflow-hidden pt-20">
 
       <div class="relative z-10 text-center max-w-4xl px-6">
         <div class="mb-8">
-          <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-purple-500 bg-clip-text text-transparent">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-accent">
             {{ fullName }}
           </h1>
-          <p class="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p class="text-xl md:text-2xl text-neutral/70 mb-8 max-w-2xl mx-auto leading-relaxed">
             {{ profile?.tagline }}
           </p>
         </div>
 
         <a
           href="#project"
-          class="inline-block bg-blue-500 hover:text-gray-100 px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
+          class="inline-block bg-accent px-8 py-4 rounded-xl font-medium transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg"
         >
           See My Work
         </a>
       </div>
 
       <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" @click="scrollDown">
-        <Icon icon="mdi:arrow-down-circle" class="w-10 h-10 text-white/70" />
+        <Icon icon="mdi:arrow-down-circle" class="w-10 h-10 text-neutral/70" />
       </div>
     </div>
   </div>
