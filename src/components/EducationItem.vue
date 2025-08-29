@@ -1,8 +1,8 @@
 <template>
-  <div class="p-2 rounded-lg bg-gray-700">
+  <div class="p-2 rounded-lg bg-secondary">
     <div class="flex items-center">
       <div class="flex-none flex justify-center items-center w-20">
-        <div class="flex justify-center items-center w-16 h-16 bg-gray-600 rounded-lg">
+        <div class="flex justify-center items-center w-16 h-16 bg-dominant/50 rounded-lg">
           <img :src="education.icon" :alt="education.institution" />
         </div>
       </div>
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="text-gray-400 p-2">
+    <div class="p-2">
       <p class="flex items-center justify-end">
         <span class="pr-2 text-3xl">
           <Icon icon="mdi:location" />

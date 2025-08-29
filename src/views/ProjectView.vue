@@ -1,9 +1,9 @@
 <template>
   <section id="project" class="scroll-mt-10">
-    <h2 class="text-center text-3xl text-gray-300 font-bold p-1.5">Projects</h2>
+    <h2 class="text-center text-3xl font-bold p-1.5">Projects</h2>
 
     <div class="py-4">
-      <hr class="w-full border-t-2 border-white pb-2 my-2">
+      <hr class="w-full border-t-2 border-neutral pb-2 my-2">
     </div>
 
     <div class="flex flex-wrap justify-center gap-4">
