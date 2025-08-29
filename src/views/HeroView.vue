@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-700 to-dominant">
+  <div class="min-h-screen bg-gradient-to-b from-gray-600 to-dominant">
     <div class="w-full h-screen flex items-center justify-center relative overflow-hidden pt-20">
 
       <div class="relative z-10 text-center max-w-4xl px-6">
