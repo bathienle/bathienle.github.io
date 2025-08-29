@@ -1,13 +1,16 @@
 <template>
   <div
-    class="p-2 rounded-lg hover:bg-gray-700"
+    class="p-2 rounded-lg hover:bg-secondary"
     @click="isOpen = !isOpen"
     @mouseenter="isOpen = true"
     @mouseleave="isOpen = false"
   >
     <div class="flex items-center">
       <div class="flex-none flex justify-center items-center w-20">
-        <div class="flex justify-center items-center w-16 h-16 bg-gray-600 rounded-lg">
+        <div
+          class="flex justify-center items-center w-16 h-16 rounded-lg"
+          :class="isOpen ? 'bg-dominant/70' : 'bg-secondary'"
+        >
           <img :src="experience.icon" :alt="experience.company" />
         </div>
       </div>
@@ -22,7 +25,7 @@
       </div>
     </div>
 
-    <div v-show="isOpen" class="text-gray-400 p-2">
+    <div v-show="isOpen" class="p-2">
       <p class="flex-none flex items-center justify-end">
         <span class="pr-2 text-3xl">
           <Icon icon="mdi:location" />

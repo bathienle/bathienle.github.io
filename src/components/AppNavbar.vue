@@ -1,14 +1,14 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-    <div class="grid grid-cols-2 md:grid-cols-3 items-center h-16 px-4 max-w-7xl mx-auto place-items-center text-gray-300">
-      <a class="justify-self-start md:justify-self-center text-2xl font-bold hover:text-gray-400 transition-colors duration-200" href="/" rel="noopener">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-secondary/10 backdrop-blur-md border-b border-white/30">
+    <div class="grid grid-cols-2 md:grid-cols-3 items-center h-16 px-4 max-w-7xl mx-auto place-items-center text-neutral">
+      <a class="justify-self-start md:justify-self-center text-2xl font-bold hover:text-accent transition-colors duration-200" href="/" rel="noopener">
         {{ fullName }}
       </a>
 
       <nav class="hidden md:block">
         <ul class="flex flex-row items-center md:items-start">
           <li v-for="link in links" :key="link.href">
-            <a :href="link.href" class="px-3 py-2 rounded-md hover:bg-purple-500 duration-200">{{ link.label }}</a>
+            <a :href="link.href" class="px-3 py-2 rounded-md hover:bg-neutral hover:text-dominant duration-200">{{ link.label }}</a>
           </li>
         </ul>
       </nav>
@@ -20,23 +20,23 @@
           :href="social.url"
           rel="noopener"
           target="_blank"
-          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-accent"
         >
           <Icon :icon="`mdi:${social.key}`" />
         </a>
       </div>
 
-      <button class="md:hidden justify-self-end text-4xl hover:text-gray-200" @click="toggleMenu">
+      <button class="md:hidden justify-self-end text-4xl hover:text-dominant" @click="toggleMenu">
         <Icon :icon="isOpen ? 'mdi:times' : 'mdi:menu'" />
       </button>
     </div>
 
-    <nav v-if="isOpen" class="md:hidden bg-gray-800 text-gray-300 shadow-lg">
-      <ul class="flex flex-col divide-y divide-gray-700">
+    <nav v-if="isOpen" class="md:hidden bg-dominant shadow-lg">
+      <ul class="flex flex-col divide-y divide-white/30">
         <li v-for="link in links" :key="link.href">
           <a
             :href="link.href"
-            class="block px-3 py-2 hover:bg-purple-500 duration-200"
+            class="block px-3 py-2 hover:bg-secondary hover:text-neutral duration-200"
             @click="closeMenu"
           >
             {{ link.label }}
@@ -51,7 +51,7 @@
           :href="social.url"
           rel="noopener"
           target="_blank"
-          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
+          class="text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-accent"
         >
           <Icon :icon="`mdi:${social.key}`" />
         </a>

@@ -1,17 +1,17 @@
 <template>
-  <div class="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg bg-gray-700">
+  <div class="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg bg-secondary border border-neutral">
     <div class="h-48 w-full overflow-hidden bg-black">
       <img class="object-contain w-full h-full" :src="project.image" :alt="project.title" />
     </div>
 
-    <div class="bg-gray-700 p-4">
-      <h3 class="flex text-2xl font-bold text-gray-500 mb-2 justify-between items-center">
-        <span class="hover:text-purple-500 transition-colors duration-200">
+    <div class="p-4">
+      <h3 class="flex text-2xl font-bold mb-2 justify-between items-center">
+        <span class="text-accent">
           {{ project.title }}
         </span>
         <span>
           <a
-            class="text-3xl hover:text-purple-500 transition-colors duration-200"
+            class="text-3xl hover:text-accent transition-colors duration-200"
             :href="project.link"
             target="_blank"
             rel="noopener"
@@ -26,7 +26,7 @@
         {{ project.startDate }} - {{ project.endDate }}
       </h4>
 
-      <p class="text-gray-200 text-sm text-justify">{{ project.description }}</p>
+      <p class="text-sm text-justify">{{ project.description }}</p>
 
       <div class="flex flex-wrap gap-2 pt-2">
         <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
