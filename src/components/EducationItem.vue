@@ -2,7 +2,7 @@
   <div class="p-2 rounded-lg bg-secondary">
     <div class="flex items-center">
       <div class="flex-none flex justify-center items-center w-20">
-        <div class="flex justify-center items-center w-16 h-16 bg-dominant/50 rounded-lg">
+        <div class="flex justify-center items-center w-16 h-16 bg-neutral rounded-lg">
           <img :src="education.icon" :alt="education.institution" />
         </div>
       </div>

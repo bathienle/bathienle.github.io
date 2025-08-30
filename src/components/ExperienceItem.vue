@@ -7,10 +7,7 @@
   >
     <div class="flex items-center">
       <div class="flex-none flex justify-center items-center w-20">
-        <div
-          class="flex justify-center items-center w-16 h-16 rounded-lg"
-          :class="isOpen ? 'bg-dominant/70' : 'bg-secondary'"
-        >
+        <div class="flex justify-center items-center w-16 h-16 rounded-lg bg-neutral">
           <img :src="experience.icon" :alt="experience.company" />
         </div>
       </div>
