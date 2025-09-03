@@ -54,8 +54,9 @@ export interface Project {
   image: string;
   startDate: string;
   endDate: string;
-  tags: string[];
   link: string;
+  tags: string[];
+  stack: Tech[];
 }
 
 export interface Content {

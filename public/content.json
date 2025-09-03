@@ -230,12 +230,26 @@
       "image": "/images/projects/portfolio.svg",
       "startDate": "May 2025",
       "endDate": "Present",
+      "link": "https://github.com/bathienle/bathienle.github.io",
       "tags": [
-        "Tailwind CSS 4",
+        "TailwindCSS 4",
         "Vite",
         "Vue 3"
       ],
-      "link": "https://github.com/bathienle/bathienle.github.io"
+      "stack": [
+        {
+          "key": "typescript",
+          "name": "TypeScript"
+        },
+        {
+          "key": "vue",
+          "name": "Vue.js"
+        },
+        {
+          "key": "tailwindcss",
+          "name": "TailwindCSS"
+        }
+      ]
     },
     {
       "title": "LocalShelf",
@@ -243,15 +257,26 @@
       "image": "/images/projects/LocalShelf.png",
       "startDate": "25 July 2025",
       "endDate": "31 July 2025",
+      "link": "https://github.com/bathienle/local-shelf",
       "tags": [
-        "Nuxt 4",
         "Spoonacular API",
-        "Tailwind CSS 4",
         "Tesseract.js",
-        "Vite",
-        "Vue 3"
+        "Vite"
       ],
-      "link": "https://github.com/bathienle/local-shelf"
+      "stack": [
+        {
+          "key": "typescript",
+          "name": "TypeScript"
+        },
+        {
+          "key": "nuxt",
+          "name": "Nuxt"
+        },
+        {
+          "key": "tailwindcss",
+          "name": "TailwindCSS"
+        }
+      ]
     }
   ]
 }
