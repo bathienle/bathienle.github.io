@@ -31,6 +31,10 @@
       <div class="flex flex-wrap gap-2 pt-2">
         <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
       </div>
+
+      <div class="flex flex-wrap justify-center gap-4 pt-8">
+        <TechIcon v-for="tech in project.stack" :key="tech.key" :tech="tech" />
+      </div>
     </div>
   </div>
 </template>
@@ -38,9 +42,9 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
 
-import type { Project } from '@/types/content.ts';
-
 import TagItem from '@/components/TagItem.vue';
+import TechIcon from '@/components/TechIcon.vue';
+import type { Project } from '@/types/content.ts';
 
 defineProps<{
   project: Project,

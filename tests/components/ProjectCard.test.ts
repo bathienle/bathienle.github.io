@@ -13,6 +13,7 @@ describe('ProjectCard.vue', () => {
     endDate: 'Dec 2021',
     description: 'This is a test project.',
     tags: ['Vue', 'TypeScript'],
+    stack: [{ 'key': 'typescript', 'name': 'TypeScript' }],
   };
   let wrapper: VueWrapper<InstanceType<typeof ProjectCard>>;
 
