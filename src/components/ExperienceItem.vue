@@ -1,9 +1,8 @@
 <template>
   <div
     class="p-2 rounded-lg hover:bg-secondary"
+    :class="{ 'bg-secondary': isOpen }"
     @click="isOpen = !isOpen"
-    @mouseenter="isOpen = true"
-    @mouseleave="isOpen = false"
   >
     <div class="flex items-center">
       <div class="flex-none flex justify-center items-center w-20">
