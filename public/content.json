@@ -227,10 +227,11 @@
     {
       "title": "bathienle.github.io",
       "description": "Personal website to showcase my projects and skills.",
-      "image": "/images/projects/portfolio.svg",
+      "image": "/images/projects/portfolio.png",
       "startDate": "May 2025",
       "endDate": "Present",
-      "link": "https://github.com/bathienle/bathienle.github.io",
+      "repository": "https://github.com/bathienle/bathienle.github.io",
+      "link": "https://bathienle.github.io/",
       "tags": [
         "TailwindCSS 4",
         "Vite",
@@ -257,7 +258,8 @@
       "image": "/images/projects/LocalShelf.png",
       "startDate": "25 July 2025",
       "endDate": "31 July 2025",
-      "link": "https://github.com/bathienle/local-shelf",
+      "repository": "https://github.com/bathienle/local-shelf",
+      "link": "https://local-shelf.vercel.app/",
       "tags": [
         "Spoonacular API",
         "Tesseract.js",

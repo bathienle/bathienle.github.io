@@ -7,7 +7,8 @@ import ProjectCard from '@/components/ProjectCard.vue';
 describe('ProjectCard.vue', () => {
   const mockProject: Project = {
     title: 'Test Project',
-    link: 'https://github.com/bathienle/bathienle.github.io',
+    link: 'https://bathienle.github.io/',
+    repository: 'https://github.com/bathienle/bathienle.github.io',
     image: 'https://avatars.githubusercontent.com/u/57636476?v=4',
     startDate: 'Jan 2021',
     endDate: 'Dec 2021',
@@ -22,7 +23,7 @@ describe('ProjectCard.vue', () => {
       props: { project: mockProject },
       global: {
         stubs: {
-          TagItem: true,
+          TechIcon: true,
         },
       },
     });
@@ -38,11 +39,14 @@ describe('ProjectCard.vue', () => {
     expect(wrapper.text()).toContain(mockProject.endDate);
     expect(wrapper.text()).toContain(mockProject.description);
     expect(wrapper.find('img').attributes('src')).toBe(mockProject.image);
-    expect(wrapper.find('a').attributes('href')).toBe(mockProject.link);
+
+    const links = wrapper.findAll('a');
+    expect(links[0].attributes('href')).toBe(mockProject.repository);
+    expect(links[1].attributes('href')).toBe(mockProject.link);
   });
 
-  it('should render correct number of tags', () => {
-    const tags = wrapper.findAllComponents({ name: 'TagItem' });
-    expect(tags.length).toBe(mockProject.tags.length);
+  it('should render correct number of tech', () => {
+    const tech = wrapper.findAllComponents({ name: 'TechIcon' });
+    expect(tech.length).toBe(mockProject.stack.length);
   });
 });
