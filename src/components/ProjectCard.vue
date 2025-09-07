@@ -14,8 +14,12 @@
         <p>{{ project.description }}</p>
 
         <div class="flex flex-wrap gap-3">
-          <TechIcon v-for="tech in project.stack" :key="tech.key" :tech="tech"
-            class="transform hover:scale-110 transition-transform duration-200" />
+          <TechIcon
+            v-for="tech in project.stack"
+            :key="tech.key"
+            :tech="tech"
+            class="transform hover:scale-110 transition-transform duration-200"
+          />
         </div>
       </div>
 
@@ -25,15 +29,23 @@
         </div>
 
         <div class="flex justify-end gap-3">
-          <a class="flex items-center gap-2 p-2 bg-dominant rounded-2xl hover:text-accent" :href="project.link"
-            target="_blank" rel="noopener">
-            <Icon class="text-xl" icon="mdi:external-link" />
-            <span>Life Demo</span>
-          </a>
-          <a class="flex items-center gap-2 p-2 bg-accent rounded-2xl hover:text-dominant" :href="project.repository"
-            target="_blank" rel="noopener">
+          <a
+            class="flex items-center gap-2 p-2 bg-dominant rounded-2xl hover:text-accent"
+            :href="project.repository"
+            target="_blank"
+            rel="noopener"
+          >
             <Icon class="text-xl" icon="mdi:github" />
             <span>View Code</span>
+          </a>
+          <a
+            class="flex items-center gap-2 p-2 bg-accent rounded-2xl hover:text-dominant"
+            :href="project.link"
+            target="_blank"
+            rel="noopener"
+          >
+            <Icon class="text-xl" icon="mdi:external-link" />
+            <span>Life Demo</span>
           </a>
         </div>
       </div>
