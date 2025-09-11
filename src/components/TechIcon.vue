@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm shadow-lg bg-dominant/30 p-2 rounded-xl">
+  <div class="max-w-sm shadow-lg bg-dominant/30 p-2 rounded-xl transform transition-transform hover:scale-110 duration-200">
     <div class="h-12 w-12">
       <a :href="tech.url" target="_blank" rel="noopener" class="relative group">
         <img class="object-contain w-full h-full" :alt="tech.name" :src="getImageSrc()" />

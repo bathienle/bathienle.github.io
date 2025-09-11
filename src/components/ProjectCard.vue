@@ -14,12 +14,7 @@
         <p>{{ project.description }}</p>
 
         <div class="flex flex-wrap gap-3">
-          <TechIcon
-            v-for="tech in project.stack"
-            :key="tech.key"
-            :tech="tech"
-            class="transform hover:scale-110 transition-transform duration-200"
-          />
+          <TechIcon v-for="tech in project.stack" :key="tech.key" :tech="tech" />
         </div>
       </div>
 
