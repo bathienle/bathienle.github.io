@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-4xl w-full rounded-3xl overflow-hidden shadow-lg bg-secondary border border-neutral">
-    <div class="grid grid-cols-2 items-center gap-4 p-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 p-4 lg:p-6">
       <div class="flex flex-col justify-between h-full">
         <div class="flex flex-col gap-2">
           <h3 class="text-2xl">{{ project.title }}</h3>
@@ -23,7 +23,7 @@
           <img class="object-contain w-full h-full" :src="project.image" :alt="project.title" />
         </div>
 
-        <div class="flex justify-end gap-3">
+        <div class="flex justify-center lg:justify-end gap-2 lg:gap-3">
           <a
             class="flex items-center gap-2 p-2 bg-dominant rounded-2xl hover:text-accent"
             :href="project.repository"
