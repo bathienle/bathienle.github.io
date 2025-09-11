@@ -33,12 +33,6 @@
         {{ experience.description }}
       </p>
 
-      <ul class="list-disc pl-7.5 p-1.5">
-        <li v-for="(item, index) in experience.achievements" :key="index">
-          {{ item }}
-        </li>
-      </ul>
-
       <div class="flex flex-wrap justify-center gap-4 pt-8">
         <TechIcon v-for="tech in experience.stack" :key="tech.key" :tech="tech" />
       </div>

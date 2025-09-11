@@ -34,7 +34,6 @@ export interface Experience {
   endDate: string;
   icon: string;
   description: string;
-  achievements: string[];
   stack: Tech[];
 }
 

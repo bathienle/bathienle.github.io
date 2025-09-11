@@ -144,10 +144,6 @@
       "endDate": "Present",
       "icon": "/images/experiences/cytomine.svg",
       "description": "Working on various aspects in the field of software development for the Cytomine software. Cytomine is a web platform for collaborative analysis of very large bio-medical images and semi-automatic processing of large image collections using machine learning algorithms.",
-      "achievements": [
-        "Develop a Content-Based Image Retrieval service using FastAPI, enabling efficient searching for similar annotations and whole-slide image patches.",
-        "Develop a Spring Boot service to execute containerised algorithms within the Cytomine software, leveraging external clusters, e.g., MicroK8s, for the executions."
-      ],
       "stack": [
         {
           "key": "github",
@@ -188,6 +184,10 @@
         {
           "key": "pytorch",
           "name": "PyTorch"
+        },
+        {
+          "key": "postgresql",
+          "name": "PostgreSQL"
         }
       ]
     }
