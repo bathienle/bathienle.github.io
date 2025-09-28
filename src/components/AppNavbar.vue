@@ -63,18 +63,12 @@
 <script setup lang="ts">
 import { computed, inject, ref } from 'vue';
 import { Icon } from '@iconify/vue';
+import { useNavigation } from '@/composables/useNavigation';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content.ts';
 
-const links = [
-  { href: '#about', label: 'About' },
-  { href: '#stack', label: 'Stack' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#education', label: 'Education' },
-  { href: '#project', label: 'Projects' },
-];
-
+const { links } = useNavigation();
 const content = inject<Ref<Content>>('content');
 const profile = computed(() => content?.value?.profile);
 const socials = computed(() => content?.value?.profile?.socials);
