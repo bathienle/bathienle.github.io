@@ -34,7 +34,7 @@ describe('EducationView.vue', () => {
     const educationItems = wrapper.findAllComponents({ name: 'EducationItem' });
 
     expect(educationItems).toHaveLength(mockContent.educations.length);
-    expect(educationItems[0].props('education')).toEqual(mockContent.educations[0]);
-    expect(educationItems[1].props('education')).toEqual(mockContent.educations[1]);
+    expect(educationItems[0]!.props('education')).toEqual(mockContent.educations[0]);
+    expect(educationItems[1]!.props('education')).toEqual(mockContent.educations[1]);
   });
 });

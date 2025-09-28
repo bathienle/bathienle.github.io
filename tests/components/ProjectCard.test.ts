@@ -41,8 +41,8 @@ describe('ProjectCard.vue', () => {
     expect(wrapper.find('img').attributes('src')).toBe(mockProject.image);
 
     const links = wrapper.findAll('a');
-    expect(links[0].attributes('href')).toBe(mockProject.repository);
-    expect(links[1].attributes('href')).toBe(mockProject.link);
+    expect(links[0]!.attributes('href')).toBe(mockProject.repository);
+    expect(links[1]!.attributes('href')).toBe(mockProject.link);
   });
 
   it('should render correct number of tech', () => {

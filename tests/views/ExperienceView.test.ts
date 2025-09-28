@@ -32,7 +32,7 @@ describe('ExperienceView.vue', () => {
     const experiences = wrapper.findAllComponents({ name: 'ExperienceItem' });
 
     expect(experiences).toHaveLength(mockContent.experiences.length);
-    expect(experiences[0].props('experience')).toEqual(mockContent.experiences[0]);
-    expect(experiences[1].props('experience')).toEqual(mockContent.experiences[1]);
+    expect(experiences[0]!.props('experience')).toEqual(mockContent.experiences[0]);
+    expect(experiences[1]!.props('experience')).toEqual(mockContent.experiences[1]);
   });
 });
