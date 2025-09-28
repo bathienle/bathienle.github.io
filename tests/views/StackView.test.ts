@@ -30,7 +30,7 @@ describe('StackView.vue', () => {
     });
 
     expect(wrapper.text()).toContain('Stack');
-    expect(wrapper.findAll('tech-icon-stub').length).toBe(mockedStacks[0].items.length);
+    expect(wrapper.findAll('tech-icon-stub').length).toBe(mockedStacks[0]!.items.length);
   });
 
   it('should not render any icons if stacks is undefined', () => {
