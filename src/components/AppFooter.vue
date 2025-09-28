@@ -63,17 +63,12 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
 import { computed, inject } from 'vue';
+import { useNavigation } from '@/composables/useNavigation';
 
 import type { Ref } from 'vue';
 import type { Content } from '@/types/content.ts';
 
-const links = [
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#education', label: 'Education' },
-  { href: '#project', label: 'Projects' },
-];
-
+const { links } = useNavigation();
 const currentYear = new Date().getFullYear();
 const content = inject<Ref<Content>>('content');
 const projects = computed(() => content?.value?.projects);
