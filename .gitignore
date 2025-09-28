@@ -29,6 +29,3 @@ yarn-error.log
 # Yarn and npm folder
 .yarn/
 .pnp/
-
-# Type Check
-tsconfig.node.tsbuildinfo
