@@ -7,6 +7,7 @@ export interface Profile {
   firstName: string;
   lastName: string;
   tagline: string;
+  signature: string;
   socials: Social[];
 }
 

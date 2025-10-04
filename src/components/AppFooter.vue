@@ -2,11 +2,9 @@
   <footer class="py-2 bg-gradient-to-b from-dominant to-gray-600">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 max-w-4xl mx-auto place-items-center items-start">
       <div class="m-2 text-center md:text-left">
-        <h2 class="text-2xl font-bold py-1.5">
-          {{ fullName }}
-        </h2>
+        <h2 class="text-2xl font-bold py-1.5">{{ fullName }}</h2>
 
-        <p class="text-gray-400 text-balance leading-relaxed">Crafted with precision and a touch of mischievous code.</p>
+        <p class="text-gray-400 text-balance leading-relaxed">{{ profile?.signature }}</p>
 
         <ul class="flex my-4 gap-5 justify-center md:justify-start">
           <li v-for="social in profile?.socials" :key="social.key">
