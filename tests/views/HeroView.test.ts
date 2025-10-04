@@ -46,7 +46,7 @@ describe('HeroView.vue', () => {
     const button = wrapper.find('.animate-bounce');
     await button.trigger('click');
 
-    expect(scrollBySpy).toHaveBeenCalledWith({
+    expect(scrollBySpy).toHaveBeenCalledExactlyOnceWith({
       top: 800,
       behavior: 'smooth',
     });
