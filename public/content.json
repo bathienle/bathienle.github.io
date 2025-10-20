@@ -107,6 +107,11 @@
           "key": "pytorch",
           "name": "PyTorch",
           "url": "https://pytorch.org/"
+        },
+        {
+          "key": "numpy",
+          "name": "NumPy",
+          "url": "https://numpy.org/"
         }
       ]
     },
