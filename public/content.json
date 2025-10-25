@@ -29,22 +29,22 @@
       "title": "Frontend Development",
       "items": [
         {
-          "key": "html",
+          "key": "html-5",
           "name": "HTML",
           "url": "https://developer.mozilla.org/fr/docs/Web/HTML"
         },
         {
-          "key": "css",
+          "key": "css-3",
           "name": "CSS",
           "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
         },
         {
-          "key": "js",
+          "key": "javascript",
           "name": "JavaScript",
           "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         },
         {
-          "key": "typescript",
+          "key": "typescript-icon",
           "name": "TypeScript",
           "url": "https://www.typescriptlang.org/"
         },
@@ -54,12 +54,12 @@
           "url": "https://vuejs.org/"
         },
         {
-          "key": "tailwindcss",
+          "key": "tailwindcss-icon",
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/"
         },
         {
-          "key": "nuxt",
+          "key": "nuxt-icon",
           "name": "Nuxt",
           "url": "https://nuxt.com/"
         }
@@ -74,7 +74,7 @@
           "url": "https://www.java.com/"
         },
         {
-          "key": "spring",
+          "key": "spring-icon",
           "name": "Spring",
           "url": "https://spring.io/projects/spring-framework"
         },
@@ -84,7 +84,7 @@
           "url": "https://www.python.org/"
         },
         {
-          "key": "fastapi",
+          "key": "fastapi-icon",
           "name": "FastAPI",
           "url": "https://fastapi.tiangolo.com/"
         },
@@ -104,7 +104,7 @@
           "url": "https://www.python.org/"
         },
         {
-          "key": "pytorch",
+          "key": "pytorch-icon",
           "name": "PyTorch",
           "url": "https://pytorch.org/"
         },
@@ -119,22 +119,22 @@
       "title": "DevOps & Tools",
       "items": [
         {
-          "key": "docker",
+          "key": "docker-icon",
           "name": "Docker",
           "url": "https://www.docker.com/"
         },
         {
-          "key": "git",
+          "key": "git-icon",
           "name": "Git",
           "url": "https://git-scm.com/"
         },
         {
-          "key": "github",
+          "key": "github-icon",
           "name": "GitHub",
           "url": "https://github.com/"
         },
         {
-          "key": "gitlab",
+          "key": "gitlab-icon",
           "name": "GitLab",
           "url": "https://about.gitlab.com/"
         }
@@ -152,11 +152,11 @@
       "description": "Working on various aspects in the field of software development for the Cytomine software. Cytomine is a web platform for collaborative analysis of very large bio-medical images and semi-automatic processing of large image collections using machine learning algorithms.",
       "stack": [
         {
-          "key": "github",
+          "key": "github-icon",
           "name": "GitHub"
         },
         {
-          "key": "docker",
+          "key": "docker-icon",
           "name": "Docker"
         },
         {
@@ -168,11 +168,11 @@
           "name": "Java"
         },
         {
-          "key": "js",
+          "key": "javascript",
           "name": "JavaScript"
         },
         {
-          "key": "typescript",
+          "key": "typescript-icon",
           "name": "TypeScript"
         },
         {
@@ -180,15 +180,15 @@
           "name": "Vue.js"
         },
         {
-          "key": "spring",
+          "key": "spring-icon",
           "name": "Spring"
         },
         {
-          "key": "fastapi",
+          "key": "fastapi-icon",
           "name": "FastAPI"
         },
         {
-          "key": "pytorch",
+          "key": "pytorch-icon",
           "name": "PyTorch"
         },
         {
@@ -245,7 +245,7 @@
       ],
       "stack": [
         {
-          "key": "typescript",
+          "key": "typescript-icon",
           "name": "TypeScript"
         },
         {
@@ -253,7 +253,7 @@
           "name": "Vue.js"
         },
         {
-          "key": "tailwindcss",
+          "key": "tailwindcss-icon",
           "name": "TailwindCSS"
         }
       ]
@@ -273,15 +273,15 @@
       ],
       "stack": [
         {
-          "key": "typescript",
+          "key": "typescript-icon",
           "name": "TypeScript"
         },
         {
-          "key": "nuxt",
+          "key": "nuxt-icon",
           "name": "Nuxt"
         },
         {
-          "key": "tailwindcss",
+          "key": "tailwindcss-icon",
           "name": "TailwindCSS"
         }
       ]
