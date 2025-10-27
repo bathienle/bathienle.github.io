@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@iconify/vue": "^5.0.0",
-    "@tailwindcss/vite": "^4.1.15",
+    "@tailwindcss/vite": "^4.1.16",
     "@tsconfig/node22": "^22.0.2",
     "@types/jsdom": "^27.0.0",
     "@types/node": "^24.9.0",
