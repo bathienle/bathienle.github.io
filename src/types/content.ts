@@ -11,9 +11,15 @@ export interface Profile {
   socials: Social[];
 }
 
+export interface Topic {
+  title: string;
+  description: string;
+  icon: string;
+}
+
 export interface About {
   description: string;
-  interests: string[];
+  interests: Topic[];
 }
 
 export interface Tech {
