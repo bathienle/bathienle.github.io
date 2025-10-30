@@ -16,12 +16,28 @@
     ]
   },
   "about": {
-    "description": "I am a software engineer with a strong passion for software development, deep learning, and MLOps. I'm trying to focus on combining AI with solid engineering practices to build scalable, data-driven systems. I am especially interested in making machine learning models not just accurate, but also efficient, reliable, and ready for production use.",
+    "description": "I am a software engineer with a strong passion for software development, deep learning, and MLOps. I am trying to focus on combining AI with solid engineering practices to build scalable, data-driven systems. I am especially interested in making machine learning models not just accurate, but also efficient, reliable, and ready for production use.",
     "interests": [
-      "Software Development",
-      "Machine Learning",
-      "Web Development",
-      "Open Source"
+      {
+        "title": "Software Development",
+        "description": "Writing clean, reliable, and maintainable software",
+        "icon": "mdi:code"
+      },
+      {
+        "title": "Machine Learning & Deep Learning",
+        "description": "Exploring intelligent systems to solve problems",
+        "icon": "streamline-emojis:robot-face-3"
+      },
+      {
+        "title": "Web Development",
+        "description": "Building modern and responsive web applications",
+        "icon": "streamline-plump-color:web"
+      },
+      {
+        "title": "Open Source",
+        "description": "Exploring projects to learn and share knowledge",
+        "icon": "logos:opensource"
+      }
     ]
   },
   "stacks": [
