@@ -3,7 +3,7 @@
 <div align="center">
 
 [![GitHub Action Publish][github-publish-badge]][github-publish-url]
-[![GitHub Action Test][github-test-badge]][github-test-url]
+[![GitHub Action CI][github-ci-bade]][github-ci-url]
 [![GitHub License][license-badge]][license-url]
 
 </div>
@@ -44,5 +44,5 @@ npm run test:unit
 [license-url]: https://github.com/bathienle/bathienle.github.io/blob/main/LICENSE
 [github-publish-badge]: https://github.com/bathienle/bathienle.github.io/workflows/Publish/badge.svg
 [github-publish-url]: https://github.com/bathienle/bathienle.github.io/actions/workflows/publish.yaml
-[github-test-badge]: https://github.com/bathienle/bathienle.github.io/workflows/Test/badge.svg
-[github-test-url]: https://github.com/bathienle/bathienle.github.io/actions/workflows/test.yaml
+[github-ci-bade]: https://github.com/bathienle/bathienle.github.io/workflows/CI/badge.svg
+[github-ci-url]: https://github.com/bathienle/bathienle.github.io/actions/workflows/ci.yaml
