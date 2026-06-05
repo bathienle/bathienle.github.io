@@ -38,6 +38,28 @@
         "description": "Exploring projects to learn and share knowledge",
         "icon": "logos:opensource"
       }
+    ],
+    "stats": [
+      {
+        "value": "4+",
+        "label": "Years experience",
+        "icon": "mdi:calendar"
+      },
+      {
+        "value": "1+",
+        "label": "Projects built",
+        "icon": "mdi:folder-multiple"
+      },
+      {
+        "value": "1",
+        "label": "Open source repos",
+        "icon": "logos:opensource"
+      },
+      {
+        "value": "0",
+        "label": "ML models shipped",
+        "icon": "mdi:rocket-launch"
+      }
     ]
   },
   "stacks": [

@@ -11,6 +11,12 @@ export interface Profile {
   socials: Social[];
 }
 
+export interface Stat {
+  value: string;
+  label: string;
+  icon?: string;
+}
+
 export interface Topic {
   title: string;
   description: string;
@@ -20,6 +26,7 @@ export interface Topic {
 export interface About {
   description: string;
   interests: Topic[];
+  stats: Stat[];
 }
 
 export interface Tech {
