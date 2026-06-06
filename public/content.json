@@ -38,6 +38,18 @@
         "description": "Exploring projects to learn and share knowledge",
         "icon": "logos:opensource"
       }
+    ],
+    "stats": [
+      {
+        "value": "4+",
+        "label": "Years experience",
+        "icon": "mdi:calendar"
+      },
+      {
+        "value": "1",
+        "label": "Open source repos",
+        "icon": "logos:opensource"
+      }
     ]
   },
   "stacks": [

@@ -6,6 +6,10 @@
       <hr class="w-full border-t-2 border-neutral my-2">
     </div>
 
+    <div class="flex flex-wrap justify-center gap-3 mb-6">
+      <StatCard v-for="(stat, index) in about?.stats" :stat="stat" :key="index" />
+    </div>
+
     <div v-if="about" class="grid grid-cols-2 gap-4">
       <div>
         <h3 class="text-center text-lg font-semibold mb-3">About</h3>
@@ -26,6 +30,7 @@
 
 <script setup lang="ts">
 import { computed, inject } from 'vue';
+import StatCard from '@/components/StatCard.vue';
 import TopicBox from '@/components/TopicBox.vue';
 
 import type { Ref } from 'vue';
