@@ -6,7 +6,7 @@
       <hr class="w-full border-t-2 border-neutral my-2">
     </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+    <div class="flex flex-wrap justify-center gap-3 mb-6">
       <StatCard v-for="(stat, index) in about?.stats" :stat="stat" :key="index" />
     </div>
 
