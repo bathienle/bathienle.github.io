@@ -165,6 +165,11 @@
           "key": "gitlab-icon",
           "name": "GitLab",
           "url": "https://about.gitlab.com/"
+        },
+        {
+          "key": "kubernetes",
+          "name": "Kubernetes",
+          "url": "https://kubernetes.io/"
         }
       ]
     }
@@ -222,6 +227,10 @@
         {
           "key": "postgresql",
           "name": "PostgreSQL"
+        },
+        {
+          "key": "kubernetes",
+          "name": "Kubernetes"
         }
       ]
     }
