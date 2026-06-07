@@ -10,19 +10,13 @@
       <StatCard v-for="(stat, index) in about?.stats" :stat="stat" :key="index" />
     </div>
 
-    <div v-if="about" class="grid grid-cols-2 gap-4">
-      <div>
-        <h3 class="text-center text-lg font-semibold mb-3">About</h3>
-        <p class="bg-secondary rounded-2xl text-justify p-4">
-          {{ about.description }}
-        </p>
-      </div>
+    <div v-if="about" class="flex flex-col gap-4">
+      <p class="bg-secondary rounded-2xl text-justify p-4">
+        {{ about.description }}
+      </p>
 
-      <div>
-        <h3 class="text-center text-lg font-semibold mb-3">Interests</h3>
-        <div class="grid gap-2">
-          <TopicBox v-for="(topic, index) in about.interests" :topic="topic" :key="index" />
-        </div>
+      <div class="flex gap-8">
+        <TopicBox v-for="(topic, index) in about.interests" :topic="topic" :key="index" class="flex-1" />
       </div>
     </div>
   </section>
