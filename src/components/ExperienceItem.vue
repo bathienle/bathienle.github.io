@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="p-2 rounded-lg hover:bg-secondary"
-    :class="{ 'bg-secondary': isOpen }"
-    @click="isOpen = !isOpen"
-  >
+  <div class="p-2 rounded-lg bg-secondary border hover:border-accent">
     <div class="flex flex-col md:flex-row items-center">
       <div class="flex-none flex justify-center items-center w-20 mb-3 md:mb-0">
         <div class="flex justify-center items-center w-16 h-16 rounded-lg bg-neutral">
@@ -21,7 +17,7 @@
       </div>
     </div>
 
-    <div v-show="isOpen" class="p-2">
+    <div class="p-2">
       <p class="flex-none flex items-center justify-center md:justify-end">
         <span class="pr-2 text-3xl">
           <Icon icon="mdi:location" />
@@ -42,15 +38,11 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
-import { ref } from 'vue';
 
 import TechIcon from '@/components/TechIcon.vue';
-
 import type { Experience } from '@/types/content.ts';
 
 defineProps<{
   experience: Experience,
 }>();
-
-const isOpen = ref(false);
 </script>
