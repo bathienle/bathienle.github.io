@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 rounded-lg bg-secondary">
+  <div class="p-2 rounded-lg bg-secondary border hover:border-accent">
     <div class="flex flex-col md:flex-row items-center">
       <div class="flex-none flex justify-center items-center w-20 mb-3 md:mb-0">
         <div class="flex justify-center items-center w-16 h-16 rounded-lg bg-neutral">
