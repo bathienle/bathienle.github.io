@@ -1,60 +1,69 @@
 <template>
-  <footer class="py-2 bg-gradient-to-b from-dominant to-gray-600">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 max-w-4xl mx-auto place-items-center items-start">
-      <div class="m-2 text-center md:text-left">
-        <h2 class="text-2xl font-bold py-1.5">{{ fullName }}</h2>
+  <footer class="border-t border-white/5 mt-16">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+        <div>
+          <p class="text-sm font-mono font-bold tracking-wider text-neutral/30 mb-3">
+            {{ initials }}
+          </p>
+          <h2 class="text-xl font-bold text-neutral mb-2">{{ fullName }}</h2>
+          <p class="text-neutral/40 text-sm leading-relaxed mb-5">{{ profile?.signature }}</p>
 
-        <p class="text-gray-400 text-balance leading-relaxed">{{ profile?.signature }}</p>
-
-        <ul class="flex my-4 gap-5 justify-center md:justify-start">
-          <li v-for="social in profile?.socials" :key="social.key">
+          <div class="flex gap-3">
             <a
-              class="inline-flex items-center justify-center text-4xl transform transition-transform duration-200 origin-center hover:scale-110 hover:text-gray-200"
-              :aria-label="`Visit ${social.key} profile`"
+              v-for="social in profile?.socials"
+              :key="social.key"
               :href="social.url"
               rel="noopener"
               target="_blank"
+              class="flex items-center justify-center w-9 h-9 rounded-xl border border-white/10 text-neutral/40 transition-all duration-200 hover:border-accent/40 hover:text-accent"
+              :aria-label="`Visit ${social.key} profile`"
             >
-              <Icon :icon="`mdi:${social.key}`"/>
+              <Icon :icon="`mdi:${social.key}`" class="w-4 h-4" />
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <nav>
+          <h3 class="text-xs font-mono text-neutral/30 uppercase tracking-[0.2em] mb-4">Navigate</h3>
+          <ul class="flex flex-col gap-2">
+            <li v-for="link in links" :key="link.href">
+              <a
+                :href="link.href"
+                class="text-neutral/50 text-sm hover:text-accent transition-colors duration-200"
+              >
+                {{ link.label }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3 class="text-xs font-mono text-neutral/30 uppercase tracking-[0.2em] mb-4">Projects</h3>
+          <ul class="flex flex-col gap-2">
+            <li v-for="(project, index) in projects" :key="index">
+              <a
+                :href="project.link"
+                target="_blank"
+                rel="noopener"
+                class="text-neutral/50 text-sm hover:text-accent transition-colors duration-200"
+              >
+                {{ project.title }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <nav class="m-2">
-        <h2 class="text-center md:text-left text-2xl font-bold py-1.5">Navigation</h2>
-
-        <ul class="flex flex-col items-center md:items-start">
-          <li v-for="link in links" :key="link.href" class="py-2">
-            <a class="text-gray-400 hover:text-gray-200 transition-colors duration-200" :href="link.href">
-              {{ link.label }}
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="m-2">
-        <h2 class="text-center md:text-left text-2xl font-bold py-1.5">Projects</h2>
-
-        <ul class="flex flex-col items-center md:items-start">
-          <li v-for="(project, index) in projects" :key="index" class="py-2">
-            <a
-              :href="project.link"
-              target="_blank"
-              rel="noopener"
-              class="text-gray-400 hover:text-gray-200 transition-colors duration-200"
-            >
-              {{ project.title }}
-            </a>
-          </li>
-        </ul>
+      <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-neutral/25 text-xs">
+          &copy; {{ currentYear }} {{ fullName }}. All rights reserved.
+        </p>
+        <p class="text-neutral/25 text-xs">
+          Built with Vue 3 & Tailwind CSS
+        </p>
       </div>
-
     </div>
-
-    <div class="border-t border-white/10 my-6 w-3/4 mx-auto" />
-
-    <p class="flex justify-center my-10">&copy; {{ currentYear }} {{ fullName }}. All rights reserved.</p>
   </footer>
 </template>
 
@@ -71,9 +80,16 @@ const currentYear = new Date().getFullYear();
 const content = inject<Ref<Content>>('content');
 const projects = computed(() => content?.value?.projects);
 const profile = computed(() => content?.value?.profile);
+
 const fullName = computed(() => {
   const first = profile.value?.firstName ?? '';
   const last = profile.value?.lastName ?? '';
   return [first, last].filter(Boolean).join(' ');
+});
+
+const initials = computed(() => {
+  const first = profile.value?.firstName?.[0] ?? '';
+  const last = profile.value?.lastName?.[0] ?? '';
+  return `${first}${last}`.toUpperCase();
 });
 </script>

@@ -10,9 +10,8 @@ html {
 main {
   max-width: 70rem;
   margin: auto;
-  padding: 2rem;
-}
-
-h2 {
-  padding-top: 5rem;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }

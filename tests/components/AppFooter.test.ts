@@ -76,7 +76,7 @@ describe('AppFooter.vue', () => {
       },
     });
 
-    expect(wrapper.find('p.flex.justify-center.my-10').text()).toContain(mockContent.profile.lastName);
+    expect(wrapper.text()).toContain(mockContent.profile.lastName);
   });
 
   it('should handle null/undefined lastName', () => {
@@ -96,6 +96,6 @@ describe('AppFooter.vue', () => {
       },
     });
 
-    expect(wrapper.find('p.flex.justify-center.my-10').text()).toContain(mockContent.profile.firstName);
+    expect(wrapper.text()).toContain(mockContent.profile.firstName);
   });
 });
