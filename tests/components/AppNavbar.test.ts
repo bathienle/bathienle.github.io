@@ -31,9 +31,9 @@ describe('AppNavbar.vue', () => {
     wrapper?.unmount();
   });
 
-  it('should render profile name and links correctly', () => {
-    expect(wrapper.text()).toContain('John');
-    expect(wrapper.text()).toContain('Doe'.toUpperCase());
+  it('should render profile initials and links correctly', () => {
+    // Navbar now renders initials (JD) instead of full name
+    expect(wrapper.text()).toContain('JD');
 
     const link = wrapper.find('a[href="/"]');
     expect(link.exists()).toBe(true);
@@ -70,7 +70,7 @@ describe('AppNavbar.vue', () => {
     await toggleButton.trigger('click');
 
     const iconStubAfterClick = toggleButton.find('anonymous-stub');
-    expect(iconStubAfterClick.attributes('icon')).toBe('mdi:times');
+    expect(iconStubAfterClick.attributes('icon')).toBe('mdi:close');
 
     await toggleButton.trigger('click');
 
