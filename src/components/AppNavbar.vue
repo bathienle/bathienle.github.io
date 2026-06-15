@@ -3,25 +3,23 @@
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     :class="scrolled ? 'bg-dominant/90 backdrop-blur-xl border-b border-white/5 shadow-lg' : 'bg-transparent'"
   >
-    <div class="grid grid-cols-2 md:grid-cols-3 items-center h-16 px-6 max-w-7xl mx-auto">
-      <!-- Logo -->
+    <div class="flex items-center justify-between h-16 px-6 max-w-4xl mx-auto gap-x-8">
       <a
-        class="justify-self-start text-sm font-mono font-bold tracking-wider text-neutral/70 hover:text-accent transition-colors duration-200"
+        class="justify-self-start text-base font-mono font-bold tracking-wider text-neutral/70 hover:text-accent transition-colors duration-200"
         href="/"
         rel="noopener"
       >
         {{ initials }}
       </a>
 
-      <!-- Desktop nav -->
       <nav class="hidden md:flex justify-center">
         <ul class="flex items-center gap-1">
           <li v-for="link in links" :key="link.href">
             <a
               :href="link.href"
-              class="px-3 py-1.5 text-sm rounded-lg transition-colors duration-200"
+              class="px-3 py-1.5 text-base rounded-lg transition-colors duration-200"
               :class="
-                activeSection === link.href
+              activeSection === link.href
                   ? 'text-accent bg-accent/10'
                   : 'text-neutral/50 hover:text-neutral hover:bg-white/5'
               "
@@ -32,7 +30,6 @@
         </ul>
       </nav>
 
-      <!-- Desktop socials -->
       <div class="hidden md:flex items-center justify-end gap-2">
         <a
           v-for="social in socials"
@@ -43,11 +40,10 @@
           class="flex items-center justify-center w-8 h-8 rounded-lg text-neutral/40 transition-all duration-200 hover:text-accent hover:bg-accent/10"
           :aria-label="`Visit ${social.key} profile`"
         >
-          <Icon :icon="`mdi:${social.key}`" class="w-5 h-5" />
+          <Icon :icon="`mdi:${social.key}`" class="w-6 h-6" />
         </a>
       </div>
 
-      <!-- Mobile menu button -->
       <button
         class="md:hidden justify-self-end flex items-center justify-center w-9 h-9 rounded-lg text-neutral/60 hover:text-neutral hover:bg-white/5 transition-colors duration-200"
         @click="toggleMenu"
@@ -57,7 +53,6 @@
       </button>
     </div>
 
-    <!-- Mobile dropdown -->
     <Transition name="mobile-menu">
       <nav
         v-if="isOpen"
@@ -67,7 +62,7 @@
           <li v-for="link in links" :key="link.href">
             <a
               :href="link.href"
-              class="flex items-center px-6 py-3 text-sm transition-colors duration-200"
+              class="flex items-center px-6 py-3 text-base transition-colors duration-200"
               :class="
                 activeSection === link.href
                   ? 'text-accent'
