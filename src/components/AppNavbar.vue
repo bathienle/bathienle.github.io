@@ -18,10 +18,9 @@
             <a
               :href="link.href"
               class="px-3 py-1.5 text-base rounded-lg transition-colors duration-200"
-              :class="
-              activeSection === link.href
-                  ? 'text-accent bg-accent/10'
-                  : 'text-neutral/50 hover:text-neutral hover:bg-white/5'
+              :class="activeSection === link.href
+                ? 'text-accent bg-accent/10'
+                : 'text-neutral/50 hover:text-neutral hover:bg-white/5'
               "
             >
               {{ link.label }}
