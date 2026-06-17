@@ -294,6 +294,62 @@
           "name": "TailwindCSS"
         }
       ]
+    },
+    {
+      "title": "Cytomine",
+      "description": "Open-source web platform for collaborative analysis of very large biomedical images and semi-automatic processing of large image collections using machine learning algorithms.",
+      "image": "/images/projects/cytomine.png",
+      "startDate": "September 2021",
+      "endDate": "Present",
+      "repository": "https://github.com/cytomine/cytomine",
+      "link": "https://demo.cytomine.be/",
+      "tags": [
+        "Open Source",
+        "Biomedical Imaging",
+        "Machine Learning"
+      ],
+      "stack": [
+        {
+          "key": "python",
+          "name": "Python"
+        },
+        {
+          "key": "java",
+          "name": "Java"
+        },
+        {
+          "key": "javascript",
+          "name": "JavaScript"
+        },
+        {
+          "key": "vue",
+          "name": "Vue.js"
+        },
+        {
+          "key": "fastapi-icon",
+          "name": "FastAPI"
+        },
+        {
+          "key": "spring-icon",
+          "name": "Spring"
+        },
+        {
+          "key": "pytorch-icon",
+          "name": "PyTorch"
+        },
+        {
+          "key": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "key": "docker-icon",
+          "name": "Docker"
+        },
+        {
+          "key": "kubernetes",
+          "name": "Kubernetes"
+        }
+      ]
     }
   ]
 }

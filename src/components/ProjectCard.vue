@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-4xl w-full rounded-3xl overflow-hidden shadow-lg bg-secondary border border-neutral">
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 p-4 lg:p-6">
-      <div class="flex flex-col justify-between h-full">
+      <div class="flex flex-col justify-between h-full gap-4">
         <div class="flex flex-col gap-2">
           <h3 class="text-2xl">{{ project.title }}</h3>
 
