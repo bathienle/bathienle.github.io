@@ -34,13 +34,14 @@
             <span>View Code</span>
           </a>
           <a
+            v-if="project.link"
             class="flex items-center gap-2 p-2 bg-accent rounded-2xl hover:text-dominant"
             :href="project.link"
             target="_blank"
             rel="noopener"
           >
             <Icon class="text-xl" icon="mdi:external-link" />
-            <span>Life Demo</span>
+            <span>Live Demo</span>
           </a>
         </div>
       </div>
