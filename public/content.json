@@ -30,7 +30,7 @@
       },
       {
         "title": "DevOps & Infrastructure",
-        "description": "Container orchestration and deployment with Docker and Kubernetes",
+        "description": "Reliable deployments with Docker and Kubernetes",
         "icon": "mdi:server"
       },
       {
