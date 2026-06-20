@@ -32,7 +32,6 @@ describe('AppNavbar.vue', () => {
   });
 
   it('should render profile initials and links correctly', () => {
-    // Navbar now renders initials (JD) instead of full name
     expect(wrapper.text()).toContain('JD');
 
     const link = wrapper.find('a[href="/"]');
@@ -40,7 +39,7 @@ describe('AppNavbar.vue', () => {
   });
 
   it('should render all navigation links', () => {
-    const navLinks = ['#about', '#experience', '#education', '#project'];
+    const navLinks = ['#about', '#stack', '#experience', '#education', '#project'];
     navLinks.forEach((id) => {
       const link = wrapper.find(`a[href="${id}"]`);
       expect(link.exists()).toBe(true);
