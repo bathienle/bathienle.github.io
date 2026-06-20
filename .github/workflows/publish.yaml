@@ -5,10 +5,15 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
       - 'public/**'
-      - 'package.json'
+      - 'src/**'
+      - 'index.html'
       - 'package-lock.json'
+      - 'package.json'
+      - 'tsconfig.app.json'
+      - 'tsconfig.json'
+      - 'tsconfig.node.json'
+      - 'vite.config.ts'
 
 permissions:
   contents: read
