@@ -49,4 +49,15 @@ describe('ProjectCard.vue', () => {
     const tech = wrapper.findAllComponents({ name: 'TechIcon' });
     expect(tech.length).toBe(mockProject.stack.length);
   });
+
+  it('should not render the live demo link when project link is not provided', () => {
+    const w = shallowMount(ProjectCard, {
+      props: { project: { ...mockProject, link: undefined } },
+      global: { stubs: { TechIcon: true } },
+    });
+
+    const links = w.findAll('a');
+    expect(links).toHaveLength(1);
+    expect(links[0]!.attributes('href')).toBe(mockProject.repository);
+  });
 });
