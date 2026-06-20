@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { ref } from 'vue';
 
 import type { VueWrapper } from '@vue/test-utils';
@@ -14,6 +14,10 @@ describe('AppNavbar.vue', () => {
     profile: {
       firstName: 'John',
       lastName: 'Doe',
+      socials: [
+        { key: 'github', url: 'https://github.com/example' },
+        { key: 'linkedin', url: 'https://linkedin.com/in/example' },
+      ],
     },
   });
 
@@ -57,6 +61,31 @@ describe('AppNavbar.vue', () => {
 
     expect(wrapper.text()).not.toContain('John');
     expect(wrapper.text()).not.toContain('Doe');
+  });
+
+  it('should render social links in the desktop navbar', () => {
+    const socialLinks = wrapper.findAll('a[target="_blank"]');
+    expect(socialLinks).toHaveLength(mockContent.value.profile.socials.length);
+    expect(socialLinks[0]!.attributes('href')).toBe(mockContent.value.profile.socials[0]!.url);
+    expect(socialLinks[1]!.attributes('href')).toBe(mockContent.value.profile.socials[1]!.url);
+  });
+
+  it('should render social links in the mobile menu', async () => {
+    const toggleButton = wrapper.find('button.md\\:hidden');
+    await toggleButton.trigger('click');
+
+    const socialLinks = wrapper.findAll('a[target="_blank"]');
+    expect(socialLinks).toHaveLength(mockContent.value.profile.socials.length * 2);
+  });
+
+  it('should apply scrolled styles when page is scrolled', async () => {
+    vi.stubGlobal('scrollY', 100);
+    window.dispatchEvent(new Event('scroll'));
+    await wrapper.vm.$nextTick();
+
+    expect(wrapper.find('header').classes()).toContain('bg-dominant/90');
+
+    vi.unstubAllGlobals();
   });
 
   it('should toggle icon when menu button is clicked', async () => {
