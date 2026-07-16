@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 
 import App from '@/App.vue';
 
@@ -14,27 +14,6 @@ describe('App.vue', () => {
     'ProjectView',
     'AppFooter',
   ];
-
-  const mockContent = {
-    profile: {
-      firstName: 'John',
-      lastName: 'Doe',
-      tagline: 'Full Stack Developer',
-    },
-    about: {
-      description: 'Passionate developer',
-    },
-    experiences: [],
-    educations: [],
-    projects: [],
-    stack: [],
-  };
-
-  const fetchMock = vi.fn().mockResolvedValue({
-    json: vi.fn().mockResolvedValue(mockContent),
-  });
-
-  vi.stubGlobal('fetch', fetchMock);
 
   const wrapper = shallowMount(App);
 

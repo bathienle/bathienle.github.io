@@ -16,10 +16,11 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, provide, ref } from 'vue';
+import { provide, ref } from 'vue';
 
 import type { Content } from '@/types/content.ts';
 
+import contentData from '@/data/content.json';
 import AppFooter from '@/components/AppFooter.vue';
 import AppNavbar from '@/components/AppNavbar.vue';
 import AboutView from '@/views/AboutView.vue';
@@ -29,11 +30,6 @@ import HeroView from '@/views/HeroView.vue';
 import ProjectView from '@/views/ProjectView.vue';
 import StackView from '@/views/StackView.vue';
 
-const content = ref<Content>();
+const content = ref<Content>(contentData);
 provide('content', content);
-
-onMounted(async () => {
-  const response = await fetch('/content.json');
-  content.value = await response.json();
-});
 </script>
