@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://bathienle.github.io/sitemap.xml
