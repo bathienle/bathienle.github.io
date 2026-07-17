@@ -8,6 +8,7 @@ export interface Profile {
   lastName: string;
   tagline: string;
   signature: string;
+  email: string;
   socials: Social[];
 }
 

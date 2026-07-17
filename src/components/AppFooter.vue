@@ -9,6 +9,16 @@
           <h2 class="text-xl font-bold text-neutral mb-2">{{ fullName }}</h2>
           <p class="text-neutral/40 text-sm leading-relaxed mb-5">{{ profile?.signature }}</p>
 
+          <div v-if="profile?.email" class="mb-5">
+            <a
+              :href="`mailto:${profile.email}`"
+              class="inline-flex items-center gap-2 text-neutral/50 text-sm transition-colors duration-200 hover:text-accent"
+            >
+              <Icon icon="mdi:email-outline" class="w-4 h-4" />
+              {{ profile.email }}
+            </a>
+          </div>
+
           <div class="flex gap-3">
             <a
               v-for="social in profile?.socials"

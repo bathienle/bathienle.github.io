@@ -15,6 +15,7 @@ describe('AppFooter.vue', () => {
       firstName: 'John',
       lastName: 'Doe',
       tagline: 'Welcome to my website!',
+      email: 'john.doe@example.com',
       socials: [
         { key: 'twitter', url: 'https://twitter.com/example' },
         { key: 'github', url: 'https://github.com/example' },
@@ -57,6 +58,27 @@ describe('AppFooter.vue', () => {
 
     expect(links.some(link => link.attributes('href') === 'https://twitter.com/example')).toBe(true);
     expect(links.some(link => link.attributes('href') === 'https://github.com/example')).toBe(true);
+  });
+
+  it('should render the email as a mailto link', () => {
+    const links = wrapper.findAll('a');
+
+    expect(links.some(link => link.attributes('href') === 'mailto:john.doe@example.com')).toBe(true);
+    expect(wrapper.text()).toContain(mockContent.profile.email);
+  });
+
+  it('should not render the email link when no email is set', () => {
+    wrapper = shallowMount(AppFooter, {
+      global: {
+        provide: {
+          content: ref({ profile: { firstName: 'Bob', lastName: 'Ross' } }),
+        },
+      },
+    });
+
+    const links = wrapper.findAll('a');
+
+    expect(links.some(link => link.attributes('href')?.startsWith('mailto:'))).toBe(false);
   });
 
   it('should handle null/undefined firstName', () => {
