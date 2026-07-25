@@ -2,9 +2,9 @@ import { shallowMount } from '@vue/test-utils';
 import { describe, it, expect } from 'vitest';
 import { ref } from 'vue';
 
-import StackView from '@/views/StackView.vue';
+import StackSection from '@/sections/StackSection.vue';
 
-describe('StackView.vue', () => {
+describe('StackSection.vue', () => {
   const mockedStacks = [
     {
       title: 'Frontend',
@@ -21,7 +21,7 @@ describe('StackView.vue', () => {
       stacks: mockedStacks,
     };
 
-    const wrapper = shallowMount(StackView, {
+    const wrapper = shallowMount(StackSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -34,7 +34,7 @@ describe('StackView.vue', () => {
   });
 
   it('should not render any icons if stacks is undefined', () => {
-    const wrapper = shallowMount(StackView, {
+    const wrapper = shallowMount(StackSection, {
       global: {
         provide: {
           content: ref({}),

@@ -2,14 +2,7 @@
   <div>
     <AppNavbar />
 
-    <HeroView />
-    <main>
-      <AboutView />
-      <StackView />
-      <ExperienceView />
-      <EducationView />
-      <ProjectView />
-    </main>
+    <HomeView />
 
     <AppFooter />
   </div>
@@ -23,12 +16,7 @@ import type { Content } from '@/types/content.ts';
 import contentData from '@/data/content.json';
 import AppFooter from '@/components/AppFooter.vue';
 import AppNavbar from '@/components/AppNavbar.vue';
-import AboutView from '@/views/AboutView.vue';
-import EducationView from '@/views/EducationView.vue';
-import ExperienceView from '@/views/ExperienceView.vue';
-import HeroView from '@/views/HeroView.vue';
-import ProjectView from '@/views/ProjectView.vue';
-import StackView from '@/views/StackView.vue';
+import HomeView from '@/views/HomeView.vue';
 
 const content = ref<Content>(contentData);
 provide('content', content);

@@ -2,9 +2,9 @@ import { shallowMount } from '@vue/test-utils';
 import { describe, it, expect } from 'vitest';
 import { ref } from 'vue';
 
-import AboutView from '@/views/AboutView.vue';
+import AboutSection from '@/sections/AboutSection.vue';
 
-describe('AboutView.vue', () => {
+describe('AboutSection.vue', () => {
   const mockedDescription = 'This is a description about the app.';
 
   it('should render the description correctly', () => {
@@ -16,7 +16,7 @@ describe('AboutView.vue', () => {
       },
     };
 
-    const wrapper = shallowMount(AboutView, {
+    const wrapper = shallowMount(AboutSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -29,7 +29,7 @@ describe('AboutView.vue', () => {
   });
 
   it('should not render the description when about is null', () => {
-    const wrapper = shallowMount(AboutView, {
+    const wrapper = shallowMount(AboutSection, {
       global: {
         provide: {
           content: ref(null),
@@ -53,7 +53,7 @@ describe('AboutView.vue', () => {
       },
     };
 
-    const wrapper = shallowMount(AboutView, {
+    const wrapper = shallowMount(AboutSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -79,7 +79,7 @@ describe('AboutView.vue', () => {
       },
     };
 
-    const wrapper = shallowMount(AboutView, {
+    const wrapper = shallowMount(AboutSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -94,7 +94,7 @@ describe('AboutView.vue', () => {
   });
 
   it('should render no StatCards when stats is empty', () => {
-    const wrapper = shallowMount(AboutView, {
+    const wrapper = shallowMount(AboutSection, {
       global: {
         provide: {
           content: ref({ about: { description: mockedDescription, stats: [], interests: [] } }),

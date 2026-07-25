@@ -5,11 +5,11 @@ import { ref } from 'vue';
 import type { VueWrapper } from '@vue/test-utils';
 import type { ComponentPublicInstance } from 'vue';
 
-import HeroView from '@/views/HeroView.vue';
+import HeroSection from '@/sections/HeroSection.vue';
 
 vi.stubGlobal('innerHeight', 800);
 
-describe('HeroView.vue', () => {
+describe('HeroSection.vue', () => {
   let wrapper: VueWrapper<ComponentPublicInstance>;
 
   const mockContent = {
@@ -21,7 +21,7 @@ describe('HeroView.vue', () => {
   };
 
   beforeEach(() => {
-    wrapper = shallowMount(HeroView, {
+    wrapper = shallowMount(HeroSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -61,7 +61,7 @@ describe('HeroView.vue', () => {
       },
     };
 
-    wrapper = shallowMount(HeroView, {
+    wrapper = shallowMount(HeroSection, {
       global: {
         provide: {
           content: ref(mockContent),
@@ -81,7 +81,7 @@ describe('HeroView.vue', () => {
       },
     };
 
-    wrapper = shallowMount(HeroView, {
+    wrapper = shallowMount(HeroSection, {
       global: {
         provide: {
           content: ref(mockContent),

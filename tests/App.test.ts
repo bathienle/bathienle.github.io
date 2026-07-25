@@ -6,19 +6,14 @@ import App from '@/App.vue';
 describe('App.vue', () => {
   const components = [
     'AppNavbar',
-    'HeroView',
-    'AboutView',
-    'StackView',
-    'ExperienceView',
-    'EducationView',
-    'ProjectView',
+    'HomeView',
     'AppFooter',
   ];
 
   const wrapper = shallowMount(App);
 
   describe('Component Rendering', () => {
-    it('should render all view components in correct order', () => {
+    it('should render the layout shell and the current view', () => {
       components.forEach(componentName => {
         expect(wrapper.findComponent({ name: componentName }).exists()).toBe(true);
       });
