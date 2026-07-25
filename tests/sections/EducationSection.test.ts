@@ -3,9 +3,9 @@ import { afterEach, beforeEach, describe, it, expect } from 'vitest';
 import { ref } from 'vue';
 
 import type { VueWrapper } from '@vue/test-utils';
-import EducationView from '@/views/EducationView.vue';
+import EducationSection from '@/sections/EducationSection.vue';
 
-describe('EducationView.vue', () => {
+describe('EducationSection.vue', () => {
   const mockContent = ref({
     educations: [
       {
@@ -23,7 +23,7 @@ describe('EducationView.vue', () => {
     ],
   });
 
-  let wrapper: VueWrapper<InstanceType<typeof EducationView>>;
+  let wrapper: VueWrapper<InstanceType<typeof EducationSection>>;
 
   beforeEach(() => {
     mockContent.value.educations = [
@@ -41,7 +41,7 @@ describe('EducationView.vue', () => {
       },
     ];
 
-    wrapper = shallowMount(EducationView, {
+    wrapper = shallowMount(EducationSection, {
       global: {
         provide: {
           content: mockContent,
@@ -70,7 +70,7 @@ describe('EducationView.vue', () => {
   });
 
   it('should render no EducationItem components when content is null', () => {
-    const emptyWrapper = shallowMount(EducationView, {
+    const emptyWrapper = shallowMount(EducationSection, {
       global: {
         provide: {
           content: ref(null),

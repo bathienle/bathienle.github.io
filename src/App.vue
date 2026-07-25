@@ -1,35 +1,24 @@
 <template>
   <div>
-    <AppNavbar />
+    <AppNavbar v-if="!route.meta.bare" />
 
-    <HeroView />
-    <main>
-      <AboutView />
-      <StackView />
-      <ExperienceView />
-      <EducationView />
-      <ProjectView />
-    </main>
+    <RouterView />
 
-    <AppFooter />
+    <AppFooter v-if="!route.meta.bare" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { provide, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 import type { Content } from '@/types/content.ts';
 
 import contentData from '@/data/content.json';
 import AppFooter from '@/components/AppFooter.vue';
 import AppNavbar from '@/components/AppNavbar.vue';
-import AboutView from '@/views/AboutView.vue';
-import EducationView from '@/views/EducationView.vue';
-import ExperienceView from '@/views/ExperienceView.vue';
-import HeroView from '@/views/HeroView.vue';
-import ProjectView from '@/views/ProjectView.vue';
-import StackView from '@/views/StackView.vue';
 
+const route = useRoute();
 const content = ref<Content>(contentData);
 provide('content', content);
 </script>

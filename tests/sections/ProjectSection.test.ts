@@ -2,7 +2,7 @@ import { shallowMount, VueWrapper } from '@vue/test-utils';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { ref } from 'vue';
 
-import ProjectView from '@/views/ProjectView.vue';
+import ProjectSection from '@/sections/ProjectSection.vue';
 
 const mockContent = ref({
   projects: [
@@ -11,11 +11,11 @@ const mockContent = ref({
   ],
 });
 
-describe('Projects.vue', () => {
-  let wrapper: VueWrapper<InstanceType<typeof ProjectView>>;
+describe('ProjectSection.vue', () => {
+  let wrapper: VueWrapper<InstanceType<typeof ProjectSection>>;
 
   beforeEach(() => {
-    wrapper = shallowMount(ProjectView, {
+    wrapper = shallowMount(ProjectSection, {
       global: {
         provide: {
           content: mockContent,

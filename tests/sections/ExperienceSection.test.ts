@@ -3,9 +3,9 @@ import { afterEach, beforeEach, describe, it, expect } from 'vitest';
 import { ref } from 'vue';
 
 import type { VueWrapper } from '@vue/test-utils';
-import ExperienceView from '@/views/ExperienceView.vue';
+import ExperienceSection from '@/sections/ExperienceSection.vue';
 
-describe('ExperienceView.vue', () => {
+describe('ExperienceSection.vue', () => {
   const mockContent = ref({
     experiences: [
       {
@@ -21,7 +21,7 @@ describe('ExperienceView.vue', () => {
     ],
   });
 
-  let wrapper: VueWrapper<InstanceType<typeof ExperienceView>>;
+  let wrapper: VueWrapper<InstanceType<typeof ExperienceSection>>;
 
   beforeEach(() => {
     mockContent.value.experiences = [
@@ -37,7 +37,7 @@ describe('ExperienceView.vue', () => {
       },
     ];
 
-    wrapper = shallowMount(ExperienceView, {
+    wrapper = shallowMount(ExperienceSection, {
       global: {
         provide: {
           content: mockContent,
@@ -66,7 +66,7 @@ describe('ExperienceView.vue', () => {
   });
 
   it('should render no ExperienceItem components when content is null', () => {
-    const emptyWrapper = shallowMount(ExperienceView, {
+    const emptyWrapper = shallowMount(ExperienceSection, {
       global: {
         provide: {
           content: ref(null),
