@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils';
 import { describe, it, expect } from 'vitest';
 
 import App from '@/App.vue';
-import { router } from '@/routes';
+import { router } from '@/router';
 
 describe('App.vue', () => {
   const mountApp = async (path: string) => {
