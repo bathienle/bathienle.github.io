@@ -2,21 +2,35 @@ import { shallowMount } from '@vue/test-utils';
 import { describe, it, expect } from 'vitest';
 
 import App from '@/App.vue';
+import { router } from '@/routes';
 
 describe('App.vue', () => {
-  const components = [
-    'AppNavbar',
-    'HomeView',
-    'AppFooter',
-  ];
+  const mountApp = async (path: string) => {
+    await router.push(path);
+    await router.isReady();
 
-  const wrapper = shallowMount(App);
+    return shallowMount(App, {
+      global: {
+        plugins: [router],
+      },
+    });
+  };
 
   describe('Component Rendering', () => {
-    it('should render the layout shell and the current view', () => {
-      components.forEach(componentName => {
+    it('should render the layout shell around the current view', async () => {
+      const wrapper = await mountApp('/');
+
+      ['AppNavbar', 'RouterView', 'AppFooter'].forEach(componentName => {
         expect(wrapper.findComponent({ name: componentName }).exists()).toBe(true);
       });
+    });
+
+    it('should hide the navbar and footer on a bare route', async () => {
+      const wrapper = await mountApp('/does-not-exist');
+
+      expect(wrapper.findComponent({ name: 'RouterView' }).exists()).toBe(true);
+      expect(wrapper.findComponent({ name: 'AppNavbar' }).exists()).toBe(false);
+      expect(wrapper.findComponent({ name: 'AppFooter' }).exists()).toBe(false);
     });
   });
 });
