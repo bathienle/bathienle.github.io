@@ -13,6 +13,14 @@ describe('router', () => {
       expect(route.meta.bare).toBeUndefined();
     });
 
+    it('should resolve a project slug to the project detail view', () => {
+      const route = router.resolve('/projects/cytomine');
+
+      expect(route.name).toBe('project');
+      expect(route.params.slug).toBe('cytomine');
+      expect(route.meta.bare).toBeUndefined();
+    });
+
     it('should resolve an unknown path to the bare not found view', () => {
       const route = router.resolve('/does-not-exist');
 

@@ -3,7 +3,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 p-4 lg:p-6">
       <div class="flex flex-col justify-between h-full gap-4">
         <div class="flex flex-col gap-2">
-          <h3 class="text-2xl">{{ project.title }}</h3>
+          <RouterLink :to="`/projects/${project.slug}`" class="w-fit">
+            <h3 class="text-2xl hover:text-accent transition-colors">{{ project.title }}</h3>
+          </RouterLink>
 
           <div class="flex items-center pb-4 gap-2">
             <Icon class="text-2xl" icon="mdi:calendar-clock-outline" />
@@ -19,9 +21,18 @@
       </div>
 
       <div class="flex flex-col gap-5">
-        <div class="w-full overflow-hidden rounded-2xl border border-neutral">
+        <RouterLink
+          :to="`/projects/${project.slug}`"
+          class="group relative block w-full overflow-hidden rounded-2xl border border-neutral"
+        >
           <img class="object-contain w-full h-full" :src="project.image" :alt="project.title" />
-        </div>
+          <div
+            class="absolute inset-0 flex items-center justify-center gap-2 bg-dominant/70 opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <Icon class="text-xl" icon="mdi:magnify-scan" />
+            <span>View Details</span>
+          </div>
+        </RouterLink>
 
         <div class="flex justify-center lg:justify-end gap-2 lg:gap-3">
           <a
