@@ -269,6 +269,7 @@
   ],
   "projects": [
     {
+      "slug": "portfolio",
       "title": "bathienle.github.io",
       "description": "Personal website to showcase my projects and skills.",
       "image": "/images/projects/portfolio.png",
@@ -297,6 +298,7 @@
       ]
     },
     {
+      "slug": "cytomine",
       "title": "Cytomine",
       "description": "Open-source web platform for collaborative analysis of very large biomedical images and semi-automatic processing of large image collections using machine learning algorithms.",
       "image": "/images/projects/cytomine.png",
