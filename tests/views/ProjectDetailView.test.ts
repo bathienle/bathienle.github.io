@@ -7,7 +7,19 @@ import ProjectDetailView from '@/views/ProjectDetailView.vue';
 
 const mockContent = ref({
   projects: [
-    { slug: 'cytomine', title: 'Cytomine', description: 'Biomedical imaging platform', image: '/cytomine.png', startDate: 'Jan 2021', endDate: 'Present', status: 'Actively Maintained', repository: 'https://github.com/cytomine/cytomine', link: 'https://demo.cytomine.be/', tags: ['Open Source'], stack: [{ key: 'python', name: 'Python' }] },
+    {
+      slug: 'cytomine',
+      title: 'Cytomine',
+      description: 'Biomedical imaging platform',
+      image: '/cytomine.png',
+      startDate: 'Jan 2021',
+      endDate: 'Present',
+      status: 'Actively Contributing',
+      repository: 'https://github.com/cytomine/cytomine',
+      link: 'https://demo.cytomine.be/',
+      tags: ['Open Source'],
+      stack: [{ key: 'python', name: 'Python' }],
+    },
   ],
 });
 
