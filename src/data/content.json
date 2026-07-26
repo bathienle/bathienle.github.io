@@ -275,6 +275,7 @@
       "image": "/images/projects/portfolio.png",
       "startDate": "May 2025",
       "endDate": "Present",
+      "status": "Actively Maintained",
       "repository": "https://github.com/bathienle/bathienle.github.io",
       "link": "https://bathienle.github.io/",
       "tags": [
@@ -304,12 +305,16 @@
       "image": "/images/projects/cytomine.png",
       "startDate": "September 2021",
       "endDate": "Present",
+      "status": "Actively Contributing",
       "repository": "https://github.com/cytomine/cytomine",
       "link": "https://demo.cytomine.be/",
       "tags": [
-        "Open Source",
         "Biomedical Imaging",
-        "Machine Learning"
+        "Collaborative Analysis",
+        "Digital Pathology",
+        "Machine Learning",
+        "Open Source",
+        "Whole Slide Imaging"
       ],
       "stack": [
         {

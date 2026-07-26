@@ -69,6 +69,7 @@ export interface Project {
   image: string;
   startDate: string;
   endDate: string;
+  status: string;
   repository: string;
   tags: string[];
   stack: Tech[];

@@ -7,7 +7,19 @@ import ProjectDetailView from '@/views/ProjectDetailView.vue';
 
 const mockContent = ref({
   projects: [
-    { slug: 'cytomine', title: 'Cytomine', description: 'Biomedical imaging platform', image: '/cytomine.png', startDate: 'Jan 2021', endDate: 'Present', repository: 'https://github.com/cytomine/cytomine', link: 'https://demo.cytomine.be/', tags: ['Open Source'], stack: [{ key: 'python', name: 'Python' }] },
+    {
+      slug: 'cytomine',
+      title: 'Cytomine',
+      description: 'Biomedical imaging platform',
+      image: '/cytomine.png',
+      startDate: 'Jan 2021',
+      endDate: 'Present',
+      status: 'Actively Contributing',
+      repository: 'https://github.com/cytomine/cytomine',
+      link: 'https://demo.cytomine.be/',
+      tags: ['Open Source'],
+      stack: [{ key: 'python', name: 'Python' }],
+    },
   ],
 });
 
@@ -36,6 +48,9 @@ describe('ProjectDetailView.vue', () => {
     expect(wrapper.find('h1').text()).toBe('Cytomine');
     expect(wrapper.text()).toContain('Biomedical imaging platform');
     expect(wrapper.find('img').attributes('src')).toBe('/cytomine.png');
+    expect(wrapper.text()).toContain('Jan 2021 - Present');
+    expect(wrapper.text()).toContain('Actively Contributing');
+    expect(wrapper.findComponent({ name: 'TagItem' }).props('text')).toBe('Open Source');
   });
 
   it('should render a not found message for an unknown slug', async () => {
