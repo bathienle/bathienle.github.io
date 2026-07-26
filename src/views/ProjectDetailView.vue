@@ -15,24 +15,42 @@
       </RouterLink>
 
       <div v-if="project" class="flex flex-col gap-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-center">{{ project.title }}</h1>
+
         <div class="w-full overflow-hidden rounded-2xl border border-neutral">
           <img class="object-contain w-full h-full" :src="project.image" :alt="project.title" />
         </div>
 
-        <div class="flex flex-col gap-4">
-          <h1 class="text-3xl md:text-4xl font-bold">{{ project.title }}</h1>
+        <div class="flex flex-col gap-6 p-4 sm:p-6 bg-secondary border border-neutral rounded-2xl">
+          <h2 class="flex items-center gap-2 text-xl font-semibold">
+            <Icon class="text-2xl" icon="material-symbols:overview-outline" />
+            Overview
+          </h2>
 
-          <div class="flex items-center gap-2 text-neutral/60">
-            <Icon class="text-2xl" icon="mdi:calendar-clock-outline" />
-            {{ project.startDate }} - {{ project.endDate }}
-          </div>
+          <div class="flex flex-col gap-6">
+            <div>
+              <p class="text-xs uppercase tracking-wide text-neutral/50 mb-1">Timeline</p>
+              <p>{{ project.startDate }} - {{ project.endDate }}</p>
+            </div>
 
-          <div class="flex flex-wrap gap-2">
-            <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
+            <div>
+              <p class="text-xs uppercase tracking-wide text-neutral/50 mb-1">Status</p>
+              <p>{{ project.status }}</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-wide text-neutral/50 mb-1">Description</p>
+              <p class="text-neutral/80 leading-relaxed">{{ project.description }}</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-wide text-neutral/50 mb-2">Keywords</p>
+              <div class="flex flex-wrap gap-2">
+                <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
+              </div>
+            </div>
           </div>
         </div>
-
-        <p class="text-lg text-neutral/80 leading-relaxed">{{ project.description }}</p>
 
         <div class="flex flex-wrap gap-3">
           <TechIcon v-for="tech in project.stack" :key="tech.key" :tech="tech" />

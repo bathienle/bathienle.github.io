@@ -13,6 +13,7 @@ describe('ProjectCard.vue', () => {
     image: 'https://avatars.githubusercontent.com/u/57636476?v=4',
     startDate: 'Jan 2021',
     endDate: 'Dec 2021',
+    status: 'Completed',
     description: 'This is a test project.',
     tags: ['Vue', 'TypeScript'],
     stack: [{ 'key': 'typescript', 'name': 'TypeScript' }],
