@@ -49,6 +49,20 @@
                 <TagItem v-for="tag in project.tags" :key="tag" :text="tag" />
               </div>
             </div>
+
+            <div v-if="project.highlights?.length">
+              <p class="text-xs uppercase tracking-wide text-neutral/50 mb-2">Key Contributions</p>
+              <ul class="flex flex-col gap-1.5">
+                <li
+                  v-for="highlight in project.highlights"
+                  :key="highlight"
+                  class="flex items-start gap-2 text-neutral/80 leading-relaxed"
+                >
+                  <Icon class="text-accent w-4 h-4 mt-1 shrink-0" icon="mdi:circle-small" />
+                  <span>{{ highlight }}</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

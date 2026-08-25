@@ -316,6 +316,9 @@
         "Open Source",
         "Whole Slide Imaging"
       ],
+      "highlights": [
+        "Leading the migration of the Cytomine Web UI from Vue 2 to Vue 3"
+      ],
       "stack": [
         {
           "key": "python",
