@@ -74,6 +74,7 @@ export interface Project {
   tags: string[];
   stack: Tech[];
   link?: string;
+  highlights?: string[];
 }
 
 export interface Content {
