@@ -317,7 +317,10 @@
         "Whole Slide Imaging"
       ],
       "highlights": [
-        "Leading the migration of the Cytomine Web UI from Vue 2 to Vue 3"
+        "Leading the migration of the Cytomine Web UI from Vue 2 to Vue 3",
+        "Integrated a Segment Anything Model (SAM) service into Cytomine's annotation workflow for AI-assisted annotation segmentation",
+        "Core contributor to the App Engine, Cytomine's service for running containerised deep learning algorithms on Kubernetes, since its initial implementation",
+        "Built and maintain the CBIR service, a PyTorch-based content-based image retrieval engine for finding visually similar annotations"
       ],
       "stack": [
         {
