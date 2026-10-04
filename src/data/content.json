@@ -86,11 +86,6 @@
           "key": "tailwindcss-icon",
           "name": "Tailwind CSS",
           "url": "https://tailwindcss.com/"
-        },
-        {
-          "key": "nuxt-icon",
-          "name": "Nuxt",
-          "url": "https://nuxt.com/"
         }
       ]
     },
